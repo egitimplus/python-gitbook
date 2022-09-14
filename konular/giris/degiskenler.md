@@ -1,5 +1,9 @@
 # Değişkenler
 
+{% hint style="warning" %}
+değişken oluşturma
+{% endhint %}
+
 ```python
 x = 5
 y = "John"
@@ -15,7 +19,9 @@ Output:
 John
 ```
 
-Değişken tanımlama kuralları
+{% hint style="warning" %}
+değişken tanımlama kuralları
+{% endhint %}
 
 <pre class="language-python"><code class="lang-python">'''
 Harf veya alt çizgi ( _ ) ile başlamalıdır.

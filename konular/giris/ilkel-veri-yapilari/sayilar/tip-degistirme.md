@@ -11,8 +11,5 @@ x = str(23.25)
 x = float(5)
 
 print(type(x))
-```
-
-```
-<class 'float'>
+# Output : <class 'float'>
 ```

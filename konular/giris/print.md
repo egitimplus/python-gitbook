@@ -1,6 +1,8 @@
 # print()
 
+{% hint style="warning" %}
 stringler her zaman tırnak içerisinde yazılır
+{% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
@@ -20,7 +22,9 @@ Hello World
 Hello World
 ```
 
+{% hint style="warning" %}
 sayılar tırnak içerisinde yazılmaz
+{% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
@@ -36,7 +40,9 @@ Output:
 2021
 ```
 
+{% hint style="warning" %}
 print() fonksiyonuna birden fazla argüman gönderebiliriz
+{% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
@@ -52,7 +58,9 @@ Hello Word Youtube
 3 5 6 8
 ```
 
+{% hint style="warning" %}
 sep parametresi ile gönderilen argümanları birleştirebiliriz. hiç bir şey göndermezsek varsayılan olarak boşluk ile birleştirilir.
+{% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
@@ -68,7 +76,9 @@ Hello-Word-Youtube
 3-5-6-8
 ```
 
+{% hint style="warning" %}
 end parametresi ile sonuna istediğimiz karakteri ekleyebiliriz. hiç bir şey göndermezsek varsayılan olarak yeni satır eklenir.
+{% endhint %}
 
 {% code lineNumbers="true" %}
 ```python

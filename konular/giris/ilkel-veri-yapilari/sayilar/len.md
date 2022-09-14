@@ -1,16 +1,12 @@
 # len()
 
 ```python
-Output:
-----------------------------------------
 number = 24123213
 text = '24123213'
 
 print(len(text))
-print(len(number))
-```
+# Output : 8
 
-```
-8
-TypeError: object of type 'int' has no len()
+print(len(number))
+# Output : TypeError: object of type 'int' has no len()
 ```
