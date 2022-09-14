@@ -1,8 +1,12 @@
 # Örnekler
 
-```python
+{% hint style="info" %}
+```
 # 1’den 20’e kadar olan çift sayıları yazdırınız.
+```
+{% endhint %}
 
+```python
 i = 1
 while i < 20:
     if i % 2 == 0:
@@ -10,7 +14,8 @@ while i < 20:
     i = i + 1
 ```
 
-```
+<pre><code><strong>Output:
+</strong>----------------------------------------
 2
 4
 6
@@ -19,11 +24,10 @@ while i < 20:
 12
 14
 16
-18
-```
+18</code></pre>
 
-```python
-'''
+{% hint style="info" %}
+```
 while döngüsü ile aşağıdaki şekli yapınız
 
 *
@@ -31,8 +35,10 @@ while döngüsü ile aşağıdaki şekli yapınız
 ***
 ****
 ***** 
-'''
+```
+{% endhint %}
 
+```python
 i = 1
 while i < 6:
     print(i * '*')
@@ -40,6 +46,8 @@ while i < 6:
 ```
 
 ```
+Output:
+----------------------------------------
 *
 **
 ***
@@ -47,16 +55,17 @@ while i < 6:
 *****
 ```
 
-```python
-'''
-while döngüsü ile aşağıdaki şekli yapınız
-
+{% hint style="info" %}
+<pre><code><strong>while döngüsü ile aşağıdaki şekli yapınız
+</strong>
 1
 1 2
 1 2 3
 1 2 3 4
-1 2 3 4 5 
-'''
+1 2 3 4 5 </code></pre>
+{% endhint %}
+
+```python
 i = 1
 while i < 6:
     j = 1
@@ -69,6 +78,8 @@ while i < 6:
 ```
 
 ```
+Output:
+----------------------------------------
 1 
 1 2 
 1 2 3 
