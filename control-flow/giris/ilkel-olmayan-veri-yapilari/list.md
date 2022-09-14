@@ -2,7 +2,7 @@
 
 * Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir (duplicate)
 
-<pre><code><strong># Boş Liste Tanımlama
+<pre class="language-python"><code class="lang-python"><strong># Boş Liste Tanımlama
 </strong>my_list = list()
 my_list = []
 print(my_list) 
