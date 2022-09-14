@@ -24,15 +24,15 @@ print(7 >= 7) # Greater Than or Equal To
 print(5 <= 7) # Less Than Or Equal To
 ```
 
-```
+<pre><code><strong>Output:
+</strong>----------------------------------------
 True
 False
 True
 True
 True
 True
-True
-```
+True</code></pre>
 
 <pre class="language-python"><code class="lang-python">'''
 Comparison by `is` vs `==`
@@ -69,6 +69,8 @@ d = 1000
 </strong>print(c is d) # False</code></pre>
 
 ```
+Output:
+----------------------------------------
 True
 False
 True

@@ -1,11 +1,13 @@
 # While
 
+{% hint style="success" %}
 ```
 while <condition>:
     ...
     ...
     ...
 ```
+{% endhint %}
 
 ```python
 number = 0

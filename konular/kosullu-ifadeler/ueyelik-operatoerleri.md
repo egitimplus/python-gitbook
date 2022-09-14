@@ -24,11 +24,11 @@ print(int(True))
 print(int(False))
 ```
 
-```
+<pre><code><strong>Output:
+</strong>----------------------------------------
 True
 False
 True
-<class 'bool'>
+&#x3C;class 'bool'>
 1
-0
-```
+0</code></pre>

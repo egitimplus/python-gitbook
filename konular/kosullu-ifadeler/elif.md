@@ -1,5 +1,6 @@
 # Elif
 
+{% hint style="success" %}
 ```
 if <condition>:
     ...
@@ -11,6 +12,7 @@ else:
     ...
     ...
 ```
+{% endhint %}
 
 ```python
 x = 4
@@ -23,5 +25,7 @@ else:
 ```
 
 ```
+Output:
+----------------------------------------
 x is greater than 3
 ```

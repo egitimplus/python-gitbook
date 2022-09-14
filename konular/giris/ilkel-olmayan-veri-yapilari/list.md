@@ -1,6 +1,8 @@
 # List
 
-* Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir (duplicate)
+{% hint style="warning" %}
+Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir (duplicate)
+{% endhint %}
 
 <pre class="language-python"><code class="lang-python"><strong># Boş Liste Tanımlama
 </strong>my_list = list()

@@ -1,11 +1,13 @@
 # For
 
+{% hint style="success" %}
 ```
 for variable in iterable:
     ...
     ...
     ...
 ```
+{% endhint %}
 
 ```python
 for letter in 'Python':

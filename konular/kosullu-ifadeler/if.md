@@ -1,10 +1,12 @@
 # If
 
+{% hint style="success" %}
 ```
 if <condition>:
     ...
     ...
 ```
+{% endhint %}
 
 ```python
 if True:
@@ -12,6 +14,8 @@ if True:
 ```
 
 ```
+Output:
+----------------------------------------
 condition is true
 ```
 
@@ -20,5 +24,7 @@ condition is true
 </strong>    print('x is greater than 5')</code></pre>
 
 ```
-No Output
+Output:
+----------------------------------------
+
 ```

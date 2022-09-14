@@ -1,8 +1,12 @@
 # Örnekler
 
-```python
-# Sayının pozitif olup/olmadığını bulan programı yazınız.
+{% hint style="info" %}
+```
+Sayının pozitif olup/olmadığını bulan programı yazınız.
+```
+{% endhint %}
 
+```python
 number = int(input('Please enter number: '))
 
 print(number)
@@ -17,20 +21,25 @@ else:
 ```
 
 ```
+Output:
+----------------------------------------
 Please enter number: -8
 -8
 pozitif sayı değil
 ```
 
-```python
-''' 
+{% hint style="info" %}
+```
 vize ve final sınav notlarından öğrencinin sınıfı geçip geçmediğini 
 tespit eden programı yazınız.
 
 passing_grade: 50
 midtern_coefficient : %30
 final_coefficient: %70
-'''
+```
+{% endhint %}
+
+```python
 passing_grade = 50
 midtern_coef = 0.3
 final_coef = 0.7
@@ -49,14 +58,16 @@ else:
 ```
 
 ```
+Output:
+----------------------------------------
 Please enter midtern exam: 40
 Please enter final exam: 60
 Result:  54.0
 Passed
 ```
 
-```python
-'''
+{% hint style="info" %}
+```
 Kullanıcı tarafından girilen sınav puanını nota çeviren programı yazınız. 
 Eğer girilen puan 0-100 aralığında değilse ekrana hata mesajı basınız.
 
@@ -65,7 +76,10 @@ Eğer girilen puan 0-100 aralığında değilse ekrana hata mesajı basınız.
 41-60  | C
 61-80  | B
 81+    | A
-'''
+```
+{% endhint %}
+
+```python
 exam_grade = int(input('Please enter exam grade: '))
 
 if exam_grade <= 20:
@@ -81,6 +95,8 @@ else:
 ```
 
 ```
+Output:
+----------------------------------------
 Please enter exam grade: 65
 B
 ```

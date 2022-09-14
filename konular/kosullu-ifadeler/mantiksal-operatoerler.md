@@ -24,6 +24,8 @@ print(not not True)
 ```
 
 ```
+Output:
+----------------------------------------
 True
 False
 False
@@ -68,6 +70,8 @@ def print_me():
 ```
 
 ```
+Output:
+----------------------------------------
 2
 0
 Hello World
