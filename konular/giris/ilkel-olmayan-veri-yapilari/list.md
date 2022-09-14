@@ -1,6 +1,6 @@
 # List
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir (duplicate)
 {% endhint %}
 

@@ -1,6 +1,6 @@
 # Elif
 
-{% hint style="success" %}
+{% hint style="info" %}
 ```
 if <condition>:
     ...
@@ -22,10 +22,6 @@ elif x > 3:
     print('x is greater than 3')
 else:
     print('x is less than 5')
-```
-
-```
-Output:
-----------------------------------------
-x is greater than 3
+    
+# Output: x is greater than 3
 ```

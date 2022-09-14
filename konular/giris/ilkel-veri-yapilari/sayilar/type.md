@@ -2,16 +2,9 @@
 
 ```python
 number = 5
-print(type(number))
+print(type(number)) # <class 'int'>
 
 string = 'hello world'
-print(type(string ))
+print(type(string )) # <class 'str'>
 
-```
-
-```
-Output:
-----------------------------------------
-<class 'int'>
-<class 'str'>
 ```

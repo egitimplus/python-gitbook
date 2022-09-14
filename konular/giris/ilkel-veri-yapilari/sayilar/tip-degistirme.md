@@ -10,6 +10,5 @@ x = str(23.25)
 # float(): converts to floating numbers
 x = float(5)
 
-print(type(x))
-# Output : <class 'float'>
+print(type(x)) # <class 'float'>
 ```

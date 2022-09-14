@@ -4,35 +4,25 @@ description: Comparison Operators
 
 # Karşılaştırma Operatörleri
 
-| İşlem      | Operatör |
-| ---------- | -------- |
-| Eşit       | ==       |
-| Eşit Değil | !=       |
-| Büyük      | >        |
-| Küçük      | <        |
-| Büyük Eşit | >=       |
-| Küçük Eşit | <=       |
-| Aynı       | is       |
+| İşlem                                 | Operatör |
+| ------------------------------------- | -------- |
+| Eşit (Equal)                          | ==       |
+| Eşit Değil (Not Equal)                | !=       |
+| Büyük (Greater Than)                  | >        |
+| Küçük (Less Than)                     | <        |
+| Büyük Eşit (Greater Than or Equal To) | >=       |
+| Küçük Eşit (Less Than Or Equal To)    | <=       |
+| Aynı (Is)                             | is       |
 
 ```python
-print(5 == 5) # Equal
-print(5 == '5') # Equal
-print(3 != 4) # Not Equal
-print(6 > 4) # Greater Than
-print(3 < 5) # Less Than
-print(7 >= 7) # Greater Than or Equal To
-print(5 <= 7) # Less Than Or Equal To
+print(5 == 5)   # True
+print(5 == '5') # False
+print(3 != 4)   # True
+print(6 > 4)    # True
+print(3 < 5)    # True
+print(7 >= 7)   # True
+print(5 <= 7)   # True
 ```
-
-<pre><code><strong>Output:
-</strong>----------------------------------------
-True
-False
-True
-True
-True
-True
-True</code></pre>
 
 <pre class="language-python"><code class="lang-python">'''
 Comparison by `is` vs `==`
@@ -43,8 +33,8 @@ a is b will compare the identities of a and b
 
 a = 'Python is fun!'
 b = 'Python is fun!'
-print(a == b) # returns True
-print(a is b) # returns False
+print(a == b) # True
+print(a is b) # False
 
 '''
 Short strings and small
@@ -67,15 +57,4 @@ c = 1000
 d = 1000
 <strong>print(a is b) # False
 </strong>print(c is d) # False</code></pre>
-
-```
-Output:
-----------------------------------------
-True
-False
-True
-True
-False
-False
-```
 

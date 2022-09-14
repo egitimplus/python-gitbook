@@ -1,6 +1,6 @@
 # print()
 
-{% hint style="warning" %}
+{% hint style="info" %}
 stringler her zaman tırnak içerisinde yazılır
 {% endhint %}
 

@@ -1,6 +1,6 @@
 # Else
 
-{% hint style="success" %}
+{% hint style="info" %}
 ```
 if <condition>:
     ...
@@ -17,8 +17,6 @@ if x > 5:
     print('x is greater than 5')
 else:
     print('x is less than 5')
-```
 
-<pre><code><strong>Output:
-</strong>----------------------------------------
-x is less than 5</code></pre>
+# Output: x is less than 5
+```

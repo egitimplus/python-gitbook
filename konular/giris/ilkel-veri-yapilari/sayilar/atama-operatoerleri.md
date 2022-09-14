@@ -4,49 +4,37 @@ description: Assignment Operators
 
 # Atama Operatörleri
 
-|           |       |
-| --------- | ----- |
-| Ekleme    | +=    |
-| Çıkarma   | -=    |
-| Çarpma    | \*=   |
-| Kuvvet    | \*\*= |
-| Bölme     | /=    |
-| Tam Bölme | //=   |
-| Kalan     | %=    |
+|                            |       |
+| -------------------------- | ----- |
+| Ekleme (Addition)          | +=    |
+| Çıkarma (Substraction)     | -=    |
+| Çarpma (Multiplication)    | \*=   |
+| Kuvvet (Exponentiation)    | \*\*= |
+| Bölme (True Division)      | /=    |
+| Tam Bölme (Floor Division) | //=   |
+| Kalan (Modulus)            | %=    |
 
 ```python
 x = 9
 
-x += 3 # Addition
-print(x)
+x += 3  
+print(x) # 12
 
-x -= 5 # Substraction
-print(x)
+x -= 5  
+print(x) # 7
 
-x *= 2 # Multiplication
-print(x)
+x *= 2 
+print(x) #  14
 
-x **= 2 # Exponentiation
-print(x)
+x **= 2  
+print(x) # 196
+ 
+x /= 3 
+print(x) # 65.33333333333333
 
-x /= 3 # True Division
-print(x)
+x //= 10 
+print(x) # 6.0
 
-x //= 10 # Floor Division
-print(x)
-
-x %= 4  # Modulus
-print(x)
-```
-
-```
-Output:
-----------------------------------------
-12
-7
-14
-196
-65.33333333333333
-6.0
-2.0
+x %= 4 
+print(x) # 2.0
 ```

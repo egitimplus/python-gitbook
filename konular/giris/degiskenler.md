@@ -1,6 +1,6 @@
 # Değişkenler
 
-{% hint style="warning" %}
+{% hint style="info" %}
 değişken oluşturma
 {% endhint %}
 
@@ -19,7 +19,7 @@ Output:
 John
 ```
 
-{% hint style="warning" %}
+{% hint style="info" %}
 değişken tanımlama kuralları
 {% endhint %}
 

@@ -15,20 +15,11 @@ text = 'Hello World Again'
 
 # küçük büyük harf duyarlıdır
 
-print('World' in text)
-print('world' in text)
-print('x' not in text)
+print('World' in text) # True
+print('world' in text) # False
+print('x' not in text) # True
 
-print(type(True))
-print(int(True))
-print(int(False))
+print(type(True)) # <class 'bool'>
+print(int(True))  # 1
+print(int(False)) # 0
 ```
-
-<pre><code><strong>Output:
-</strong>----------------------------------------
-True
-False
-True
-&#x3C;class 'bool'>
-1
-0</code></pre>

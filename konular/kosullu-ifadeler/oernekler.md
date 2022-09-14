@@ -1,6 +1,6 @@
 # Örnekler
 
-{% hint style="info" %}
+{% hint style="warning" %}
 ```
 Sayının pozitif olup/olmadığını bulan programı yazınız.
 ```
@@ -28,7 +28,7 @@ Please enter number: -8
 pozitif sayı değil
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 ```
 vize ve final sınav notlarından öğrencinin sınıfı geçip geçmediğini 
 tespit eden programı yazınız.
@@ -66,7 +66,7 @@ Result:  54.0
 Passed
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 ```
 Kullanıcı tarafından girilen sınav puanını nota çeviren programı yazınız. 
 Eğer girilen puan 0-100 aralığında değilse ekrana hata mesajı basınız.

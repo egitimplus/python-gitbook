@@ -1,6 +1,6 @@
 # If
 
-{% hint style="success" %}
+{% hint style="info" %}
 ```
 if <condition>:
     ...
@@ -11,20 +11,10 @@ if <condition>:
 ```python
 if True:
     print('condition is true')
+    
+# Output: condition is true
 ```
 
-```
-Output:
-----------------------------------------
-condition is true
-```
-
-<pre class="language-python"><code class="lang-python">x = 4
-<strong>if x > 5:
+<pre class="language-python"><code class="lang-python"><strong>x = 4
+</strong><strong>if x > 5:
 </strong>    print('x is greater than 5')</code></pre>
-
-```
-Output:
-----------------------------------------
-
-```

@@ -13,27 +13,14 @@ description: Boolean Operators
 | not      | Sonucu ters çevirir. True -> False, False -> True olur |
 
 ```python
-print(True and True)
-print(True and False)
-print(False and False)
-print(True or True)
-print(True or False)
-print(False or False)
-print(not True)
-print(not not True)
-```
-
-```
-Output:
-----------------------------------------
-True
-False
-False
-True
-True
-False
-False
-True
+print(True and True)    # True
+print(True and False)   # False
+print(False and False)  # False
+print(True or True)     # True
+print(True or False)    # True
+print(False or False)   # False
+print(not True)         # False
+print(not not True)     # True
 ```
 
 ```python
@@ -66,18 +53,4 @@ def print_me():
     print('I am here!')
 
 0 and print_me() # 0
-
-```
-
-```
-Output:
-----------------------------------------
-2
-0
-Hello World
-
-1
-1
-[]
-0
 ```
