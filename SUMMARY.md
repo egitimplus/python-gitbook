@@ -24,6 +24,7 @@
     * [Tuple](konular/giris/ilkel-olmayan-veri-yapilari/tuple.md)
     * [Set](konular/giris/ilkel-olmayan-veri-yapilari/set.md)
     * [Dictionary](konular/giris/ilkel-olmayan-veri-yapilari/dictionary.md)
+  * [input()](konular/giris/input.md)
 * [Koşullu İfadeler](konular/kosullu-ifadeler/README.md)
   * [Karşılaştırma Operatörleri](konular/kosullu-ifadeler/karsilastirma-operatoerleri.md)
   * [Mantıksal Operatörler](konular/kosullu-ifadeler/mantiksal-operatoerler.md)
