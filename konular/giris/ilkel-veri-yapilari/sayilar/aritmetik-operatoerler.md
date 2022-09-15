@@ -15,11 +15,11 @@ description: Arithmetic Operators
 | Kalan (Modulus)            | %        |
 
 ```python
-print(5 + 3)      # 8 
-print(6 - 1)      # 5 
-print(4 * 4)      # 16 
-print(2 ** 4)     # 16 
-print(6 / 2)      # 3.0
-print(15 // 2)    # 7
-print(22 % 4)     # 2
+print(5 + 3)     # 8 
+print(6 - 1)     # 5 
+print(4 * 4)     # 16 
+print(2 ** 4) # 16 
+print(6 / 2) # 3.0
+print(15 // 2) # 7
+print(22 % 4) # 2
 ```
