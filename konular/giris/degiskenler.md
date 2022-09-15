@@ -5,18 +5,11 @@ değişken oluşturma
 {% endhint %}
 
 ```python
-x = 5
-y = "John"
+x = 5       
+y = "John"  
 
-print(x)
-print(y)
-```
-
-```
-Output:
-----------------------------------------
-5
-John
+print(x) # 5
+print(y) # John
 ```
 
 {% hint style="info" %}
@@ -31,7 +24,7 @@ Kelimeler arasında boşluk bırakılamaz.
 
 # Büyük / küçük harf duyarlıdır.
 Hello = 'Hello'
-print(hello)
+print(hello) # NameError: name 'hello' is not defined
 
 # Python tarafından ayrılmış kelimeler (reserved words) kullanılamaz.
 <strong># import keyword
@@ -40,9 +33,9 @@ class = '12-A'
 
 # Türkçe karakterler kullanılabilir ancak kullanılmaması daha iyi olacaktır
 adı = 'Emre'
-print(adı)
+print(adı) # Emre
 
 # İsimlendirme yaparken değişken isimlerini tamamen küçük harfle ve aralarında 
 # alt çizgi (snake case) kullanılması tavsiye edilir. 
 # (Python Enhancement Proposals)
-student_name = 'Emre Cevik'</code></pre>
+student_name = 'Emre Cevik' # SyntaxError: invalid syntax</code></pre>

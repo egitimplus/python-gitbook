@@ -6,54 +6,91 @@ stringler her zaman tırnak içerisinde yazılır
 
 {% code lineNumbers="true" %}
 ```python
-print('Hello World')        # Hello World    
-print("Hello World")        # Hello World
-print(""" Hello World""")   # Hello World
-print('''Hello World''')    # Hello World
+print('Hello World')
+print("Hello World")
+print(""" Hello World""")
+print('''Hello World''')
 ```
 {% endcode %}
 
-{% hint style="info" %}
+```
+Output:
+----------------------------------------
+Hello World
+Hello World
+Hello World
+Hello World
+```
+
+{% hint style="warning" %}
 sayılar tırnak içerisinde yazılmaz
 {% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
-print(5)    # 5
-print(2021) # 2021
+print(5)
+print(2021)
 ```
 {% endcode %}
 
-{% hint style="info" %}
+```
+Output:
+----------------------------------------
+5
+2021
+```
+
+{% hint style="warning" %}
 print() fonksiyonuna birden fazla argüman gönderebiliriz
 {% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
-print('Hello', 'Word', 'Youtube') # Hello Word Youtube
-print(3,5,6,8) # 3 5 6 8
+print('Hello', 'Word', 'Youtube')
+print(3,5,6,8)
 ```
 {% endcode %}
 
-{% hint style="info" %}
+```
+Output:
+----------------------------------------
+Hello Word Youtube
+3 5 6 8
+```
+
+{% hint style="warning" %}
 sep parametresi ile gönderilen argümanları birleştirebiliriz. hiç bir şey göndermezsek varsayılan olarak boşluk ile birleştirilir.
 {% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
-print('Hello', 'Word', 'Youtube', sep='-') # Hello-Word-Youtube
-print(3, 5, 6, 8, sep='-') # 3-5-6-8
+print('Hello', 'Word', 'Youtube', sep='-')
+print(3, 5, 6, 8, sep='-')
 ```
 {% endcode %}
 
-{% hint style="info" %}
+```
+Output:
+----------------------------------------
+Hello-Word-Youtube
+3-5-6-8
+```
+
+{% hint style="warning" %}
 end parametresi ile sonuna istediğimiz karakteri ekleyebiliriz. hiç bir şey göndermezsek varsayılan olarak yeni satır eklenir.
 {% endhint %}
 
 {% code lineNumbers="true" %}
 ```python
-print('Hello', 'Word', 'Youtube', sep='-', end='\n') # Hello-Word-Youtube
-print(3, 5, 6, 8, sep='-', end='!') # 3-5-6-8!
+print('Hello', 'Word', 'Youtube', sep='-', end='\n')
+print(3, 5, 6, 8, sep='-')
 ```
 {% endcode %}
+
+```
+Output:
+----------------------------------------
+Hello-Word-Youtube
+3-5-6-8
+```
 
