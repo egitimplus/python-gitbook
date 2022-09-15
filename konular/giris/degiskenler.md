@@ -5,44 +5,37 @@ değişken oluşturma
 {% endhint %}
 
 ```python
-x = 5
-y = "John"
+x = 5       
+y = "John"  
 
-print(x)
-print(y)
-```
-
-```
-Output:
-----------------------------------------
-5
-John
+print(x) # 5
+print(y) # John
 ```
 
 {% hint style="info" %}
 değişken tanımlama kuralları
+
+* Harf veya alt çizgi ( \_ ) ile başlamalıdır.
+* Harf, alt çizgi ( \_ ) ve rakamlardan oluşabilir.
+* Kelimeler arasında boşluk bırakılamaz.
+* Python tarafından ayrılmış kelimeler (reserved words) kullanılamaz.
 {% endhint %}
 
-<pre class="language-python"><code class="lang-python">'''
-Harf veya alt çizgi ( _ ) ile başlamalıdır.
-Harf, alt çizgi ( _ ) ve rakamlardan oluşabilir.
-Kelimeler arasında boşluk bırakılamaz.
-'''
+```python
+# import keyword
+# print(keyword.kwlist)
+class = '12-A'
 
 # Büyük / küçük harf duyarlıdır.
 Hello = 'Hello'
-print(hello)
-
-# Python tarafından ayrılmış kelimeler (reserved words) kullanılamaz.
-<strong># import keyword
-</strong># print(keyword.kwlist)
-class = '12-A'
+print(hello) # NameError: name 'hello' is not defined
 
 # Türkçe karakterler kullanılabilir ancak kullanılmaması daha iyi olacaktır
 adı = 'Emre'
-print(adı)
+print(adı) # Emre
 
 # İsimlendirme yaparken değişken isimlerini tamamen küçük harfle ve aralarında 
 # alt çizgi (snake case) kullanılması tavsiye edilir. 
 # (Python Enhancement Proposals)
-student_name = 'Emre Cevik'</code></pre>
+student_name = 'Emre Cevik' # SyntaxError: invalid syntax
+```
