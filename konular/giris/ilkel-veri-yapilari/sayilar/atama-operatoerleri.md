@@ -7,7 +7,7 @@ description: Assignment Operators
 {% tabs %}
 {% tab title="Ekleme " %}
 {% hint style="info" %}
-Ekleme (Addition) +=
+Addition ( += )
 {% endhint %}
 
 ```python
@@ -19,7 +19,7 @@ print(x) # 12
 
 {% tab title="Çıkarma " %}
 {% hint style="info" %}
-Çıkarma (Substraction) -=
+Substraction ( -= )
 {% endhint %}
 
 ```python
@@ -31,7 +31,7 @@ print(x) # 4
 
 {% tab title="Çarpma " %}
 {% hint style="info" %}
-Çarpma (Multiplication) \*=
+Multiplication ( \*= )
 {% endhint %}
 
 <pre class="language-python"><code class="lang-python"><strong>x = 9
@@ -41,7 +41,7 @@ print(x) # 4
 
 {% tab title="Kuvvet " %}
 {% hint style="info" %}
-Kuvvet (Exponentiation) \*\*=
+Exponentiation ( \*\*= )
 {% endhint %}
 
 ```python
@@ -53,7 +53,7 @@ print(x) # 81
 
 {% tab title="Bölme " %}
 {% hint style="info" %}
-Tam Bölme (Floor Division) /=
+Floor Division ( /= )
 {% endhint %}
 
 ```python
@@ -65,7 +65,7 @@ print(x) # 3.33333333333333
 
 {% tab title="Tam Bölme" %}
 {% hint style="info" %}
-Bölme (True Division) //=
+True Division ( //= )
 {% endhint %}
 
 ```python
@@ -77,7 +77,7 @@ print(x) # 3
 
 {% tab title="Kalan " %}
 {% hint style="info" %}
-Kalan (Modulus) %=
+Modulus ( %= )
 {% endhint %}
 
 ```python
