@@ -69,9 +69,7 @@ print(5 <= 7)   # True
 {% tab title="Aynı" %}
 {% hint style="info" %}
 Is ( is)
-{% endhint %}
 
-{% hint style="success" %}
 ```
 a == b -> a ve b'nin değerlerini karşılaştırır
 a is b -> a ve b'nin kimliklerini karşılaştırır
@@ -103,7 +101,7 @@ d = 5
 print(c is d) # True
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Uzun string ve büyük sayılarda kimlikleri aynı değildir
 {% endhint %}
 
