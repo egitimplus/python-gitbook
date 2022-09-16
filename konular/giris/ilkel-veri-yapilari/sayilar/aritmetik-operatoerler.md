@@ -51,7 +51,7 @@ Floor Division ( / )
 {% endhint %}
 
 ```python
-print(6 / 2)      # 3.0
+print(7 / 2)      # 3.5
 ```
 {% endtab %}
 
