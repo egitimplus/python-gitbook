@@ -4,37 +4,86 @@ description: Assignment Operators
 
 # Atama Operatörleri
 
-|                            |       |
-| -------------------------- | ----- |
-| Ekleme (Addition)          | +=    |
-| Çıkarma (Substraction)     | -=    |
-| Çarpma (Multiplication)    | \*=   |
-| Kuvvet (Exponentiation)    | \*\*= |
-| Bölme (True Division)      | /=    |
-| Tam Bölme (Floor Division) | //=   |
-| Kalan (Modulus)            | %=    |
+{% tabs %}
+{% tab title="Ekleme " %}
+{% hint style="info" %}
+Ekleme (Addition) +=
+{% endhint %}
 
 ```python
 x = 9
-
 x += 3  
 print(x) # 12
-
-x -= 5  
-print(x) # 7
-
-x *= 2 
-print(x) #  14
-
-x **= 2  
-print(x) # 196
- 
-x /= 3 
-print(x) # 65.33333333333333
-
-x //= 10 
-print(x) # 6.0
-
-x %= 4 
-print(x) # 2.0
 ```
+{% endtab %}
+
+{% tab title="Çıkarma " %}
+{% hint style="info" %}
+Çıkarma (Substraction) -=
+{% endhint %}
+
+```python
+x = 9
+x -= 5  
+print(x) # 4
+```
+{% endtab %}
+
+{% tab title="Çarpma " %}
+{% hint style="info" %}
+Çarpma (Multiplication) \*=
+{% endhint %}
+
+<pre class="language-python"><code class="lang-python"><strong>x = 9
+</strong><strong>x *= 2 
+</strong>print(x) #  18</code></pre>
+{% endtab %}
+
+{% tab title="Kuvvet " %}
+{% hint style="info" %}
+Kuvvet (Exponentiation) \*\*=
+{% endhint %}
+
+```python
+x = 9
+x **= 2  
+print(x) # 81
+```
+{% endtab %}
+
+{% tab title="Bölme " %}
+{% hint style="info" %}
+Tam Bölme (Floor Division) /=
+{% endhint %}
+
+```python
+x = 10
+x /= 3
+print(x) # 3.33333333333333
+```
+{% endtab %}
+
+{% tab title="Tam Bölme" %}
+{% hint style="info" %}
+Bölme (True Division) //=
+{% endhint %}
+
+```python
+x = 10
+x //= 3 
+print(x) # 3
+```
+{% endtab %}
+
+{% tab title="Kalan " %}
+{% hint style="info" %}
+Kalan (Modulus) %=
+{% endhint %}
+
+```python
+x = 9
+x %= 4 
+print(x) # 1.0
+```
+{% endtab %}
+{% endtabs %}
