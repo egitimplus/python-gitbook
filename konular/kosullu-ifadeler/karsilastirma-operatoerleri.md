@@ -71,44 +71,51 @@ print(5 <= 7)   # True
 Is ( is)
 {% endhint %}
 
+{% hint style="success" %}
+```
+a == b -> a ve b'nin değerlerini karşılaştırır
+a is b -> a ve b'nin kimliklerini karşılaştırır
+```
+{% endhint %}
+
 ```python
-'''
-Comparison by `is` vs `==`
-
-a == b compares the value of a and b.
-a is b will compare the identities of a and b
-'''
-
 a = 'Python is fun!'
 b = 'Python is fun!'
+
 print(a == b) # True
 print(a is b) # False
 
-'''
-Short strings and small
-integers will return True when compared with is, due to the Python machine attempting to use less memory for
-identical objects.
-'''
+print(id(a)) # 2570926058312
+print(id(b)) # 2570926057736
+```
+
+{% hint style="warning" %}
+Kısa string ve küçük tam sayılarda (256'dan küçük) performans sebebiyle aynı değere sahip değişkenlerin kimlikleri de aynıdır.
+{% endhint %}
+
+```python
 a = 'short'
 b = 'short'
+print(a is b) # True
+
 c = 5
 d = 5
-print(a is b) # True
 print(c is d) # True
+```
 
-'''
-But longer strings and larger integers will be stored separately.
-'''
+{% hint style="info" %}
+Uzun string ve büyük sayılarda kimlikleri aynı değildir
+{% endhint %}
+
+```python
 a = 'not so short'
 b = 'not so short'
+print(a is b) # False
+
 c = 1000
 d = 1000
-print(a is b) # False
-print(c is d) # Falsepy
+print(c is d) # False
 ```
 {% endtab %}
 {% endtabs %}
-
-```python
-```
 
