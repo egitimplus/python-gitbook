@@ -4,27 +4,75 @@ description: Comparison Operators
 
 # Karşılaştırma Operatörleri
 
-| İşlem                                 | Operatör |
-| ------------------------------------- | -------- |
-| Eşit (Equal)                          | ==       |
-| Eşit Değil (Not Equal)                | !=       |
-| Büyük (Greater Than)                  | >        |
-| Küçük (Less Than)                     | <        |
-| Büyük Eşit (Greater Than or Equal To) | >=       |
-| Küçük Eşit (Less Than Or Equal To)    | <=       |
-| Aynı (Is)                             | is       |
+{% tabs %}
+{% tab title="Eşit " %}
+{% hint style="info" %}
+Equal ( == )
+{% endhint %}
 
 ```python
 print(5 == 5)   # True
 print(5 == '5') # False
+```
+{% endtab %}
+
+{% tab title="Eşit Değil " %}
+{% hint style="info" %}
+&#x20;Not Equal ( =! )
+{% endhint %}
+
+```python
 print(3 != 4)   # True
+```
+{% endtab %}
+
+{% tab title="Büyük " %}
+{% hint style="info" %}
+Greater Than ( > )
+{% endhint %}
+
+```python
 print(6 > 4)    # True
+```
+{% endtab %}
+
+{% tab title="Küçük " %}
+{% hint style="info" %}
+Less Than ( < )
+{% endhint %}
+
+```python
 print(3 < 5)    # True
+```
+{% endtab %}
+
+{% tab title="Büyük Eşit" %}
+{% hint style="info" %}
+Greater Than or Equal To ( >= )
+{% endhint %}
+
+```python
 print(7 >= 7)   # True
+```
+{% endtab %}
+
+{% tab title="Küçük Eşit" %}
+{% hint style="info" %}
+Less Than or Equal To ( <= )
+{% endhint %}
+
+```python
 print(5 <= 7)   # True
 ```
+{% endtab %}
 
-<pre class="language-python"><code class="lang-python">'''
+{% tab title="Aynı" %}
+{% hint style="info" %}
+Is ( is)
+{% endhint %}
+
+```python
+'''
 Comparison by `is` vs `==`
 
 a == b compares the value of a and b.
@@ -55,6 +103,12 @@ a = 'not so short'
 b = 'not so short'
 c = 1000
 d = 1000
-<strong>print(a is b) # False
-</strong>print(c is d) # False</code></pre>
+print(a is b) # False
+print(c is d) # Falsepy
+```
+{% endtab %}
+{% endtabs %}
+
+```python
+```
 
