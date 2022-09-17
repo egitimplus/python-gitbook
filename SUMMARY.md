@@ -12,6 +12,7 @@
       * [Atama Operatörleri](konular/giris/ilkel-veri-yapilari/sayilar/atama-operatoerleri.md)
     * [Strings](konular/giris/ilkel-veri-yapilari/strings.md)
     * [Boolean](konular/giris/ilkel-veri-yapilari/boolean.md)
+    * [Complex](konular/giris/ilkel-veri-yapilari/complex.md)
   * [builtin-methods-1](konular/giris/builtin-methods-1.md)
   * [tip değiştirme](konular/giris/tip-degistirme.md)
   * [İlkel Olmayan Veri Yapıları](konular/giris/ilkel-olmayan-veri-yapilari/README.md)
