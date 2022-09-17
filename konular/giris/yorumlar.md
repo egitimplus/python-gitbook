@@ -1,17 +1,34 @@
+---
+description: Comments
+---
+
 # Yorumlar
 
+{% tabs %}
+{% tab title="single line" %}
 {% hint style="info" %}
 tek satırlık yorumlar
 {% endhint %}
 
 ```python
 # This is a comment
-
-print("Hello, World!") #This is a inline comment
+print("Hello, World!")
 
 # Output: Hello, World!
 ```
+{% endtab %}
 
+{% tab title="inline" %}
+{% hint style="info" %}
+satır içi yorumlar
+{% endhint %}
+
+```python
+print("Hello, World!") #This is a inline comment
+```
+{% endtab %}
+
+{% tab title="Untitled" %}
 {% hint style="info" %}
 çok satırlık yorumlar
 {% endhint %}
@@ -26,3 +43,5 @@ print("Hello, World!")
 
 # Output: Hello, World!
 ```
+{% endtab %}
+{% endtabs %}

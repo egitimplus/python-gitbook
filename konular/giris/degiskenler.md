@@ -1,3 +1,7 @@
+---
+description: Variables
+---
+
 # Değişkenler
 
 {% hint style="info" %}
