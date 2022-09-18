@@ -1,37 +1,25 @@
 # Tuple
 
-{% hint style="info" %}
-Sıralanabilir (ordered), Değiştirilemez (immutable), Tekrarlanabilir (duplicate)
-{% endhint %}
+```python
+# a tuple is a comma-separated list of values
 
-<pre class="language-python"><code class="lang-python"><strong># Boş demet tanımlama
-</strong>a = tuple()
-print(type(a)) # &#x3C;class 'tuple'>
-
-a = ()
-print(type(a)) # &#x3C;class 'tuple'>
-<strong>
-</strong># Elemanı olan demet oluşturma
 t = ('a', 'b', 'c', 'd', 'e')
-print(type(t)) # &#x3C;type 'tuple'>
+print(type(t)) # <type 'tuple'>
 
-# Parantezler içerisindeki tek bir eleman demet değildir.
+# Note that a single value in parentheses is not a tuple:
 t2 = ('a')
-print(type(t2)) # &#x3C;type 'str'>
+print(type(t2)) # <type 'str'>
 
-# Demet tanımlayabilmek için parantezler içerisinde , olmalıdır
+# To create a singleton tuple it is necessary to have a trailing comma.
 t2 = ('a',)
-print(type(t2)) # &#x3C;type 'tuple'>
+print(type(t2)) # <type 'tuple'>
 
-# Metin'den demet oluşturma
+# Another way to create a tuple is the built-in function tuple.
 t = tuple('lupins')
 print(print(t)) # ('l', 'u', 'p', 'i', 'n', 's')
 
-# Demetler değiştirilemezler
+# Tuples are immutable
 t = (1, 4, 9)
 t[0] = 2
 # TypeError: 'tuple' object does not support item assignment
-
-# Demetlerin elemanlarına indexi ile ulaşılabilir. 
-print(t[1]) # 4
-print(t[-1]) # 9</code></pre>
+```
