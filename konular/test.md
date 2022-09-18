@@ -75,9 +75,10 @@ s ='hello'
 # Print out the 'o'
 
 # Method 1:
-s[-1]
-# Method 2:
+s[-1] # o
 
+# Method 2:
+s[4] # o
 ```
 
 ### Lists <a href="#lists" id="lists"></a>
@@ -88,7 +89,11 @@ Build this list \[0,0,0] two separate ways.
 
 ```
 # Method 1:
+[0] * 3 # [0, 0, 0]
+
 # Method 2:
+list2 = [0,0,0]
+list2 # [0, 0, 0]
 ```
 
 {% hint style="info" %}
@@ -97,6 +102,10 @@ Reassign 'hello' in this nested list to say 'goodbye' instead:
 
 ```
 list3 = [1,2,[3,4,'hello']]
+
+list3[2][2] = 'goodbye'
+
+list3 # [1, 2, [3, 4, 'goodbye']]
 ```
 
 {% hint style="info" %}
@@ -105,6 +114,13 @@ Sort the list below:
 
 ```
 list4 = [5,3,4,6,1]
+
+# Method 1:
+sorted(list4) # [1, 3, 4, 5, 6]
+
+# Method 2:
+list4.sort()
+list4 # [1, 3, 4, 5, 6]
 ```
 
 ### Dictionaries <a href="#dictionaries" id="dictionaries"></a>
@@ -115,38 +131,46 @@ Using keys and indexing, grab the 'hello' from the following dictionaries:
 
 ```
 d = {'simple_key':'hello'}
-# Grab 'hello'
+d['simple_key'] # 'hello'
 
 d = {'k1':{'k2':'hello'}}
-# Grab 'hello'
+d['k1']['k2'] # 'hello'
 
-# Getting a little tricker
 d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+d['k1'][0]['nest_key'][1][0] # 'hello'
 
-#Grab hello
-# This will be hard and annoying!
 d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
-
+d['k1'][2]['k2'][1]['tough'][2][0] # 'hello'
 ```
 
 {% hint style="info" %}
 Can you sort a dictionary? Why or why not?
+
+**Answer: No! Because normal dictionaries are **_**mappings**_** not a sequence.**
 {% endhint %}
 
 ### Tuples <a href="#tuples" id="tuples"></a>
 
 {% hint style="info" %}
 What is the major difference between tuples and lists?&#x20;
+
+**Answer: Tuples are immutable!**
 {% endhint %}
 
 {% hint style="info" %}
 How do you create a tuple?
 {% endhint %}
 
+```
+t = (1,2,3)
+```
+
 ### Sets <a href="#sets" id="sets"></a>
 
 {% hint style="info" %}
 What is unique about a set?
+
+**Answer: They don't allow for duplicate items!**
 {% endhint %}
 
 {% hint style="info" %}
@@ -155,6 +179,8 @@ Use a set to find the unique values of the list below:v
 
 ```
 list5 = [1,2,2,33,4,4,11,22,3,3,2]
+
+set(list5) # {1, 2, 3, 4, 11, 22, 33}
 ```
 
 ### Booleans <a href="#booleans" id="booleans"></a>
@@ -165,19 +191,19 @@ What will be the resulting Boolean of the following pieces of code
 
 ```
 # Answer before running cell
-2 > 3
+2 > 3 # False
 
 # Answer before running cell
-3 <= 2
+3 <= 2 # False
 
 # Answer before running cell
-3 == 2.0
+3 == 2.0 # False
 
 # Answer before running cell
-3.0 == 3
+3.0 == 3 # True
 
 # Answer before running cell
-4**0.5 != 2
+4**0.5 != 2 # False
 ```
 
 {% hint style="info" %}
@@ -190,5 +216,5 @@ l_one = [1,2,[3,4]]
 l_two = [1,2,{'k1':4}]
 
 # True or False?
-l_one[2][0] >= l_two[2]['k1']
+l_one[2][0] >= l_two[2]['k1'] # False
 ```
