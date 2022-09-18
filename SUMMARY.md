@@ -8,7 +8,6 @@
   * [Değişkenler](konular/giris/degiskenler.md)
   * [İlkel Veri Yapıları](konular/giris/ilkel-veri-yapilari/README.md)
     * [Sayılar](konular/giris/ilkel-veri-yapilari/sayilar/README.md)
-      * [Types](konular/giris/ilkel-veri-yapilari/sayilar/types.md)
       * [Aritmetik Operatörler](konular/giris/ilkel-veri-yapilari/sayilar/aritmetik-operatoerler.md)
       * [Atama Operatörleri](konular/giris/ilkel-veri-yapilari/sayilar/atama-operatoerleri.md)
     * [Strings](konular/giris/ilkel-veri-yapilari/strings.md)
