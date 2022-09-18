@@ -11,13 +11,8 @@ def my_function():
     x = 'local variable'
     print('inside: ', x)
 
-my_function()
-print('outside: ', x)
-```
-
-```
-inside:  local variable
-outside:  local variable
+my_function()            # inside:  local variable
+print('outside: ', x)    # outside:  local variable
 ```
 
 ```python
@@ -29,13 +24,8 @@ def my_function():
     x = x + 1
     print(x)
 
-my_function()
-print(x)
-```
-
-```
-1
-1
+my_function()   # 1 
+print(x)        # 1
 ```
 
 ```python
@@ -47,6 +37,8 @@ def func():
     print(locals().keys()) # prints all variable names in local scope
 
 func()
+
+
 '''
 What happens with name clashes?
 '''
