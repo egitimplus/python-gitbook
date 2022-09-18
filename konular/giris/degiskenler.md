@@ -43,3 +43,9 @@ print(adı) # Emre
 # (Python Enhancement Proposals)
 student_name = 'Emre Cevik' # SyntaxError: invalid syntax
 ```
+
+```
+
+
+
+```
