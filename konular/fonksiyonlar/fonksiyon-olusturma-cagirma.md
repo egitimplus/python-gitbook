@@ -24,16 +24,19 @@ def fruit_juicer():
     print('I am fruit juicer')
 
 print(fruit_juicer)
-# <function fruit_juicer at 0x7f099253fd40>
 
 fruit_juicer()
-# I am fruit juicer
 
-print(help(fruit_juicer))
-'''
+prin(help(fruit_juicer))
+```
+
+```
+<function fruit_juicer at 0x7f099253fd40>
+
+I am fruit juicer
+
 Help on function fruit_juicer in module __main__:
 
 fruit_juicer()
     function description
-'''
 ```
