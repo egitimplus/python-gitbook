@@ -15,6 +15,11 @@ x = 'global_variable'
 def my_function():
     print('inside: ', x)
 
-my_function()         # inside:  global_variable
-print('outside: ', x) # outside:  global_variable
+my_function()
+print('outside: ', x)
+```
+
+```
+inside:  global_variable
+outside:  global_variable
 ```

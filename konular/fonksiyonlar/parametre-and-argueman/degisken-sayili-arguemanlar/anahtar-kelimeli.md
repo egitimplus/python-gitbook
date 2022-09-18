@@ -12,14 +12,14 @@ def fruit_juicer(**kwargs):
         print(k, v)
 
 fruit_juicer(fruits=['orange', 'apple', 'carrot'], sugar=True, size='L')
+```
 
-'''
+```
 ['orange', 'apple', 'carrot']
 L
 fruits ['orange', 'apple', 'carrot']
 sugar True
 size L
-'''
 ```
 
 ```python
@@ -40,12 +40,9 @@ def f1(**kwargs):
     print((kwargs))
 
 fn(a=1, b=2)
-
-'''
-{'a': 1, 'b': 2}
-{'a': 1, 'b': 2}
-'''
 ```
 
 ```
+{'a': 1, 'b': 2}
+{'a': 1, 'b': 2}
 ```

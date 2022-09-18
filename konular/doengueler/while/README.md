@@ -16,13 +16,13 @@ while number < 5:
     number += 1
 
 print('Loop End')
+```
 
-'''
+```
 loop working 0
 loop working 1
 loop working 2
 loop working 3
 loop working 4
 Loop End
-'''
 ```

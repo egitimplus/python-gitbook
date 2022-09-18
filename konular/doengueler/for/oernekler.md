@@ -1,7 +1,9 @@
 # Örnekler
 
 {% hint style="info" %}
+```
 Kullanıcı tarafından girilen sayının faktöryelini hesaplayınız.
+```
 {% endhint %}
 
 ```python
@@ -13,11 +15,19 @@ while i < faktoryel:
     toplam = toplam * i
     
 print(toplam)
-# 6
+```
+
+```
+Output:
+----------------------------------------
+6
 ```
 
 {% hint style="info" %}
-Klavyeden girilen başlangıç ve bitiş sayıları arasında bulunan tek sayıların ortalamasını bulan programı yazınız.
+```
+Klavyeden girilen başlangıç ve bitiş sayıları arasında bulunan tek sayıların 
+ortalamasını bulan programı yazınız.
+```
 {% endhint %}
 
 ```python
@@ -31,12 +41,19 @@ for i in range(baslangic, bitis):
         toplam = toplam + i
         adet = adet + 1
         
-print(toplam / adet) 
-# 5.0
+print(toplam / adet)
+```
+
+```
+Output:
+----------------------------------------
+5.0
 ```
 
 {% hint style="info" %}
+```
 Klavyeden girilen sayının rakamlarının çarpımını bulan programı yazınız.
+```
 {% endhint %}
 
 ```python
@@ -46,13 +63,15 @@ toplam = 1
 for i in x:
     toplam = int(i) * toplam
     print(toplam)
+```
 
-'''
+```
+Output:
+----------------------------------------
 1
 2
 6
 6
 12
 36
-'''
 ```

@@ -13,10 +13,11 @@ def fruit_juicer(*fruits):
 
 fruit_juicer('orange', 'apple', 'carrot')
 
-'''
+```
+
+```
 ('orange', 'apple', 'carrot')
 orange
 apple
 carrot
-'''
 ```
