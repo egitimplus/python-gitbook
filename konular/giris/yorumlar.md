@@ -28,7 +28,7 @@ print("Hello, World!") #This is a inline comment
 ```
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="multiline" %}
 {% hint style="info" %}
 çok satırlık yorumlar
 {% endhint %}
