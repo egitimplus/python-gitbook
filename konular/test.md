@@ -22,18 +22,16 @@ What is the value of the expression 4 + 6 \* 5
 {% endhint %}
 
 ```
-44
-29
-34
+print(4 * (6 + 5)) # 44
+print(4 * 6 + 5)   # 29
+print(4 + 6 * 5)   # 34
 ```
 
 {% hint style="info" %}
 What is the type of the result of the expression 3 + 1.5 + 4?
-{% endhint %}
 
-```
-Floating Point Number
-```
+**Answer: Floating Point Number**
+{% endhint %}
 
 {% hint style="info" %}
 What would you use to find a number’s square root, as well as its square?
