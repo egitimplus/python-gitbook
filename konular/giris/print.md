@@ -1,4 +1,4 @@
-# print()
+# Strings
 
 {% hint style="info" %}
 stringler her zaman tırnak içerisinde yazılır
