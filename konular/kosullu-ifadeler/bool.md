@@ -17,5 +17,5 @@ print(bool({})) # False
 print(bool(0.0)) # False
  
 # Returns True as x is a non empty string
-print(bool('GeeksforGeeks')) # False
+print(bool('GeeksforGeeks')) # True
 ```
