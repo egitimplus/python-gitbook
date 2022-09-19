@@ -14,6 +14,10 @@ Equal ( == )
 print(5 == 5)   # True
 print(5 == '5') # False
 ```
+
+{% hint style="warning" %}
+Note that `==` is a _comparison_ operator, while `=` is an _assignment_ operator.
+{% endhint %}
 {% endtab %}
 
 {% tab title="Eşit Değil " %}
@@ -113,6 +117,20 @@ print(a is b) # False
 c = 1000
 d = 1000
 print(c is d) # False
+```
+{% endtab %}
+
+{% tab title="Chained" %}
+{% hint style="info" %}
+Chained
+{% endhint %}
+
+```
+1 < 2 < 3          # True
+1 < 2 and 2 < 3    # True
+
+1 < 3 > 2          # True
+1 < 3 and 3 > 2    # True
 ```
 {% endtab %}
 {% endtabs %}

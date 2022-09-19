@@ -12,11 +12,6 @@ def my_function():
     x = 'local variable'
     print('inside: ', x)
 
-my_function()
-print('outside: ', x)
-```
-
-```
-inside:  local variable
-NameError: name 'x' is not defined
+my_function()            # inside:  local variable
+print('outside: ', x)    # NameError: name 'x' is not defined
 ```

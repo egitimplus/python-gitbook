@@ -9,11 +9,8 @@ def func():
     print(locals().keys()) # prints all variable names in local scope
 
 func()
-```
-
-```
-dict_keys(['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__builtin__', '__builtins__', '_ih', '_oh', '_dh', 'In', 'Out', 'get_ipython', 'exit', 'quit', '_', '__', '___', '_i', '_ii', '_iii', '_i1', 'faktoryel', 'i', 'toplam', '_i2', 'baslangic', 'bitis', 'adet', '_i3', '_i4', 'my_function', '_i5', 'x', '_i6', '_i7', 'foo', 'func'])
-dict_keys(['bar'])
+# dict_keys(['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__builtin__', '__builtins__', '_ih', '_oh', '_dh', 'In', 'Out', 'get_ipython', 'exit', 'quit', '_', '__', '___', '_i', '_ii', '_iii', '_i1', 'faktoryel', 'i', 'toplam', '_i2', 'baslangic', 'bitis', 'adet', '_i3', '_i4', 'my_function', '_i5', 'x', '_i6', '_i7', 'foo', 'func'])
+# dict_keys(['bar'])
 ```
 
 ```python
@@ -30,12 +27,9 @@ def func():
     print(locals()['foo']) # prints 2
 
 func()
-```
-
-```
-2
-1
-2
+# 2
+# 1
+# 2
 ```
 
 ```python
@@ -48,10 +42,7 @@ def func():
     foo = 2 # this modifies the global foo, rather than creating a local variable
 func()
 print(foo)
-```
-
-```
-2
+# 2
 ```
 
 ```python
@@ -69,10 +60,7 @@ def func():
     print(foo)
     
 func()
-```
-
-```
-UnboundLocalError: local variable 'foo' referenced before assignment
+# UnboundLocalError: local variable 'foo' referenced before assignment
 ```
 
 ```python
@@ -86,10 +74,7 @@ def func():
     print(foo) # 7
 
 func()
-```
-
-```
-7
-7
-7
+# 7
+# 7
+# 7
 ```

@@ -13,6 +13,14 @@ Addition ( + )
 ```python
 print(5 + 3)      # 8 
 ```
+
+{% hint style="warning" %}
+İki metini toplarken dikkat etmek lazım!
+{% endhint %}
+
+```python
+print('5' + '3') # 53
+```
 {% endtab %}
 
 {% tab title="Çıkarma" %}
@@ -32,6 +40,14 @@ Multiplication ( \* )
 
 ```python
 print(4 * 4)      # 16 
+```
+
+{% hint style="warning" %}
+Bir metin ve tam sayıyı çarparken dikkat etmeliyiz.
+{% endhint %}
+
+```python
+print('4' * 4)    # 4444
 ```
 {% endtab %}
 

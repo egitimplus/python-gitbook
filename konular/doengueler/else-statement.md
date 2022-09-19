@@ -13,10 +13,10 @@ while i < number:
     i += 1
 else:
     print('number is prime')
-```
-
-```
+    
+'''
 Enter number:100
 number is not prime
 can divide 2
+'''
 ```

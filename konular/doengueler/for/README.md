@@ -12,26 +12,34 @@ for variable in iterable:
 ```python
 for letter in 'Python':
     print(letter)
-```
-
-```
+    
+'''
 P
 y
 t
 h
 o
 n
+'''
 ```
 
 ```python
-for number in range(5):
-    print(number)
-```
+# We'll learn how to automate this sort of list in the next lecture
 
-```
-0
+list1 = [1,2,3,4,5,6,7,8,9,10]
+for num in list1:
+    print(num)
+    
+'''
 1
 2
 3
 4
+5
+6
+7
+8
+9
+10
+'''
 ```

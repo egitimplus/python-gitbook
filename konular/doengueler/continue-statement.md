@@ -14,8 +14,5 @@ while x < 100:
     result += x
 
 print(result)
-```
-
-```
-2500
+# 2500
 ```

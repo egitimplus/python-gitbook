@@ -31,12 +31,8 @@ To mark parameters as _keyword-only_, indicating the parameters must be passed b
 def standard_arg(arg):
     print(arg)
 
-standard_arg(2)
-standard_arg(arg=2)
-
-# 2
-# 2
-
+standard_arg(2)     # 2
+standard_arg(arg=2) # 2
 ```
 
 ```python
