@@ -3,6 +3,8 @@
 ## 📄 KONULAR
 
 * [Giriş](README.md)
+  * [Neden Python?](konular/giris/neden-python.md)
+  * [Ortam Kurulumu](konular/giris/ortam-kurulumu.md)
   * [print()](konular/giris/print.md)
   * [Yorumlar](konular/giris/yorumlar.md)
   * [Değişkenler](konular/giris/degiskenler.md)
@@ -13,7 +15,7 @@
     * [Alıştırma](konular/giris/ilkel-veri-yapilari/alistirma.md)
     * [Strings](konular/giris/ilkel-veri-yapilari/strings.md)
     * [Boolean](konular/giris/ilkel-veri-yapilari/boolean.md)
-  * [builtin-methods-1](konular/giris/builtin-methods-1.md)
+  * [Builtin-methods-1](konular/giris/builtin-methods-1.md)
   * [tip değiştirme](konular/giris/tip-degistirme.md)
   * [İlkel Olmayan Veri Yapıları](konular/giris/ilkel-olmayan-veri-yapilari/README.md)
     * [List](konular/giris/ilkel-olmayan-veri-yapilari/list.md)

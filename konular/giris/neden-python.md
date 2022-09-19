@@ -1,0 +1,2 @@
+# Neden Python?
+
