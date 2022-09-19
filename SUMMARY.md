@@ -16,7 +16,7 @@
     * [Strings](konular/giris/ilkel-veri-yapilari/strings.md)
     * [Boolean](konular/giris/ilkel-veri-yapilari/boolean.md)
   * [Builtin-methods-1](konular/giris/builtin-methods-1.md)
-  * [tip değiştirme](konular/giris/tip-degistirme.md)
+  * [Tip Değiştirme](konular/giris/tip-degistirme.md)
   * [İlkel Olmayan Veri Yapıları](konular/giris/ilkel-olmayan-veri-yapilari/README.md)
     * [List](konular/giris/ilkel-olmayan-veri-yapilari/list.md)
     * [Tuple](konular/giris/ilkel-olmayan-veri-yapilari/tuple.md)
