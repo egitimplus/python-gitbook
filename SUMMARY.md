@@ -31,6 +31,7 @@
 * [Koşullu İfadeler](konular/kosullu-ifadeler/README.md)
   * [Karşılaştırma Operatörleri](konular/kosullu-ifadeler/karsilastirma-operatoerleri.md)
   * [Mantıksal Operatörler](konular/kosullu-ifadeler/mantiksal-operatoerler.md)
+  * [bool()](konular/kosullu-ifadeler/bool.md)
   * [Üyelik Operatörleri](konular/kosullu-ifadeler/ueyelik-operatoerleri.md)
   * [If](konular/kosullu-ifadeler/if.md)
   * [Else](konular/kosullu-ifadeler/else.md)
