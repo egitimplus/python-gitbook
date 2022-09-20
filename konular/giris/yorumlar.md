@@ -4,7 +4,7 @@ description: Comments
 
 # Yorumlar
 
-## tek satırlık yorumlar
+## Tek satırlık yorumlar
 
 ```python
 # This is a comment
@@ -13,13 +13,13 @@ print("Hello, World!")
 # Output: Hello, World!
 ```
 
-## satır içi yorumlar
+## Satır içi yorumlar
 
 ```python
 print("Hello, World!") #This is a inline comment
 ```
 
-## çok satırlık yorumla
+## Çok satırlık yorumla
 
 ```python
 """
