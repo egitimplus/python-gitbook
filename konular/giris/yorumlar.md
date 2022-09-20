@@ -4,11 +4,7 @@ description: Comments
 
 # Yorumlar
 
-{% tabs %}
-{% tab title="single line" %}
-{% hint style="info" %}
-tek satırlık yorumlar
-{% endhint %}
+## tek satırlık yorumlar
 
 ```python
 # This is a comment
@@ -16,24 +12,16 @@ print("Hello, World!")
 
 # Output: Hello, World!
 ```
-{% endtab %}
 
-{% tab title="inline" %}
-{% hint style="info" %}
-satır içi yorumlar
-{% endhint %}
+## satır içi yorumlar
 
 ```python
 print("Hello, World!") #This is a inline comment
 ```
-{% endtab %}
 
-{% tab title="multiline" %}
-{% hint style="info" %}
-çok satırlık yorumlar
-{% endhint %}
+## çok satırlık yorumla
 
-```
+```python
 """
 This is a
 multiline
@@ -42,6 +30,5 @@ comment
 print("Hello, World!")
 
 # Output: Hello, World!
+
 ```
-{% endtab %}
-{% endtabs %}

@@ -20,9 +20,9 @@ print(x) # 5
 print(y) # John
 ```
 
-{% hint style="info" %}
-değişken tanımlama kuralları
+## Değişken Tanımlama Kuralları
 
+{% hint style="info" %}
 * Harf veya alt çizgi ( \_ ) ile başlamalıdır.
 * Harf, alt çizgi ( \_ ) ve rakamlardan oluşabilir.
 * Kelimeler arasında boşluk bırakılamaz.
@@ -60,7 +60,6 @@ student_name = 'Emre Cevik' # SyntaxError: invalid syntax
 | Kebap Case    | toplam-kayit  |                     |
 
 ```
-
 
 
 ```
