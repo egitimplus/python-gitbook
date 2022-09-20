@@ -1,15 +1,5 @@
 # Alıştırmalar
 
-```
-Her işlem için farklı fonksiyonlar oluşturarak aşağıda adımları verilen programı yapınız. 
-
-1- Kullanıcı yapacağı işlemi girsin (toplama, çıkarma, bölme, çarpma)
-2- Bu işlemler harici bir işlem girilirse yanlış işlem diye mesaj versin ve işlemi tekrar sorsun
-3- Eğer işlem doğru ise kullanıcıdan bu işlemleri yapabilmek için iki tane sayı istesin. Eğer sayı girilmez ise hata versin ve başa dönsün.
-4- Her şey yolunda giderse sonucu ekrana bastırsın
-
-```
-
 ```python
 '''
 1 - kullanıcı adını "username" eşit olana kadar soralım.

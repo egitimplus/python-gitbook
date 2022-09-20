@@ -4,12 +4,6 @@ description: Variables
 
 # Değişkenler
 
-Geçici olarak veri saklamak için oluşturduğumuz alanlara değişken denir. Bir değişkene değer atamak için eşittir ( = ) kullanılır. Python’da değişkenlerin tipini önceden tanımlamak gerekmez.
-
-Örnek : Hızı 115km olan bir araç 5 saatte kaç km yol gider?
-
-Mesafe = Hız x Zaman
-
 {% hint style="info" %}
 değişken oluşturma
 {% endhint %}
@@ -49,19 +43,6 @@ print(adı) # Emre
 # (Python Enhancement Proposals)
 student_name = 'Emre Cevik' # SyntaxError: invalid syntax
 ```
-
-{% hint style="info" %}
-Değişken İsimlendirme Yöntemleri
-{% endhint %}
-
-| Yöntem        | Örnek         | Kullanım            |
-| ------------- | ------------- | ------------------- |
-| Camel Case    | toplamKayit   |                     |
-| Pascal Case   | ToplamKayit   | sınıflar            |
-| Snake Case    | toplam\_kayit | değişken, fonksiyon |
-| Flat Case     | toplamkayit   | paket isimleri      |
-| Constant Case | TOPLAM\_KAYIT | sabitler            |
-| Kebap Case    | toplam-kayit  |                     |
 
 ```
 

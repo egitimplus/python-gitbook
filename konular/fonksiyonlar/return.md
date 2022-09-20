@@ -1,7 +1,5 @@
 # Return
 
-Fonksiyonlar geriye değer döndürebilir.
-
 ```python
 def fruit_juicer(fruit):
     return f'I am {fruit} juicer'

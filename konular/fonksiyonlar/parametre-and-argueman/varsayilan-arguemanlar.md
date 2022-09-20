@@ -4,8 +4,6 @@ description: Default Arguments
 
 # Varsayılan Argümanlar
 
-Fonksiyon tanımlarken parametrelere değer vererek isteğe bağlı hale getirebiliriz.
-
 ```python
 def fruit_juicer(fruit1, fruit2='orange'):
     print(f'I am {fruit1} and {fruit2} juicer')

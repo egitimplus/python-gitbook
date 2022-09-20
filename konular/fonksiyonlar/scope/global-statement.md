@@ -1,6 +1,6 @@
 # global statement
 
-Her zaman kullanmak için global olarak tanımlanması gerekir. Local değişkeni global değişkene çevirebiliriz
+Local değişkeni global değişkene çevirebiliriz
 
 ```python
 if 'x' in globals():

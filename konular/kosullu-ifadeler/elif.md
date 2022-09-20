@@ -25,17 +25,3 @@ else:
     
 # Output: x is greater than 3
 ```
-
-{% hint style="info" %}
-Kullanıcı tarafından girilen sınav puanını nota çeviren programı yazınız. Eğer girilen puan 0-100 aralığında değilse ekrana hata mesajı basınız.
-
-
-{% endhint %}
-
-| Sınav Puanı | Not |
-| ----------- | --- |
-| 0-20        | E   |
-| 21-40       | D   |
-| 41-60       | C   |
-| 61-80       | B   |
-| 81-100      | A   |
