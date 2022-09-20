@@ -21,10 +21,10 @@ x -= 5      # Substraction
 print(x)    # 7
 
 x *= 2      # Multiplication 
-print(x)    #  14
+print(x)    # 14
 
 x **= 2     # Exponentiation 
-print(x)    #  196
+print(x)    # 196
 
 x /= 4      # Floor Division
 print(x)    # 49.0
