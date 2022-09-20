@@ -160,66 +160,57 @@ print(result) # Output: Goodbye
 
 ## çoklu koşul
 
-```python
-//'''
-Testing for multiple conditions
-A common mistake when checking for multiple conditions is to apply the logic incorrectly.
-This example is trying to check if two variables are each greater than 2. The statement is evaluated as - if (a) and
-(b > 2). This produces an unexpected result because bool(a) evaluates as True when a is not zero.
-'''
+{% hint style="info" %}
+Her değişken ayrı ayrı karşılaştırılmalı.
+{% endhint %}
 
+```python
 a = 1
 b = 6
 
+# Yanlış
 if a and b > 2:
     print('yes')
 else:
     print('no')
- 
 
-'''
-Each variable needs to be compared separately.
-'''
+# Output: yes
+    
+# Doğru    
 if a > 2 and b > 2:
     print('yes')
 else:
     print('no')
  
-# no
+# Output: no
 
-'''
-Another, similar, mistake is made when checking if a variable is one of multiple values. The statement in this
-example is evaluated as - if (a == 3) or (4) or (6). This produces an unexpected result because bool(4) and
-bool(6) each evaluate to True
-'''
 
+```
+
+```python
+# Yanlış
 if a == 3 or 4 or 6:
     print('yes')
 else:
     print('no')
+    
+# Output : yes
 
-# yes
-
-'''
-Again each comparison must be made separately
-'''
+# Doğru
 if a == 3 or a == 4 or a == 6:
     print('yes')
 else:
     print('no')
  
-# no
+# Output : no
 
-'''
-Using the in operator is the canonical way to write this.
-'''
-
+# Doğru
 if a in (3, 4, 6):
     print('yes')
 else:
     print('no')
-    
-# no
+
+# Output : no
 ```
 
 ## pass ifadesi

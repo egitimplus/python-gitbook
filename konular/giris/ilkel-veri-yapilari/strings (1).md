@@ -1,7 +1,8 @@
-# Dizeler (Strings)
+# Strings Advanced
 
+{% tabs %}
+{% tab title="Basics" %}
 ```python
-print('Hello' + 'World')
 # Output : HelloWorld
 
 print('4' + '2') 
@@ -16,9 +17,9 @@ print('2' * 3)
 print('2' + 4) 
 # Output : Error: sayı ile string toplanırsa hata verir
 ```
+{% endtab %}
 
-## İndeksleme
-
+{% tab title="Indexing" %}
 ```python
 text = "Hello World Again"
 
@@ -30,9 +31,9 @@ print(text[4]) # Output : o
 print(text[-1]) # Output : n
 print(text[-3]) # Output : aprint('Hello' + 'World') 
 ```
+{% endtab %}
 
-## Dilimleme
-
+{% tab title="Slicing" %}
 ```python
 text = "Hello World Again"
 
@@ -46,9 +47,9 @@ print(text[1:-1:2]) # el ol gi
 print(text[::2])    # HloWrdAan
 print(text[::-1])   # niagA dlroW olleH
 ```
+{% endtab %}
 
-## İnterpolasyon
-
+{% tab title="Interpolation" %}
 ```python
 name = 'Adam'
 surname = 'Smith'
@@ -58,39 +59,21 @@ text = 'My name is ' + name + ' ' + surname + '. I am '+ str(age) + ' years old.
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
 
-
-
-
-
-
-```
-
-### % operatörü
-
-```
 text = 'My name is %s %s. I am %s years old.' % (name, surname, age)
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
-```
 
-### format() metodu
-
-```
 text = 'My name is {} {}. I am {} years old.'.format(name, surname, age)
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
-```
 
-### f-strings
-
-```
 text = f'My name is {name} {surname}. I am {age} years old.'
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
 ```
+{% endtab %}
 
-## Metodlar
-
+{% tab title="Methods" %}
 ```python
 text = 'hello World AGAIN'
 
@@ -127,5 +110,10 @@ print(text.partition('World')) # ('Hello ', 'World', ' Again and Again')
 # islower(), isupper(), istitle()
 # isalnum(), isalpha(), isspace()
 # isdigit(), isnumeric(), isdecimal()
-# endswith(), startswith()İnterpolas
+# endswith(), startswith()
+```
+{% endtab %}
+{% endtabs %}
+
+```python
 ```

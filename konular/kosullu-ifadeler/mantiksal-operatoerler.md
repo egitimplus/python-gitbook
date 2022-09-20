@@ -50,9 +50,6 @@ print(not not True)     # True
 Sonucu belirlemek için değerlendirilmesi gerekmeyen ifadeler değerlendirilmez.
 
 ```python
-def print_me():
-    print('I am here!')
-
 0 and print('Hello World') # 0
 ```
 
