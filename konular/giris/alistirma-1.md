@@ -1,10 +1,4 @@
-# input()
-
-Kullanıcıdan veri/bilgi almak için kullanılır. Kullanıcının girdiği veriler her zaman string olarak döner.
-
-```
-// Some code
-```
+# Alıştırma
 
 {% hint style="info" %}
 Kullanıcı tarafından girilen iki sayının toplamını bulan programı yazınız.

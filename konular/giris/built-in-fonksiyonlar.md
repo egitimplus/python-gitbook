@@ -1,6 +1,37 @@
-# dir()
+# Built-in Fonksiyonlar
 
-```python
+## type()
+
+type() fonksiyonu içine yazılan değişkenin veya ifadenin veri tipini dönderir.
+
+```
+number = 5
+print(type(number)) # <class 'int'>
+
+print(type(5))      # <class 'int'>
+
+number = 5.0
+print(type(number)) # <class 'float'>
+
+string = 'hello'
+print(type(string )) # <class 'str'>len()
+```
+
+## len()
+
+len() fonksiyonu içerisine gönderilen ifadenin uzunluğunu dönderir.
+
+```
+text = '24123213'
+print(len(text))   # 8
+
+number = 24123213
+print(len(number)) # TypeError: object of type 'int' has no len()
+```
+
+## dir()
+
+```
 print(dir('Hello'))
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', 
 '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', 
@@ -30,3 +61,7 @@ print(dir(sayi))
 'real', 'to_bytes']
 '''
 ```
+
+## input()
+
+Kullanıcıdan veri/bilgi almak için kullanılır. Kullanıcının girdiği veriler her zaman string olarak döner.
