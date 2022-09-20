@@ -12,8 +12,7 @@ while i < faktoryel:
     i = i + 1
     toplam = toplam * i
     
-print(toplam)
-# 6
+print(toplam) # 6
 ```
 
 {% hint style="info" %}
@@ -31,8 +30,7 @@ for i in range(baslangic, bitis):
         toplam = toplam + i
         adet = adet + 1
         
-print(toplam / adet) 
-# 5.0
+print(toplam / adet) # 5.0
 ```
 
 {% hint style="info" %}
@@ -45,14 +43,6 @@ x = '123123'
 toplam = 1
 for i in x:
     toplam = int(i) * toplam
-    print(toplam)
 
-'''
-1
-2
-6
-6
-12
-36
-'''
+print(toplam) # 36
 ```
