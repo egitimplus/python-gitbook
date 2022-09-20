@@ -1,4 +1,4 @@
-# Strings
+# Print Fonksiyonu
 
 stringler her zaman tırnak içerisinde yazılır
 
