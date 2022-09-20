@@ -14,30 +14,24 @@ description: Assignment Operators
 | %=       | Mod / Kalan |
 
 ```python
-# Addition
+x += 3      # Addition
+print(x)    # 12
 
-x += 3  
-print(x)     # 12
+x -= 5      # Substraction
+print(x)    # 7
 
-# Substraction
-x -= 5  
-print(x)     # 7
+x *= 2      # Multiplication 
+print(x)    #  14
 
-# Multiplication 
-x *= 2 
-print(x)     #  14
+x **= 2     # Exponentiation 
+print(x)    #  196
 
-# Exponentiation 
-x **= 2 
-print(x)     #  196
+x /= 4      # Floor Division
+print(x)    # 49.0
 
-# Floor Division
-x /= 4
-print(x)     # 49.0
+x //= 3     # True Division
+print(x)    # 16
 
-# True Division
-x //= 3     # 16
-
-# Modulus 
-x %= 5     # 1
+x %= 5      # Modulus 
+print(x)    # 1
 ```
