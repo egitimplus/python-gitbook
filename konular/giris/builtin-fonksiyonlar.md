@@ -1,4 +1,4 @@
-# Built-in Fonksiyonlar
+# Builtin Fonksiyonlar
 
 ## type()
 
