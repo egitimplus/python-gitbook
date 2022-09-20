@@ -4,13 +4,14 @@ description: Assignment Operators
 
 # Atama Operatörleri
 
-| +=    | Toplama     |
-| ----- | ----------- |
-| -=    | Çıkarma     |
-| \*=   | Çarpma      |
-| /=    | Bölme       |
-| \*\*= | Üs alma     |
-| %=    | Mod / Kalan |
+| Operatör | Açıklama    |
+| -------- | ----------- |
+| +=       | Toplama     |
+| -=       | Çıkarma     |
+| \*=      | Çarpma      |
+| /=       | Bölme       |
+| \*\*=    | Üs alma     |
+| %=       | Mod / Kalan |
 
 ```python
 # Addition
