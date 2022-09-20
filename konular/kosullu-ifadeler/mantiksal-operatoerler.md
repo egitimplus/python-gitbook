@@ -4,9 +4,11 @@ description: Boolean Operators
 
 # Mantıksal Operatörler
 
-## and
-
+{% tabs %}
+{% tab title="and" %}
+{% hint style="info" %}
 Tüm ifadeleri çalıştırır hepsi True ise sondaki ifadeyi döndürür eğer False varsa ilk False değeri dönderir.
+{% endhint %}
 
 ```python
 print(True and True)    # True
@@ -20,10 +22,12 @@ print("" and "Pancakes") # ""
 print(" " and "Pancakes") # Pancakes
 print(None and "Pancakes") # None
 ```
+{% endtab %}
 
-## or
-
+{% tab title="or" %}
+{% hint style="info" %}
 Soldan sağa doğru ifadeleri sırayla çalıştırır ve ilk bulduğu True değeri dönderir. Eğer hiç True yoksa son değeri dönderir.
+{% endhint %}
 
 ```python
 print(True or True)     # True
@@ -35,49 +39,29 @@ print(None or 1) # 1
 print(0 or []) # []
 
 ```
+{% endtab %}
 
-## not
-
+{% tab title="not" %}
+{% hint style="info" %}
 Sonucu ters çevirir. True -> False, False -> True olur
+{% endhint %}
 
 ```python
 print(not True)         # False
 print(not not True)     # True
 ```
+{% endtab %}
 
-## lazy evaluation
-
+{% tab title="lazy eveluation" %}
+{% hint style="info" %}
 Sonucu belirlemek için değerlendirilmesi gerekmeyen ifadeler değerlendirilmez.
+{% endhint %}
 
 ```python
+def print_me():
+    print('I am here!')
+
 0 and print('Hello World') # 0
 ```
-
-## bool()
-
-```python
-# Returns False as x is not equal to y
-print(bool(5==10)) # False
- 
-# Returns False as x is None
-print(bool(None)) # False
- 
-# Returns False as x is an empty sequence
-print(bool(())) # False
- 
-# Returns False as x is an empty mapping ("", [])
-print(bool({})) # False
- 
-# Returns False as x is 0
-print(bool(0.0)) # False
- 
-# Returns True as x is a non empty string
-print(bool('Emre')) # True
-```
-
-## tam sayıya çevirme
-
-```python
-print(int(True))  # 1
-print(int(False)) # 0
-```
+{% endtab %}
+{% endtabs %}

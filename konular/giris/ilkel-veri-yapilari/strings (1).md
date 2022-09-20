@@ -57,12 +57,6 @@ age = 40
 text = 'My name is ' + name + ' ' + surname + '. I am '+ str(age) + ' years old.'
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
-
-
-
-
-
-
 ```
 
 ### % operatörü
