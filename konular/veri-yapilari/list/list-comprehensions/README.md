@@ -8,16 +8,11 @@ for item in data:
     if item % 2 == 0:
         new_list.append(item ** 2)
   
-print(new_list)
+print(new_list) # [4, 16, 16] 
 
 new_list = [item ** 2 for item in data if item % 2 == 0]
 
-print(new_list)
-```
-
-```
-[4, 16, 16] 
-[4, 16, 16]
+print(new_list) # [4, 16, 16] 
 ```
 
 <pre class="language-python"><code class="lang-python"># Get a list of uppercase characters from a string
@@ -36,12 +31,6 @@ new_list = ["".join(sorted(word, key = lambda x: x.lower())) for word in sentenc
 print(new_list)
 # ['aBefiltuu', 'is', 'beertt', 'ahnt', 'gluy']</code></pre>
 
-```
-['H', 'E', 'L', 'L', 'O', ' ', 'W', 'O', 'R', 'L', 'D']
-['these', 'words', 'mostly', 'have,commas']
-['aBefiltuu', 'is', 'beertt', 'ahnt', 'gluy']
-```
-
 ```python
 # create a list of characters in apple, replacing non vowels with '*'
 
@@ -56,11 +45,6 @@ print(new_list)
 #['a', '*', '*', '*', 'e']
 ```
 
-```
-SyntaxError: invalid syntax
-['a', '*', '*', '*', 'e']
-```
-
 ```python
 # Double Iteration
 
@@ -72,14 +56,12 @@ def f():
         for x in foo(i):
             yield str(x)
 
-[str(x)
+new = [str(x)
     for i in range(3)
     for x in foo(i)
 ]
-```
 
-```
-['0', '0.5', '1', '1.5', '2', '2.5']
+print(new) # ['0', '0.5', '1', '1.5', '2', '2.5']
 ```
 
 Nested List Comprehension

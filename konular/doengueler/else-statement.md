@@ -2,6 +2,10 @@
 
 eğer döngü normal olarak tamamlanırsa else bölümü çalıştırılır.
 
+{% hint style="info" %}
+Kullanıcı tarafından girilen sayının asal olup olmadığını tespit eden programı yazınız.
+{% endhint %}
+
 ```python
 i = 2
 number = int(input('Enter number:'))

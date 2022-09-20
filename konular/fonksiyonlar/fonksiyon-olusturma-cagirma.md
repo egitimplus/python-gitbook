@@ -16,6 +16,8 @@ f(x) = 2 * 5 + 5
 f(x) = 15
 ```
 
+Fonksiyonlar def ile tanımlanır.
+
 ```python
 def fruit_juicer():
     """
