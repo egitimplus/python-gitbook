@@ -43,7 +43,7 @@
   * [range()](konular/doengueler/for/range.md)
   * [enumerate()](konular/doengueler/for/enumerate.md)
   * [zip()](konular/doengueler/for/zip.md)
-  * [Örnekler](konular/doengueler/oernekler.md)
+  * [Örnekler](konular/doengueler/for/oernekler.md)
   * [break statement](konular/doengueler/break-statement.md)
   * [continue statement](konular/doengueler/continue-statement.md)
   * [else statement](konular/doengueler/else-statement.md)
