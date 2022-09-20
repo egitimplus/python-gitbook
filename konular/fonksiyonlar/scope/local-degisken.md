@@ -4,6 +4,8 @@ description: Local Variable
 
 # Local Değişken
 
+Bir değişkeni fonksiyon içerisinde kullanırsan sadece o fonksiyon için geçerli olur.&#x20;
+
 ```python
 if 'x' in globals():
     del x

@@ -74,7 +74,7 @@
     * [global statement](konular/fonksiyonlar/scope/global-statement.md)
     * [Örnekler](konular/fonksiyonlar/scope/oernekler.md)
 * [match statement](konular/match-statement.md)
-* [Alıştırmalar](konular/alistirmalar-1.md)
+* [Alıştırmalar](<konular/alistirmalar (1).md>)
 * [Test](konular/test-2.md)
 * [Veri Yapıları](konular/veri-yapilari/README.md)
   * [List](konular/veri-yapilari/list/README.md)
