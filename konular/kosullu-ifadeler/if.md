@@ -1,0 +1,230 @@
+# If - elif - else
+
+## if
+
+{% hint style="info" %}
+```
+if <condition>:
+    ...
+    ...
+```
+{% endhint %}
+
+```python
+if True:
+    print('condition is true')
+```
+
+```python
+x = 4
+if x > 5:
+    print('x is greater than 5')
+```
+
+{% hint style="info" %}
+Klavyeden girilen sayı pozitif ise ekrana pozitif yazdırınız
+{% endhint %}
+
+```python
+number = int(input('Please enter a number'))
+if number > 0:
+    print('Entered number is positive')
+```
+
+## else
+
+{% hint style="info" %}
+```
+if <condition>:
+    ...
+    ...
+else:
+    ...
+    ...
+```
+{% endhint %}
+
+```python
+x = 3
+if x > 5:
+    print('x is greater than 5')
+else:
+    print('x is less than 5')
+```
+
+{% hint style="info" %}
+Sayının pozitif olup/olmadığını bulan programı yazınız.
+{% endhint %}
+
+```python
+number = int(input('Please enter number: '))
+
+print(number)
+
+if number > 0:
+    print('pozitif bir sayı')
+elif number == 0:
+    print('sayı sıfırdır yani nötr')
+else:
+    print('pozitif sayı değil')
+```
+
+{% hint style="info" %}
+Klavyeden girilen vize ve final sınav notlarından öğrencinin sınıfı geçip geçmediğini tespit eden programı yazınız.&#x20;
+
+Geçme notu : 50&#x20;
+
+Vize katsayısı : %30&#x20;
+
+Final katsayısı: %70
+{% endhint %}
+
+```python
+passing_grade = 50
+midtern_coef = 0.3
+final_coef = 0.7
+
+midterm_exam = input('Please enter midtern exam: ')
+final_exam = input('Please enter final exam: ')
+
+result = int(midterm_exam) * midtern_coef + int(final_exam) * final_coef
+
+print('Result: ', result)
+
+if result > passing_grade:
+    print('Passed')
+else:
+    print('Failed')
+```
+
+## elif
+
+{% hint style="info" %}
+```
+if <condition>:
+    ...
+    ...
+elif <condition>:
+    ...
+    ...
+else:
+    ...
+    ...
+```
+{% endhint %}
+
+```python
+x = 4
+if x > 5:
+    print('x is greater than 5')
+elif x > 3:
+    print('x is greater than 3')
+else:
+    print('x is less than 5')
+```
+
+{% hint style="info" %}
+Kullanıcı tarafından girilen sınav puanını nota çeviren programı yazınız. Eğer girilen puan 0-100 aralığında değilse ekrana hata mesajı basınız.
+{% endhint %}
+
+| Sınav Puanı | Not |
+| ----------- | --- |
+| 0-20        | E   |
+| 21-40       | D   |
+| 41-60       | C   |
+| 61-80       | B   |
+| 81-100      | A   |
+
+```python
+exam_grade = int(input('Please enter exam grade: '))
+
+if exam_grade <= 20:
+    print('E')
+elif 20 < exam_grade <=40:
+    print('D')
+elif 40 < exam_grade <= 60:
+    print('C')
+elif 60 < exam_grade <= 80:
+    print('B')
+else:
+    print('A')
+```
+
+## tek satırda if-else
+
+```python
+n = 5
+result = "Hello" if n > 10 else "Goodbye" if n > 5 else "Good day"
+print(result) # Output: Goodbye
+```
+
+## çoklu koşul
+
+```python
+//'''
+Testing for multiple conditions
+A common mistake when checking for multiple conditions is to apply the logic incorrectly.
+This example is trying to check if two variables are each greater than 2. The statement is evaluated as - if (a) and
+(b > 2). This produces an unexpected result because bool(a) evaluates as True when a is not zero.
+'''
+
+a = 1
+b = 6
+
+if a and b > 2:
+    print('yes')
+else:
+    print('no')
+ 
+
+'''
+Each variable needs to be compared separately.
+'''
+if a > 2 and b > 2:
+    print('yes')
+else:
+    print('no')
+ 
+# no
+
+'''
+Another, similar, mistake is made when checking if a variable is one of multiple values. The statement in this
+example is evaluated as - if (a == 3) or (4) or (6). This produces an unexpected result because bool(4) and
+bool(6) each evaluate to True
+'''
+
+if a == 3 or 4 or 6:
+    print('yes')
+else:
+    print('no')
+
+# yes
+
+'''
+Again each comparison must be made separately
+'''
+if a == 3 or a == 4 or a == 6:
+    print('yes')
+else:
+    print('no')
+ 
+# no
+
+'''
+Using the in operator is the canonical way to write this.
+'''
+
+if a in (3, 4, 6):
+    print('yes')
+else:
+    print('no')
+    
+# no
+```
+
+## pass ifadesi
+
+```python
+if 5 > 3:
+    pass
+```
