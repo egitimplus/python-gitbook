@@ -41,7 +41,7 @@
   * [While](konular/doengueler/while/README.md)
   * [For](konular/doengueler/for/README.md)
   * [Builtin Fonksiyonlar](konular/doengueler/builtin-fonksiyonlar.md)
-  * [Atlama İfadeleri](konular/doengueler/atlama-ifadeleri.md)
+  * [Atlama İfadeleri](konular/doengueler/break-statement.md)
   * [Test](konular/test-1.md)
 * [Fonksiyonlar](konular/fonksiyonlar/README.md)
   * [Fonksiyon Oluşturma / Çağırma](konular/fonksiyonlar/fonksiyon-olusturma-cagirma.md)

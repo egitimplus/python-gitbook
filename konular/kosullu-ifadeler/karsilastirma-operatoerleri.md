@@ -4,83 +4,54 @@ description: Comparison Operators
 
 # Karşılaştırma Operatörleri
 
-{% tabs %}
-{% tab title="Eşit " %}
-{% hint style="info" %}
-Equal ( == )
-{% endhint %}
+| Operatör | Açıklama      | Örnek  | Sonuç |
+| -------- | ------------- | ------ | ----- |
+| ==       | Eşittir       | 5 == 6 | False |
+| !=       | Eşit Değildir | 5 != 6 | True  |
+| >        | Büyüktür      | 6 > 4  | True  |
+| <        | Küçüktür      | 6 < 4  | False |
+| >=       | Büyük Eşittir | 6 >= 5 | True  |
+| <=       | Küçük Eşittir | 5 <= 4 | False |
 
-```python
-print(5 == 5)   # True
-print(5 == '5') # False
-```
+<pre><code><strong># Equal ( == )
+</strong><strong># Note that == is a comparison operator, while = is an assignment operator
+</strong><strong>
+</strong><strong>print(5 == 5)   # True
+</strong>print(5 == '5') # False
 
-{% hint style="warning" %}
-Note that `==` is a _comparison_ operator, while `=` is an _assignment_ operator.
-{% endhint %}
-{% endtab %}
-
-{% tab title="Eşit Değil " %}
-{% hint style="info" %}
-&#x20;Not Equal ( =! )
-{% endhint %}
-
-```python
+# Not Equal ( =! )
 print(3 != 4)   # True
-```
-{% endtab %}
 
-{% tab title="Büyük " %}
-{% hint style="info" %}
-Greater Than ( > )
-{% endhint %}
-
-```python
+# Greater Than ( > )
 print(6 > 4)    # True
-```
-{% endtab %}
 
-{% tab title="Küçük " %}
-{% hint style="info" %}
-Less Than ( < )
-{% endhint %}
+# Less Than ( &#x3C; )
+print(3 &#x3C; 5)    # True
 
-```python
-print(3 < 5)    # True
-```
-{% endtab %}
-
-{% tab title="Büyük Eşit" %}
-{% hint style="info" %}
-Greater Than or Equal To ( >= )
-{% endhint %}
-
-```python
+# Greater Than or Equal To ( >= )
 print(7 >= 7)   # True
+
+# Less Than or Equal To ( &#x3C;= )
+print(5 &#x3C;= 7)   # True
+</code></pre>
+
 ```
-{% endtab %}
+# Chained
 
-{% tab title="Küçük Eşit" %}
-{% hint style="info" %}
-Less Than or Equal To ( <= )
-{% endhint %}
+1 < 2 < 3          # True
+1 < 2 and 2 < 3    # True
 
-```python
-print(5 <= 7)   # True
+1 < 3 > 2          # True
+1 < 3 and 3 > 2    # True
 ```
-{% endtab %}
 
-{% tab title="Aynı" %}
-{% hint style="info" %}
+```
+'''
 Is ( is)
-
-```
 a == b -> a ve b'nin değerlerini karşılaştırır
 a is b -> a ve b'nin kimliklerini karşılaştırır
-```
-{% endhint %}
+'''
 
-```python
 a = 'Python is fun!'
 b = 'Python is fun!'
 
@@ -89,13 +60,12 @@ print(a is b) # False
 
 print(id(a)) # 2570926058312
 print(id(b)) # 2570926057736
-```
 
-{% hint style="warning" %}
-Kısa string ve küçük tam sayılarda (256'dan küçük) performans sebebiyle aynı değere sahip değişkenlerin kimlikleri de aynıdır.
-{% endhint %}
+'''
+Kısa string ve küçük tam sayılarda (256'dan küçük) performans sebebiyle aynı değere 
+sahip değişkenlerin kimlikleri de aynıdır.
+'''
 
-```python
 a = 'short'
 b = 'short'
 print(a is b) # True
@@ -103,13 +73,10 @@ print(a is b) # True
 c = 5
 d = 5
 print(c is d) # True
-```
 
-{% hint style="warning" %}
+'''
 Uzun string ve büyük sayılarda kimlikleri aynı değildir
-{% endhint %}
-
-```python
+'''
 a = 'not so short'
 b = 'not so short'
 print(a is b) # False
@@ -118,20 +85,3 @@ c = 1000
 d = 1000
 print(c is d) # False
 ```
-{% endtab %}
-
-{% tab title="Chained" %}
-{% hint style="info" %}
-Chained
-{% endhint %}
-
-```
-1 < 2 < 3          # True
-1 < 2 and 2 < 3    # True
-
-1 < 3 > 2          # True
-1 < 3 and 3 > 2    # True
-```
-{% endtab %}
-{% endtabs %}
-
