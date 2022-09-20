@@ -10,9 +10,7 @@ Geçici olarak veri saklamak için oluşturduğumuz alanlara değişken denir. B
 
 Mesafe = Hız x Zaman
 
-{% hint style="info" %}
-değişken oluşturma
-{% endhint %}
+## Değişken oluşturma
 
 ```python
 x = 5       
@@ -50,9 +48,7 @@ print(adı) # Emre
 student_name = 'Emre Cevik' # SyntaxError: invalid syntax
 ```
 
-{% hint style="info" %}
-Değişken İsimlendirme Yöntemleri
-{% endhint %}
+## Değişken İsimlendirme Yöntemleri
 
 | Yöntem        | Örnek         | Kullanım            |
 | ------------- | ------------- | ------------------- |
