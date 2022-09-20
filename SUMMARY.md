@@ -41,7 +41,6 @@
   * [While](konular/doengueler/while/README.md)
   * [For](konular/doengueler/for/README.md)
   * [Builtin Fonksiyonlar](konular/doengueler/builtin-fonksiyonlar.md)
-  * [Örnekler](konular/doengueler/for/oernekler.md)
   * [break statement](konular/doengueler/break-statement.md)
   * [continue statement](konular/doengueler/continue-statement.md)
   * [else statement](konular/doengueler/else-statement.md)
