@@ -23,7 +23,7 @@
     * [Set](konular/giris/ilkel-olmayan-veri-yapilari/set.md)
     * [Dictionary](konular/giris/ilkel-olmayan-veri-yapilari/dictionary.md)
   * [Test](konular/test.md)
-* [Dizeler (Strings)](konular/dizeler-strings.md)
+* [Dizeler (Strings)](<konular/giris/ilkel-veri-yapilari/strings (1).md>)
 * [Koşullu İfadeler](konular/kosullu-ifadeler/README.md)
   * [Karşılaştırma Operatörleri](konular/kosullu-ifadeler/karsilastirma-operatoerleri.md)
   * [Mantıksal Operatörler](konular/kosullu-ifadeler/mantiksal-operatoerler.md)
