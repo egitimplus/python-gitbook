@@ -1,8 +1,7 @@
-# Strings Advanced
+# Dizeler (Strings)
 
-{% tabs %}
-{% tab title="Basics" %}
 ```python
+print('Hello' + 'World')
 # Output : HelloWorld
 
 print('4' + '2') 
@@ -17,9 +16,9 @@ print('2' * 3)
 print('2' + 4) 
 # Output : Error: sayı ile string toplanırsa hata verir
 ```
-{% endtab %}
 
-{% tab title="Indexing" %}
+## İndeksleme
+
 ```python
 text = "Hello World Again"
 
@@ -31,9 +30,9 @@ print(text[4]) # Output : o
 print(text[-1]) # Output : n
 print(text[-3]) # Output : aprint('Hello' + 'World') 
 ```
-{% endtab %}
 
-{% tab title="Slicing" %}
+## Dilimleme
+
 ```python
 text = "Hello World Again"
 
@@ -47,9 +46,9 @@ print(text[1:-1:2]) # el ol gi
 print(text[::2])    # HloWrdAan
 print(text[::-1])   # niagA dlroW olleH
 ```
-{% endtab %}
 
-{% tab title="Interpolation" %}
+## İnterpolasyon
+
 ```python
 name = 'Adam'
 surname = 'Smith'
@@ -71,9 +70,9 @@ text = f'My name is {name} {surname}. I am {age} years old.'
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
 ```
-{% endtab %}
 
-{% tab title="Methods" %}
+## Metodlar
+
 ```python
 text = 'hello World AGAIN'
 
@@ -110,10 +109,5 @@ print(text.partition('World')) # ('Hello ', 'World', ' Again and Again')
 # islower(), isupper(), istitle()
 # isalnum(), isalpha(), isspace()
 # isdigit(), isnumeric(), isdecimal()
-# endswith(), startswith()
-```
-{% endtab %}
-{% endtabs %}
-
-```python
+# endswith(), startswith()İnterpolas
 ```
