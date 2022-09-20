@@ -3,6 +3,8 @@
 ## 📄 KONULAR
 
 * [Giriş](README.md)
+  * [Nasıl Çalışmalıyım ?](konular/giris/nasil-calismaliyim.md)
+  * [Programlama Dili](konular/giris/programlama-dili.md)
   * [Neden Python?](konular/giris/neden-python.md)
   * [Ortam Kurulumu](konular/giris/ortam-kurulumu.md)
   * [Strings](konular/giris/print.md)
@@ -51,6 +53,7 @@
   * [break statement](konular/doengueler/break-statement.md)
   * [continue statement](konular/doengueler/continue-statement.md)
   * [else statement](konular/doengueler/else-statement.md)
+* [Alıştırmalar](konular/alistirmalar.md)
 * [Test](konular/test-1.md)
 * [Fonksiyonlar](konular/fonksiyonlar/README.md)
   * [Fonksiyon Oluşturma / Çağırma](konular/fonksiyonlar/fonksiyon-olusturma-cagirma.md)
@@ -71,7 +74,7 @@
     * [global statement](konular/fonksiyonlar/scope/global-statement.md)
     * [Örnekler](konular/fonksiyonlar/scope/oernekler.md)
 * [match statement](konular/match-statement.md)
-* [Alıştırmalar](konular/alistirmalar.md)
+* [Alıştırmalar](konular/alistirmalar-1.md)
 * [Test](konular/test-2.md)
 * [Veri Yapıları](konular/veri-yapilari/README.md)
   * [List](konular/veri-yapilari/list/README.md)

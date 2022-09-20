@@ -9,6 +9,10 @@ while <condition>:
 ```
 {% endhint %}
 
+{% hint style="info" %}
+0’dan başlayıp 5’e kadar sayıları yazdırınız.
+{% endhint %}
+
 ```python
 number = 0
 while number < 5:
