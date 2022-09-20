@@ -19,7 +19,7 @@ print("Hello, World!")
 print("Hello, World!") #This is a inline comment
 ```
 
-## Çok satırlık yorumla
+## Çok satırlık yorumlar
 
 ```python
 """

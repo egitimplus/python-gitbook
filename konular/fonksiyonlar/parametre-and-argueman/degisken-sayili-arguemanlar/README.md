@@ -1,2 +1,0 @@
-# Değişken Sayılı Argümanlar
-
