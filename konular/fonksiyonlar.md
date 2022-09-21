@@ -128,7 +128,7 @@ parrot(actor='John Cleese')  # unknown keyword argument
 
 Fonksiyon tanımlarken parametrelere değer vererek isteğe bağlı hale getirebiliriz.
 
-```
+```python
 def fruit_juicer(fruit1, fruit2='orange'):
     print(f'I am {fruit1} and {fruit2} juicer')
 
@@ -143,7 +143,7 @@ fruit_juicer(fruit1='apple', fruit2='carrot')
 
 #### Pozisyonel
 
-```
+```python
 def fruit_juicer(*fruits):
     print(fruits)
 
@@ -251,7 +251,7 @@ Looking at this in a bit more detail, it is possible to mark certain parameters 
 
 To mark parameters as _keyword-only_, indicating the parameters must be passed by keyword argument, place an `*` in the arguments list just before the first _keyword-only_ parameter.
 
-```
+```python
 def standard_arg(arg):
     print(arg)
 
@@ -259,7 +259,7 @@ standard_arg(2)     # 2
 standard_arg(arg=2) # 2
 ```
 
-```
+```python
 def pos_only_arg(arg, /):
     print(arg)
     
@@ -267,7 +267,7 @@ pos_only_arg(arg=1)
 # TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'
 ```
 
-```
+```python
 def kwd_only_arg(*, arg):
     print(arg)
     
@@ -278,7 +278,7 @@ kwd_only_arg(arg=3)
 # 3
 ```
 
-```
+```python
 def combined_example(pos_only, /, standard, *, kwd_only):
     print(pos_only, standard, kwd_only)
     
