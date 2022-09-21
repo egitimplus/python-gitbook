@@ -1,3 +1,9 @@
+---
+description: >-
+  Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir
+  (duplicate)
+---
+
 # List
 
 * Sıralanabilir (ordered) : Öğelerin belirli bir sıraya sahip olduğu ve bu sıranın değişmeyeceği anlamına gelir. İndexler ile istenilen öğeye ulaşılabilir.

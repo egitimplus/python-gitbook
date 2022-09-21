@@ -1,4 +1,12 @@
+---
+description: >-
+  Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanamaz (not
+  duplicate)
+---
+
 # Sözlük
+
+
 
 ```python
 '''

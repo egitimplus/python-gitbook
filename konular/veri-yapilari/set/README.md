@@ -1,3 +1,9 @@
+---
+description: >-
+  Sıralanamaz (not ordered), Değiştirilebilir (mutable), Tekrarlanamaz (not
+  duplicate)
+---
+
 # Küme
 
 ## Oluşturma

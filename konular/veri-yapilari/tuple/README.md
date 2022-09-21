@@ -1,3 +1,9 @@
+---
+description: >-
+  Sıralanabilir (ordered), Değiştirilemez (immutable), Tekrarlanabilir
+  (duplicate)
+---
+
 # Demet
 
 a tuple is a comma-separated list of values
