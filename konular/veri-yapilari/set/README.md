@@ -1,6 +1,6 @@
 # Küme
 
-| İşlem         | Metod                 | x      |     Inplace Metod    |  x  |
+| İşlem         | Metod                 | Op     |     Inplace Metod    |  Op |
 | ------------- | --------------------- | ------ | :------------------: | :-: |
 | Kesişim       | intersection          | a & b  | intersection\_update |  &= |
 | Birleşim      | union                 | a \| b |        update        | \|= |
@@ -13,60 +13,75 @@
 ## Kesişim
 
 ```
-{1, 2, 3, 4, 5}.intersection({3, 4, 5, 6}) 
-{1, 2, 3, 4, 5} & {3, 4, 5, 6} 
-# {3, 4, 5}
+s1 = {1, 2, 3, 4}
+s2 = {3, 4, 5}
+
+s3 = s1.intersection(s2) 
+s3 = s1 & s2 
+
+s1.intersection_update(s2)
+
+# {3, 4}
 ```
 
 ## Birleşim
 
 ```
-{1, 2, 3, 4, 5}.union({3, 4, 5, 6}) 
-{1, 2, 3, 4, 5} | {3, 4, 5, 6} 
-# {1, 2, 3, 4, 5, 6}
+s3 = s1.union(s2) 
+s3 = s1 | s2 
+
+s1.update(s2)
+
+# {1, 2, 3, 4, 5}
 ```
 
 ## Fark
 
 ```
-{1, 2, 3, 4}.difference({2, 3, 5}) 
-{1, 2, 3, 4} - {2, 3, 5} 
-# {1, 4}
+s3 = s1.difference(s2) 
+s3 = s1 - s2 
+
+s1.difference_update(s2)
+
+# {1, 2}
 ```
 
 ## Simetrik Fark
 
 ```
-{1, 2, 3, 4}.symmetric_difference({2, 3, 5}) 
-{1, 2, 3, 4} ^ {2, 3, 5} 
-# {1, 4, 5}
+s3 = s1.symmetric_difference(s2) 
+s3 = s1 ^ s2 
+
+# {1, 2, 5}
 ```
 
 ## Üst Küme
 
 ```
-{1, 2}.issuperset({1, 2, 3})
-{1, 2} >= {1, 2, 3} 
-# False
+s3 = {1, 2}
+
+s1.issuperset(s3)
+s1 >= s3
+# True
 ```
 
 ## Alt Küme
 
 ```
-{1, 2}.issubset({1, 2, 3}) 
-{1, 2} <= {1, 2, 3}
+s3.issubset(s1) 
+s3 <= s1
 # True
 ```
 
 ## Ayrık Küme
 
 ```
-{1, 2}.isdisjoint({3, 4}) # True
-{1, 2}.isdisjoint({1, 4}) # False
+s4 = {3, 4}
+s3.isdisjoint(s4) 
+# True
 ```
 
 ```python
-
 
 
 # Existence check

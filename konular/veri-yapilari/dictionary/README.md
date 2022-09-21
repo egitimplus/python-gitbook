@@ -1,4 +1,4 @@
-# Dictionary
+# Sözlük
 
 ```python
 '''
