@@ -1,30 +1,46 @@
 # Tuple
 
-```python
-# a tuple is a comma-separated list of values
+a tuple is a comma-separated list of values
 
+```python
 t = ('a', 'b', 'c', 'd', 'e')
 type(t) # <type 'tuple'>
+```
 
-# Note that a single value in parentheses is not a tuple:
+Note that a single value in parentheses is not a tuple:
+
+```python
 t2 = ('a')
-type(t2) # <type 'str'>
+type(t2) # <type 'str'>Oluşturma
+```
 
-# To create a singleton tuple it is necessary to have a trailing comma.
+## Oluşturma
+
+To create a singleton tuple it is necessary to have a trailing comma.
+
+```python
 t2 = ('a',)
 type(t2) # <type 'tuple'>
+```
 
-# Another way to create a tuple is the built-in function tuple.
+Another way to create a tuple is the built-in function tuple.
+
+```
 t = tuple('lupins')
 print(t) # ('l', 'u', 'p', 'i', 'n', 's')
+```
 
-# Tuples are immutable
+## Ekleme & Güncelleme
+
+Tuples are immutable
+
+```
 t = (1, 4, 9)
 t[0] = 2
 # TypeError: 'tuple' object does not support item assignment
+```
 
-# Index and Slicing like as Lists
-
+```
 # Similarly, tuples don't have .append and .extend methods as list does. 
 # Using += is possible, but it changes the binding of the variable, and not the tuple itself:
 
@@ -34,6 +50,9 @@ t += (3, 4)
 t # (1, 2, 3, 4)
 q # (1, 2)
 
+```
+
+```
 # Be careful when placing mutable objects, such as lists, inside tuples. 
 # This may lead to very confusing outcomes when changing them. For example:
 
@@ -42,8 +61,17 @@ t[3] += [4, 5]
 # Will both raise an error and change the contents of the list within the tuple:
 # TypeError: 'tuple' object does not support item assignment
 
-t # (1, 2, 3, [1, 2, 3, 4, 5])
+t # (1, 2, 3, [1, 2, 3, 4, 5])#
 ```
+
+```python
+# Index and Slicing like as Lists
+
+
+
+```
+
+## Packing and Unpacking&#x20;
 
 ```python
 # Packing and Unpacking Tuples
@@ -53,17 +81,6 @@ t # (1, 2, 3, [1, 2, 3, 4, 5])
 
 a = 1, 2, 3 # a is the tuple (1, 2, 3)
 a = (1, 2, 3) # a is the tuple (1, 2, 3)
-
-# To tell Python that a variable is a tuple and not a single value you can use
-# a trailing comma
-
-a = 1 # a is the value 1
-a = 1, # a is the tuple (1,)
-
-# A comma is needed also if you use parentheses
-
-a = (1,) # a is the tuple (1,)
-a = (1) # a is the value 1 and not a tuple
 
 # To unpack values from a tuple and do multiple assignments use
 # unpacking AKA multiple assignment
@@ -80,6 +97,16 @@ _, x, y, _ = a
 # x == 2
 # y == 3
 
+# To tell Python that a variable is a tuple and not a single value you can use
+# a trailing comma
+
+a = 1 # a is the value 1
+a = 1, # a is the tuple (1,)
+
+# A comma is needed also if you use parentheses
+
+a = (1,) # a is the tuple (1,)
+a = (1) # a is the value 1 and not a tuple
 
 # Single element tuples:
 
