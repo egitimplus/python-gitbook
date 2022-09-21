@@ -2,11 +2,71 @@
 description: Positional Arguments
 ---
 
-# Parametre & Argüman
+# Fonksiyonlar
+
+## Fonksiyon Tanımlama
+
+```
+f(x) = 2x + 5
+
+x -> 3
+f(x) = 2 * 3 + 5
+f(x) = 11
+
+x -> 5
+f(x) = 2 * 5 + 5
+f(x) = 15
+```
+
+Fonksiyonlar def ile tanımlanır.
+
+```python
+def fruit_juicer():
+    """
+    function description
+    """
+    print('I am fruit juicer')
+```
+
+## Fonksiyon Yardımı - help()
+
+```python
+print(help(len))
+
+'''
+Help on built-in function len in module builtins:
+
+len(obj, /)
+    Return the number of items in a container.
+'''
+```
+
+```python
+print(help(fruit_juicer))
+
+'''
+Help on function fruit_juicer in module __main__:
+
+fruit_juicer()
+    function description
+'''
+```
+
+## Fonksiyon Çağırma
+
+```python
+print(fruit_juicer)
+# <function fruit_juicer at 0x7f099253fd40>
+
+fruit_juicer()
+# I am fruit juicer// Some code
+```
+
+## Parametre & Argüman
 
 Fonksiyona girdi olarak kullanılan değişkenlere parametre, fonksiyon çağırılırken gönderilen değerlere argüman denir.
 
-## Pozisyonel Argümanlar
+### Pozisyonel Argümanlar
 
 ```python
 def fruit_juicer(fruit): # name parametre
@@ -32,7 +92,7 @@ sum(3, 5)
 # 8
 ```
 
-## Anahtar Kelimeli Argümanlar
+### Anahtar Kelimeli Argümanlar
 
 ```python
 def fruit_juicer(fruit1, fruit2):
@@ -64,7 +124,7 @@ parrot(110, voltage=220)     # duplicate value for the same argument
 parrot(actor='John Cleese')  # unknown keyword argument
 ```
 
-## Varsayılan Argümanlı
+### Varsayılan Argümanlı
 
 Fonksiyon tanımlarken parametrelere değer vererek isteğe bağlı hale getirebiliriz.
 
@@ -79,9 +139,9 @@ fruit_juicer(fruit1='apple', fruit2='carrot')
 # I am apple and carrot juicer
 ```
 
-## Değişken Sayılı Argümanlar
+### Değişken Sayılı Argümanlar
 
-### Pozisyonel
+#### Pozisyonel
 
 ```
 def fruit_juicer(*fruits):
@@ -100,7 +160,7 @@ carrot
 '''
 ```
 
-### Anahtar Kelimeli
+#### Anahtar Kelimeli
 
 ```python
 def fruit_juicer(**kwargs):
@@ -149,7 +209,7 @@ fn(a=1, b=2)
 '''
 ```
 
-### Karışık
+#### Karışık
 
 ```python
 def fruit_juicer(brand, *args, **kwargs):
@@ -166,7 +226,7 @@ XTech
 '''
 ```
 
-## Özel Argümanlar
+### Özel Argümanlar
 
 where `/` and `*` are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.
 
@@ -253,4 +313,212 @@ def foo(name, /, **kwds):
     
 foo(1, **{'name': 2})
 # True
+```
+
+## Return
+
+Fonksiyonlar geriye değer döndürebilir.
+
+```python
+def fruit_juicer(fruit):
+    return f'I am {fruit} juicer'
+
+juicer = fruit_juicer('apple')
+print(juicer) # I am apple juicer
+```
+
+```
+def sum(a, b):
+    return a + b
+
+result = sum(3, 5)
+
+print(result) # 8
+```
+
+```
+def sum_minus(a, b):
+    minus = a - b
+    sum = a + b
+    return sum, minus
+
+result = sum_minus(3, 5)
+print(result) # (8, -2)
+
+sum, min = sum_minus(6, 2) 
+print(sum, min) # 8 4
+```
+
+```
+def function(number):
+    if number > 5:
+        return True
+    else:
+        return False
+
+print(function(3)) # False
+```
+
+```
+def function(number):
+    if number > 5:
+        return True
+    
+    return False
+
+print(function(3)) # False
+```
+
+```
+def function(number):   
+    return number > 5
+
+print(function(3)) # False
+```
+
+
+
+
+
+## Scope
+
+### Global Değişken
+
+Global değişken fonksiyon içerisinde de çalışır
+
+```python
+if 'x' in globals():
+    del x
+
+x = 'global_variable'
+
+def my_function():
+    print('inside: ', x)
+
+my_function()         # inside:  global_variable
+print('outside: ', x) # outside:  global_variable
+```
+
+### Local Değişken
+
+Bir değişkeni fonksiyon içerisinde kullanırsan sadece o fonksiyon için geçerli olur.&#x20;
+
+```python
+if 'x' in globals():
+    del x
+
+def my_function():
+    x = 'local variable'
+    print('inside: ', x)
+
+my_function()            # inside:  local variable
+print('outside: ', x)    # NameError: name 'x' is not defined
+```
+
+### global statement
+
+Her zaman kullanmak için global olarak tanımlanması gerekir. Local değişkeni global değişkene çevirebiliriz
+
+```python
+if 'x' in globals():
+    del x
+
+def my_function():
+    global x
+    x = 'local variable'
+    print('inside: ', x)
+
+my_function()            # inside:  local variable
+print('outside: ', x)    # outside:  local variable
+```
+
+```python
+x = 0
+
+def my_function():
+    # x global yaparsak x'e yeni değer atayabiliriz
+    global x
+    x = x + 1
+    print(x)
+
+my_function()   # 1 
+print(x)        # 1
+```
+
+### Alıştırmalar
+
+```
+foo = 1
+
+def func():
+    bar = 2
+    print(globals().keys()) # prints all variable names in global scope
+    print(locals().keys()) # prints all variable names in local scope
+
+func()
+
+'''
+dict_keys(['foo', 'func'])
+dict_keys(['bar'])
+'''
+```
+
+```
+foo = 1
+def func():
+    foo = 2 # creates a new variable foo in local scope, global foo is not affected
+    print(foo) # 2
+ 
+    # global variable foo still exists, unchanged:
+    print(globals()['foo']) # 1
+    print(locals()['foo']) # 2
+
+func()
+# 2
+# 1
+# 2
+```
+
+```
+foo = 1
+def func():
+    global foo
+    foo = 2 # this modifies the global foo, rather than creating a local variable
+
+func()
+print(foo) # 2
+```
+
+```
+'''
+The scope is defined for the whole body of the function!
+What it means is that a variable will never be global for a half of the function and local afterwards, or vice-versa.
+'''
+
+foo = 1
+def func():
+    # This function has a local variable foo, because it is defined down below.
+    # So, foo is local from this point. Global foo is hidden.
+    print(foo) # raises UnboundLocalError, because local foo is not yet initialized
+    foo = 7
+    print(foo)
+    
+func()
+# UnboundLocalError: local variable 'foo' referenced before assignment
+```
+
+```
+foo = 1
+def func():
+    # In this function, foo is a global variable from the beginning
+    global foo
+    foo = 7 # global foo is modified
+    print(foo) # 7
+    print(globals()['foo']) # 7
+    print(foo) # 7
+
+func()
+# 7
+# 7
+# 7
 ```
