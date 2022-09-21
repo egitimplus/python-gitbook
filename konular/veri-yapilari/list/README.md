@@ -201,3 +201,27 @@ print(my_list)
 ['apple', 'banana', 'cherry', 'orange']
 ['orange', 'cherry', 'banana', 'apple']
 ```
+
+## Metodlar
+
+```
+// Some code
+```
+
+## Nested Lists
+
+```
+// Some code
+```
+
+## List Comprehensions
+
+```
+// Some code
+```
+
+## any() & all()
+
+```
+// Some code
+```
