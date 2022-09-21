@@ -1,4 +1,4 @@
-# Tuple
+# Demet
 
 a tuple is a comma-separated list of values
 
@@ -50,18 +50,6 @@ t += (3, 4)
 t # (1, 2, 3, 4)
 q # (1, 2)
 
-```
-
-```
-# Be careful when placing mutable objects, such as lists, inside tuples. 
-# This may lead to very confusing outcomes when changing them. For example:
-
-t = (1, 2, 3, [1, 2, 3])
-t[3] += [4, 5]
-# Will both raise an error and change the contents of the list within the tuple:
-# TypeError: 'tuple' object does not support item assignment
-
-t # (1, 2, 3, [1, 2, 3, 4, 5])#
 ```
 
 ```python
@@ -169,4 +157,30 @@ tuple1 + tuple2
 # hashable
 hash( (1, 2) ) # ok
 hash( ([], {"hello"}) # not ok, since lists and sets are not hashableyth
+```
+
+## Comprehensions
+
+```
+#  Comprehensions involving tuples
+
+[x + y for x, y in [(1, 2), (3, 4), (5, 6)]]
+# Out: [3, 7, 11]
+
+[x + y for x, y in zip([1, 3, 5], [2, 4, 6])]
+# Out: [3, 7, 11]
+
+# This is just like regular for loops:
+
+for x, y in [(1,2), (3,4), (5,6)]:
+    print(x+y)
+
+# Note however, if the expression that begins the comprehension is a tuple then
+# it must be parenthesized:
+
+[x, y for x, y in [(1, 2), (3, 4), (5, 6)]]
+# SyntaxError: invalid syntax
+
+[(x, y) for x, y in [(1, 2), (3, 4), (5, 6)]]
+# Out: [(1, 2), (3, 4), (5, 6)]
 ```
