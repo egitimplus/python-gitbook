@@ -50,14 +50,14 @@ student_name = 'Emre Cevik' # SyntaxError: invalid syntax
 
 ## Değişken İsimlendirme Yöntemleri
 
-| Yöntem        | Örnek         | Kullanım            |
-| ------------- | ------------- | ------------------- |
-| Camel Case    | toplamKayit   |                     |
-| Pascal Case   | ToplamKayit   | sınıflar            |
-| Snake Case    | toplam\_kayit | değişken, fonksiyon |
-| Flat Case     | toplamkayit   | paket isimleri      |
-| Constant Case | TOPLAM\_KAYIT | sabitler            |
-| Kebap Case    | toplam-kayit  |                     |
+| Yöntem        | Örnek        | Kullanım            |
+| ------------- | ------------ | ------------------- |
+| Camel Case    | totalCount   |                     |
+| Pascal Case   | TotalCount   | sınıflar            |
+| Snake Case    | total\_count | değişken, fonksiyon |
+| Flat Case     | totalcount   | paket isimleri      |
+| Constant Case | TOTAL\_COUNT | sabitler            |
+| Kebap Case    | total-count  |                     |
 
 ```
 
