@@ -61,7 +61,7 @@ print(text)
 
 ### % operatörü
 
-```
+```python
 text = 'My name is %s %s. I am %s years old.' % (name, surname, age)
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
@@ -69,7 +69,7 @@ print(text)
 
 ### format() metodu
 
-```
+```python
 text = 'My name is {} {}. I am {} years old.'.format(name, surname, age)
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
@@ -77,7 +77,7 @@ print(text)
 
 ### f-strings
 
-```
+```python
 text = f'My name is {name} {surname}. I am {age} years old.'
 print(text)
 # Output : My name is Adam Smith. I am 40 years old.
