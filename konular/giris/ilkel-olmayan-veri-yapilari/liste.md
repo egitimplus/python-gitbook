@@ -1,11 +1,13 @@
-# List
+---
+description: >-
+  Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir
+  (duplicate)
+---
 
-{% hint style="info" %}
-Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanabilir (duplicate)
-{% endhint %}
+# Liste
 
-<pre class="language-python"><code class="lang-python"><strong># Boş Liste Tanımlama
-</strong>my_list = list()
+```python
+my_list = list()
 my_list = []
 print(my_list) 
 # Output: []
@@ -29,4 +31,5 @@ print(len(my_list))
 # Listenin elemanlarına indexi ile ulaşılabilir. 
 # Index aynı stringlerde olduğu gibi sıfırdan başlar.
 print(my_list[2])
-print(my_list[-1])</code></pre>
+print(my_list[-1])
+```

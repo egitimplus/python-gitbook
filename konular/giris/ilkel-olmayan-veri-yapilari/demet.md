@@ -1,11 +1,12 @@
-# Tuple
+---
+description: >-
+  Sıralanabilir (ordered), Değiştirilemez (immutable), Tekrarlanabilir
+  (duplicate)
+---
 
-{% hint style="info" %}
-Sıralanabilir (ordered), Değiştirilemez (immutable), Tekrarlanabilir (duplicate)
-{% endhint %}
+# Demet
 
-<pre class="language-python"><code class="lang-python"><strong># Boş demet tanımlama
-</strong>a = tuple()
+<pre class="language-python"><code class="lang-python">a = tuple()
 print(type(a)) # &#x3C;class 'tuple'>
 
 a = ()

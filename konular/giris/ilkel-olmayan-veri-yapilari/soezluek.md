@@ -1,11 +1,12 @@
-# Dictionary
+---
+description: >-
+  Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanamaz (not
+  duplicate)
+---
 
-{% hint style="info" %}
-Sıralanabilir (ordered), Değiştirilebilir (mutable), Tekrarlanamaz (not duplicate)
-{% endhint %}
+# Sözlük
 
 ```python
-# Make a dictionary with {} and : to signify a key and a value
 my_dict = {'key1':'value1','key2':'value2'}
 
 # Call values by their key

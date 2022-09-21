@@ -34,12 +34,6 @@ shift_list(my_array, 5) # Out: [1, 2, 3, 4, 5]
 shift_list(my_array, 3) # Out: [3, 4, 5, 1, 2]
 ```
 
-```
-[3, 4, 5, 1, 2]
-[1, 2, 3, 4, 5]
-[3, 4, 5, 1, 2]
-```
-
 ```python
 data = 'chandan purohit 22 2000' #assuming data fields of fixed length
 name_slice = slice(0,15)
@@ -53,8 +47,3 @@ print(data[age_slice]) #'22'
 print(data[salary_slice]) #'2000'
 ```
 
-```
-chandan purohit
-22
-2000
-```

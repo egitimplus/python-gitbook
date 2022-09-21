@@ -1,11 +1,12 @@
-# Set
+---
+description: >-
+  Sıralanamaz (not ordered), Değiştirilebilir (mutable), Tekrarlanamaz (not
+  duplicate)
+---
 
-{% hint style="info" %}
-Sıralanamaz (not ordered), Değiştirilebilir (mutable), Tekrarlanamaz (not duplicate)
-{% endhint %}
+# Küme
 
 ```python
-# Boş küme tanımlama
 x = set()
 print(type(x)) # <class 'set'>
 
