@@ -16,31 +16,26 @@ Boş liste oluşturma
 # Boş Liste Tanımlama
 my_list = list()
 my_list = []
-print(my_list) 
-# Output: []
 ```
 
 Elemanı olan liste oluşturma
 
-```
+```python
 my_list = ['Newyork', 'London', 'Paris']
-my_list = list(('Newyork', 'London', 'Paris'))
-
-print(my_list) 
-# Output: ['Newyork', 'London', 'Paris']
+print(my_list)
 ```
 
 Listelere farklı türlerde eleman eklenebilir
 
-```
+```python
 my_list = ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 print(my_list) 
-# Output: ['Newyork', 3, 3.5, True, ['banana', 'orange']]Listenin eleman sayısı için len() fonksiyonu kullanılır.
 ```
 
-```
-print(len(my_list)) 
-# Output: 3
+Listenin eleman sayısı için len() fonksiyonu kullanılır.
+
+```python
+print(len(my_list)) # 3
 ```
 
 ## Index ve Dilimleme
@@ -84,28 +79,28 @@ print(my_list) # ['Newyork', 'France', 'Group', 'Paris']
 
 Birden fazla değerde değiştirilebilir.
 
-```
+```python
 my_list[1:4] = ['Group']
 print(my_list) # ['Newyork', 'Group']
 ```
 
 Listeye yeni eleman eklemek için append() metodu kullanılır. Yeni eleman en sona eklenir.
 
-```
+```python
 my_list.append('Paris')
 print(my_list) # ['Newyork', 'Group', 'Paris']
 ```
 
 Araya eleman eklemek için insert metodu kullanılır.
 
-```
+```python
 my_list.insert(1, 'New')
 print(my_list) # ['Newyork', 'New', 'Group', 'Paris']
 ```
 
 extend() metodu ile iki liste birleştirilebilir.
 
-```
+```python
 list1 = ['banana', 'orange']
 list2 = ['cherry', 'apple']
 
@@ -115,7 +110,7 @@ print(list1)    # ['banana', 'orange', 'cherry', 'apple']
 
 \+ ile iki liste birleştirilebilir.
 
-```
+```python
 new_list = list1 + list2
 print(new_list) # ['banana', 'orange', 'cherry', 'apple']
 ```
@@ -124,14 +119,14 @@ print(new_list) # ['banana', 'orange', 'cherry', 'apple']
 
 listeden değeri kullanılarak eleman silmek için remove() metodu kullanılır.
 
-```
+```python
 new_list.remove('banana')
-print(new_list) # ['orange', 'cherry', 'apple']
+print(new_list) # ['orange', 'cherry', 'apple']py
 ```
 
 En sondaki elemanı silmek için pop() kullanılır.  Argüman olarak indeks değeri girerek istediğimiz elemanı da silebiliriz.
 
-```
+```python
 print(new_list.pop())     # apple
 print(new_list.pop(0))    # orange
 ```
@@ -147,31 +142,31 @@ print(my_list) # [3, 3.5, True, ['banana', 'orange']]
 
 clear() metodu ile listeyi temizleyebiliriz
 
-```
+```python
 my_list.clear()
 print(my_list) # []
 ```
 
 ## Kopyalama
 
-```
+```python
 # You can slice it:
 new_list = my_list[:]
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
-```
+```python
 # You can use the built in list() function:
 new_list = list(my_list)
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
-```
+```python
 new_list = my_list.copy()  # Returns a shallow copy of the lis
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
-```
+```python
 # You can use copy module:
 
 import copy
@@ -179,7 +174,7 @@ new_list = copy.copy(my_list) #inserts references to the objects found in the or
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
-```
+```python
 new_list = copy.deepcopy(old_list) #inserts copies of the objects found in the original.
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
@@ -204,7 +199,7 @@ print(my_list)
 
 ## Karşılaştırma
 
-```
+```python
 # Comparison of list
 
 [1, 10, 100] < [2, 10, 100]     # True, because 1 < 2
@@ -218,7 +213,7 @@ print(my_list)
 
 ## Metodlar
 
-```
+```python
 my_list = ['orange', 'banana', 'apple', 'cherry']
 
 # count
@@ -239,7 +234,7 @@ print(my_list) # ['cherry', 'apple', 'banana', 'orange']
 
 ## Nested Lists
 
-```
+```python
 # Accessing values in nested list
 alist = [[[1,2],[3,4]], [[5,6,7],[8,9,10], [12, 13, 14]]]
 
@@ -250,14 +245,14 @@ print(alist[0][0][1]) #2
 print(alist[1][1][2]) #10
 ```
 
-```
+```python
 # Using nested for loops to print the list:
 for row in alist: #One way to loop through nested lists
     for col in row:
         print(col)
 ```
 
-```
+```python
 # Another way to use nested for loops. The other way is better but I've needed to use this on occasion:
 for row in range(len(alist)): # A less Pythonic way to loop through lists
     for col in range(len(alist[row])):
@@ -266,7 +261,7 @@ for row in range(len(alist)): # A less Pythonic way to loop through lists
 
 ## List Comprehensions
 
-```
+```python
 data = [1, 2, 3, 4, 4, 5, 5]
 new_list = []
   
@@ -281,7 +276,7 @@ new_list = [item ** 2 for item in data if item % 2 == 0]
 print(new_list) # [4, 16, 16]
 ```
 
-```
+```python
 # Get a list of uppercase characters from a string
 new_list = [s.upper() for s in "Hello World"]
 print(new_list)
@@ -299,7 +294,7 @@ print(new_list)
 # ['aBefiltuu', 'is', 'beertt', 'ahnt', 'gluy']
 ```
 
-```
+```python
 # create a list of characters in apple, replacing non vowels with '*'
 
 # Ex - 'apple' --> ['a', '*', '*', '*' ,'e']
@@ -313,7 +308,7 @@ print(new_list)
 #['a', '*', '*', '*', 'e']
 ```
 
-```
+```python
 # Double Iteration
 
 def foo(i):
@@ -336,7 +331,7 @@ print(new) # ['0', '0.5', '1', '1.5', '2', '2.5']
 
 ## Nested List Comprehensions
 
-```
+```python
 # Nested List Comprehensions
 
 #List Comprehension with nested loop
@@ -397,7 +392,7 @@ alist = [[[1,2],[3,4]], [[5,6,7],[8,9,10], [12, 13, 14]]]
 
 ## any() & all()
 
-```
+```python
 # any and all
 
 # You can use all() to determine if all the values in an iterable evaluate to True
