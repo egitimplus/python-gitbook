@@ -327,7 +327,7 @@ juicer = fruit_juicer('apple')
 print(juicer) # I am apple juicer
 ```
 
-```
+```python
 def sum(a, b):
     return a + b
 
@@ -336,9 +336,9 @@ result = sum(3, 5)
 print(result) # 8
 ```
 
-```
+```python
 def sum_minus(a, b):
-    minus = a - b
+    minus = a - by
     sum = a + b
     return sum, minus
 
@@ -349,7 +349,7 @@ sum, min = sum_minus(6, 2)
 print(sum, min) # 8 4
 ```
 
-```
+```python
 def function(number):
     if number > 5:
         return True
@@ -359,7 +359,7 @@ def function(number):
 print(function(3)) # False
 ```
 
-```
+```python
 def function(number):
     if number > 5:
         return True
@@ -369,7 +369,7 @@ def function(number):
 print(function(3)) # False
 ```
 
-```
+```python
 def function(number):   
     return number > 5
 
@@ -447,7 +447,7 @@ print(x)        # 1
 
 ### Alıştırmalar
 
-```
+```python
 foo = 1
 
 def func():
@@ -463,7 +463,7 @@ dict_keys(['bar'])
 '''
 ```
 
-```
+```python
 foo = 1
 def func():
     foo = 2 # creates a new variable foo in local scope, global foo is not affected
@@ -479,7 +479,7 @@ func()
 # 2
 ```
 
-```
+```python
 foo = 1
 def func():
     global foo
@@ -489,7 +489,7 @@ func()
 print(foo) # 2
 ```
 
-```
+```python
 '''
 The scope is defined for the whole body of the function!
 What it means is that a variable will never be global for a half of the function and local afterwards, or vice-versa.
@@ -507,7 +507,7 @@ func()
 # UnboundLocalError: local variable 'foo' referenced before assignment
 ```
 
-```
+```python
 foo = 1
 def func():
     # In this function, foo is a global variable from the beginning
