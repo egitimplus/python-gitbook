@@ -50,7 +50,7 @@
   * [Örnekler](konular/veri-yapilari/list/oernekler-1.md)
   * [Demet](konular/veri-yapilari/tuple/README.md)
   * [Küme](konular/veri-yapilari/set/README.md)
-  * [Sözlük](konular/veri-yapilari/soezluek.md)
+  * [Sözlük](konular/veri-yapilari/dictionary/README.md)
   * [Kolleksiyonlar](konular/veri-yapilari/kolleksiyonlar.md)
   * [Array](konular/veri-yapilari/array.md)
 * [Fonksiyonlar (Advanced)](konular/fonksiyonlar-advanced.md)
