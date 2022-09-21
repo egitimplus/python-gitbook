@@ -42,6 +42,13 @@ Listenin eleman sayısı için len() fonksiyonu kullanılır.
 print(len(my_list)) # 3
 ```
 
+Listede bir elemanın olup olmadığını kontrol etmek için «in» kullanılır.
+
+```python
+if 'Newyork' in my_list:
+    pass
+```
+
 ## Index ve Dilimleme
 
 Listenin elemanlarına index ile ulaşılabilir. Index aynı stringlerde olduğu gibi sıfırdan başlar.
@@ -432,5 +439,16 @@ vals = [1, 2, 3, 4]
 print(any(val > 12 for val in vals)) # False
 
 print(any((val * 2) > 6 for val in vals)) # True
+
+```
+
+## min(), max(), sum()
+
+```python
+vals = [1, 4, 12, 5]
+
+print(max(vals)) # 12
+print(min(vals)) # 1
+print(sum(vals)) # 22
 
 ```
