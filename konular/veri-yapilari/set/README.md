@@ -93,6 +93,8 @@ difference         v -= t                   difference_update
 
 ### Kesişim
 
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 ```python
 s1 = {1, 2, 3, 4}
 s2 = {3, 4, 5}
@@ -107,6 +109,8 @@ s1.intersection_update(s2)
 
 ### Birleşim
 
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 ```python
 s3 = s1.union(s2) 
 s3 = s1 | s2 
@@ -117,6 +121,8 @@ s1.update(s2)
 ```
 
 ### Fark
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ```
 s3 = s1.difference(s2) 
@@ -129,6 +135,8 @@ s1.difference_update(s2)
 
 ### Simetrik Fark
 
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ```python
 s3 = s1.symmetric_difference(s2) 
 s3 = s1 ^ s2 
@@ -137,6 +145,8 @@ s3 = s1 ^ s2
 ```
 
 ### Üst Küme
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 s3 = {1, 2}
@@ -148,6 +158,8 @@ s1 >= s3
 
 ### Alt Küme
 
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 ```python
 s3.issubset(s1) 
 s3 <= s1
@@ -155,6 +167,8 @@ s3 <= s1
 ```
 
 ### Ayrık Küme
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 s4 = {3, 4}

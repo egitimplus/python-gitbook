@@ -4,15 +4,13 @@ description: >-
   (duplicate)
 ---
 
-# List
+# Liste
 
 * Sıralanabilir (ordered) : Öğelerin belirli bir sıraya sahip olduğu ve bu sıranın değişmeyeceği anlamına gelir. İndexler ile istenilen öğeye ulaşılabilir.
 * Değiştirilebilir (mutable) : Listeler oluşturulduktan sonra elemanları değiştirilebilir, yeni eleman eklenebilir ve elemanlar silinebilir.
 * Tekrarlanabilir (duplicate) : Listelerde aynı elemanlardan birden fazla bulunabilir.
 
 ## Oluşturma
-
-
 
 Liste oluşturmak için list() veya \[] kullanılır.
 
@@ -72,8 +70,6 @@ print('Newyork' in my_list) # False
 ```
 
 ## Ekleme ve Güncelleme
-
-
 
 Listede bir elemanın değerini değiştirmek için bulunduğu indexe yeni değer atanır.
 

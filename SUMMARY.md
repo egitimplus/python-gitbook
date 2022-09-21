@@ -40,7 +40,7 @@
 * [Alıştırmalar](konular/alistirmalar.md)
 * [Test](<konular/test (1).md>)
 * [Veri Yapıları](konular/veri-yapilari/README.md)
-  * [Liste](konular/veri-yapilari/liste.md)
+  * [Liste](konular/veri-yapilari/list/README.md)
   * [Demet](konular/veri-yapilari/tuple/README.md)
   * [Küme](konular/veri-yapilari/set/README.md)
   * [Sözlük](konular/veri-yapilari/dictionary/README.md)
