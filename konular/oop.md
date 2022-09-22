@@ -24,7 +24,7 @@ Gerçek dünyadaki nesnelerin (objects) özellikleri ve davranışları sınıfl
 
 Özellikler (attributes) isim, soyisim, yaş gibi kullanacağımız bilgileri saklamaktadır.  Davranışlar (methods) ise, kullanıcı kaydı, iki sayısının toplamı gibi bir görevi yerine getiren fonksiyonlardır&#x20;
 
-### Sınıf oluşturma
+**Sınıf oluşturma**
 
 ```python
 class Employee:
@@ -34,7 +34,7 @@ class Employee:
 
 ## Objects (Nesne)
 
-### Nesne oluşturma
+Nesne oluşturma
 
 Python'da her şey nesnedir. Tam sayılar, ondalık sayılar, dizeler, sözlükler her şey nesnedir. 12 sayısı bir nesnedir veya "Merhaba Dünya" dizesi bir nesnedir.&#x20;
 
