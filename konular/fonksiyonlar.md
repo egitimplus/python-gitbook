@@ -23,7 +23,7 @@ Fonksiyonlar def ile tanımlanır.
 ```python
 def fruit_juicer():
     """
-    function description : docstring
+    function description
     """
     print('I am fruit juicer')
 ```
