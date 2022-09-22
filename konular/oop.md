@@ -1,5 +1,14 @@
 # OOP
 
+Main Concepts of Object-Oriented Programming (OOPs)&#x20;
+
+Class \
+Objects \
+Polymorphism \
+Encapsulation \
+Inheritance \
+Data Abstraction
+
 ## sınıf oluşturma
 
 ```python
