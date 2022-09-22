@@ -1,6 +1,6 @@
 # OOP
 
-## class
+## sınıf oluşturma
 
 ## instance
 
