@@ -34,7 +34,7 @@ class Employee:
 
 ## Objects (Nesne)
 
-Nesne oluşturma
+**Nesne oluşturma**
 
 Python'da her şey nesnedir. Tam sayılar, ondalık sayılar, dizeler, sözlükler her şey nesnedir. 12 sayısı bir nesnedir veya "Merhaba Dünya" dizesi bir nesnedir.&#x20;
 
