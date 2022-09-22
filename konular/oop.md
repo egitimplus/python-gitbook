@@ -12,4 +12,6 @@
 
 ## polymorphism
 
+## encapsulation
+
 ## dunder (magic) methods
