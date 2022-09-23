@@ -157,7 +157,7 @@ print(ja.name, ja.age) # Ja 3
 
 Metotları kullanarak bir nesnenin fonksiyonlarını uygulayabilirsiniz.
 
-```
+```python
 class Dog:
     # class attribute
     species = 'Canis familiaris'
@@ -171,22 +171,195 @@ class Dog:
         # print('hau hau')
         return 'hau hau'
 
+rich = Dog(name='Rich', age=5)
+print(rich.speak())  # hau hau
+```
+
+```python
+class Dog:
+    # class attribute
+    species = 'Canis familiaris'
+    
+    def __init__(self, name, age):
+        self.name = name  # instance attribute
+        self.age = age    # instance attribute
+    
+    # instance method
+    def speak(self, times=2):
+        return ' '.join(['hau' for t in range(times)])
+ 
+rich = Dog(name='Rich', age=5)
+print(rich.speak(3))  # hau hau hau
 ```
 
 **static methods**
 
 Şimdiye kadar yöntemleri çağırmak için bir sınıfın nesnelerini kullandım, ancak doğrudan sınıf adı kullanılarak çağrılabilen statik bir yöntem olan başka bir yöntem türü daha var. Statik yöntemler yalnızca sınıf özelliklerine erişebilir.
 
+```python
+class Dog:
+    # class attribute
+    species = 'Canis familiaris'
+    
+    @staticmethod
+    def get_static_method():
+        message = "This is static methods. Dont have self parameter"
+        print (message)
+        
+Dog.get_static_method() # This is static methods. Dont have self parameter
+
+rich = Dog()
+rich.get_static_method() # This is static methods. Dont have self parame
+```
+
+**class methods**
+
 ```
 // Some code
 ```
 
-##
+**global & local**
+
+Bir sınıfın niteliklerine de değişkenler denir. İki tür değişken vardır: yerel ve küresel. Bir sınıftaki yerel değişkenler, yalnızca tanımlandığı yöntemin içinden erişilebilen değişkenlerdir. Bu nedenle, get\_static\_method() yönteminin içindeki bir mesaj değişkenine erişemezsiniz. Erişmeye çalıştığınızda aşağıdaki örnekte görüldüğü gibi AttributeError veriyor.
+
+```python
+rich = Dog()
+rich.message # AttributeError: 'Dog' object has no attribute 'message'
+```
+
+Global değişkenler herhangi bir metodun dışında tanımlanır ve herhangi bir yerden erişilebilirler.
+
+```
+rich.species # Canis familiaris
+```
+
+## encapsulation
+
+Nesne yönelimli programlamada üç ana kavram vardır: Kapsülleme, Kalıtım ve Polimorfizm. Kapsülleme, veri gizleme anlamına gelir. OOP'de, bir sınıfın diğer sınıfın verilerine doğrudan erişimi olmamalı veya erişim, örnek yöntemlerle kontrol edilmelidir. Sınıf verilerine erişimi kontrol etmek için özel değişkenleri ve özellikleri kullanabilirsiniz. Özel bir değişken tanımlamak için değişken adının önüne iki alt çizgi koyabilirsiniz. Örneğin, \_\_age özel bir değişkendir. Aşağıdaki kodda gösterildiği gibi bu mantığı uygulayan age özniteliği için bir özellik oluşturabilirsiniz. Bir mülkün üç bölümü vardır. Aşağıdaki örnekte age olan özniteliği tanımlamanız gerekir. Ardından, @property dekoratörünü kullanarak özniteliğin özelliğini tanımlamanız gerekir. Son olarak, aşağıdaki örnekte @age.setter tanımlayıcısı olan bir özellik ayarlayıcı oluşturmalısınız. Çalışanların yaşının her zaman 18 - 99 arasında olması gerektiğini söyleyebilirsiniz. Bir kullanıcı yaş özniteliği için 18'den küçük veya 99'dan büyük bir değer girmeye çalışırsa, bir hata vardır ve Employee sınıfından bir nesne oluşturulamaz. . Ancak değer 18 - 99 arasındaysa bir nesne oluşturulabilir.
+
+```
+class Employee:
+
+    #class attributes
+    status = "active"
+    number_of_employee = 0
+
+    def __init__(self, employee_id, name, age):
+        self.employee_id = employee_id #instance attribute
+        self.name = name #instance attribute
+        self.age = age #instance attribute
+        Employee.number_of_employee += 1
+
+
+    # Creates model property
+    @property
+    def age(self):
+        return self.__age
+
+    # Create property setter
+    @age.setter
+    def age(self, age):
+        if age < 18:
+            raise Exception('An Employee\'s age cannot be lower than 18')
+        elif age > 99:
+            raise Exception('An Employee\'s age cannot be upper than 99')
+        else:
+            self.__age = age
+
+
+    #instance method
+    def give_info(self):
+        print("Name:",self.name,"\nID:",self.employee_id)
+
+    @staticmethod
+    def get_class_objective():
+        message = "The objective of this Employee class is to organize employee information with more modular manner"
+        print (message)
+        
+child = Employee("103", "Eric Cartman", 12)
+# Exception: An Employee's age cannot be lower than 18
+
+```
 
 ## inheritance
 
+OOP'deki kalıtım, bir çocuğun kendi benzersiz özelliklerine ek olarak ebeveynlerinden bazı özellikleri miras aldığı gerçek dünya mirasına benzer. Başka bir sınıfı miras alan sınıfa alt sınıf, başka bir sınıf tarafından miras alınan sınıfa ise üst sınıf denir. Aşağıdaki kod, bir kalıtım örneği gösterir.
+
+```
+# Create Class Manager that inherits Employee
+class Manager(Employee):
+
+    def set_team_size(self, team_size):
+        self.team_size = team_size
+```
+
+Önceki örnekte, Employee sınıfını miras alan bir Manager sınıfı oluşturuyorum. Bir sınıfı miras almak için, alt sınıf adından sonra gelen parantez içine üst sınıf adını yazmalısınız. Manager sınıfı, aşağıdaki örnekte gösterildiği gibi, ana Employee sınıfının tüm özniteliklerine ve yöntemlerine erişebilir.
+
+```
+muge = Manager("104", "Müge Özkan", 30)
+
+muge.name
+muge.status
+muge.get_class_objective()
+```
+
+Manager sınıfının, Employee sınıfının yöntem ve niteliklerine ek olarak kendi set\_team\_size() yöntemi de vardır. Manager sınıfının nesnesinin takım boyutunu aşağıdaki örnekte olduğu gibi ayarlayabilirsiniz. Bir yan not olarak, bir sınıfın ikiden fazla ebeveyn veya alt sınıfı olabilir.
+
+```
+muge.set_team_size(10)
+muge.team_size
+```
+
 ## polymorphism
 
-## encapsulation
+Polimorfizm, bir nesnenin farklı şekillerde hareket etme yeteneğini ifade eder. İki tür polimorfizm vardır: yöntem geçersiz kılma ve yöntem aşırı yükleme.
+
+### Method overriding
+
+Yöntem geçersiz kılma, alt sınıfta üst sınıfta olduğu gibi aynı ada sahip bir yönteme sahip olmak anlamına gelir. Bu tür yöntemlerin tanımları ebeveyn ve alt sınıflarda farklıdır, ancak ad aynı kalır. Hatırlarsanız, Employee sınıfında bir give\_info() yöntemimiz vardı. Yönetici nesneleri hakkında takım boyutu bilgisi vermek için alt Yönetici sınıfında bu yöntemi geçersiz kılabiliriz.
+
+```
+class Manager(Employee):
+
+    team_size = 10
+
+    def set_team_size(self, team_size):
+        self.team_size = team_size
+
+    def give_info(self):
+        print("Name:",self.name,"\nID:",self.employee_id,"\nTeam Size:",self.team_size)
+        
+muge = Manager("104", "Müge Özkan", 30)
+muge.give_info()
+```
+
+Önceki örnekte gördüğünüz gibi, give\_info() yöntemi hem ebeveyn hem de alt sınıflar aracılığıyla çağrılmaktadır, ancak alt sınıf, üst sınıfın yöntemini geçersiz kıldığından farklı davranırlar.
+
+### Method overloading <a href="#method-overriding" id="method-overriding"></a>
+
+Bu tür yöntemleri çağırırken argümanların sayısını veya türlerini değiştirerek herhangi bir yöntemi aşırı yükleyebilirsiniz ve yöntemler farklı davranır. Aşağıdaki örnekte, hesapla\_salary() yöntemini bir argümanla çağırırsak, o argümanı döndürür. Ancak, bu yöntemi iki argümanla çağırırsak, iki argümanın bir toplamını döndürür.
+
+```
+class Manager(Employee):
+
+    team_size = 10
+
+    def set_team_size(self, team_size):
+        self.team_size = team_size
+
+    def give_info(self):
+        print("Name:",self.name,"\nID:",self.employee_id,"\nTeam Size:",self.team_size)
+
+    def calculate_salary(self, salary, bonus=None):
+        if bonus is not None:
+            salary += bonus
+        return salary
+```
+
+```python
+muge = Manager("104", "Müge Özkan", 30)
+muge.calculate_salary(12345) 
+muge.calculate_salary(12345, 678)
+```
 
 ## dunder (magic) methods
