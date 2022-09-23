@@ -18,13 +18,19 @@ Nesne Yönelimli Programlamada 4 temel özellik vardır. Bu özelliklerden birin
 **Çok Biçimlilik:** Alt sınıflar üst sınıfın gösterdiği davranışları göstermek zorunda değildir. Alt sınıfların farklı davranışları göstermesine Çok biçimlilik denilmektedir.\
 
 
+Python'da her şey bir nesnedir. Örneğin, string ve list Python nesneleridir. Sınıf, nesneler oluşturmak için bir plan gibidir. Modüler yapısı nedeniyle OOP teknikleri kullanılarak yazılan kodun bakımı kolaydır. OOP'de kullanılan kapsülleme yaklaşımı ile programlar daha güvenlidir.
+
 ## Class (Sınıf)
+
+OOP'deki bir sınıf, nesneler için bir plan gibidir ve OOP kullanarak kendi veri yapınızı geliştirebilirsiniz. Örneğin, çalışanla ilgili ad veya maaş gibi özellikleri izlemek için bir Çalışan sınıfı oluşturabilirsiniz.
 
 Gerçek dünyadaki nesnelerin (objects) özellikleri ve davranışları sınıflara aktarılır. Bu durumların sınıflara aktarılması metodlar yardımıyla olur. Sınıfta tanımlanan metot ve değişkenlere sınıfın üyeleri denir.&#x20;
 
 Özellikler (attributes) isim, soyisim, yaş gibi kullanacağımız bilgileri saklamaktadır.  Davranışlar (methods) ise, kullanıcı kaydı, iki sayısının toplamı gibi bir görevi yerine getiren fonksiyonlardır&#x20;
 
 **Sınıf oluşturma**
+
+Python'da class oluşturmak için class anahtar sözcüğü kullanılır. Sınıf adı, sınıf anahtar sözcüğünü ve ardından iki nokta üst üste işareti izler. Sınıfın gövdesi yeni bir satırda başlar ve class anahtar sözcüğünden bir sekme girintilidir.
 
 ```python
 class Employee:
@@ -34,11 +40,22 @@ class Employee:
 
 ## Objects (Nesne)
 
-**Nesne oluşturma**
+Daha önce de söylediğim gibi, bir sınıf, nesneler oluşturmak için bir plan gibidir. Yöntemlerini ve niteliklerini kullanmadan önce bir sınıfın nesnesini oluşturmamız gerekir.
 
 Python'da her şey nesnedir. Tam sayılar, ondalık sayılar, dizeler, sözlükler her şey nesnedir. 12 sayısı bir nesnedir veya "Merhaba Dünya" dizesi bir nesnedir.&#x20;
 
 İçinde veri saklayan ve bu veriler üzerinde işlem yapacak olan metodlar bulunduran bileşenlerdir.  Nesne oluşturduğumuzda hafızada yer kaplar.
+
+**Nesne oluşturma**
+
+Bir nesne aynı zamanda bir örnek olarak da adlandırılır. Bu nedenle, bir sınıfın nesnesini oluşturma işlemine örnekleme denir. Python'da bir sınıfın nesnesini oluşturmak için sınıf adını yazmanız ve ardından parantez açıp kapatmanız gerekir.
+
+```
+obj_1 = Dog()
+print(type(obj_1) # __main__.Dog
+```
+
+Nesnenin türünü kontrol etmek için type yöntemini kullanabilirim. Aşağıdaki örnekte gördüğünüz gibi emre nesnesinin türü bir Çalışan sınıfıdır.
 
 Nesnelerimizin hafızada tuttuklerı adresler farkı
 
@@ -60,19 +77,31 @@ obj\_1 ve obj\_2 Dog() sınıfının örnekleri olsa da bellekte iki farklı nes
 
 ## Attributes (Özellikler)
 
+
+
 Sınıflarımızın özellikleri olur. Dog sınıfını düşünürsek bunlar ne olabilir ? ismi, yaşı özelliklerine örnek verilebilir.
 
 ```python
 class Dog:
     name = 'Rich'
     age = 5
-    
+```
+
+Bir nesnenin tüm niteliklerini ve yöntemlerini görmek için yerleşik dir() işlevini kullanabilirsiniz. Python'da bazı yerleşik nitelikler ve yöntemler vardır. Aşağıdaki örnek, emre nesnesinin tüm niteliklerini ve yöntemlerini gösterir. Önünde çift alt çizgi bulunan örnekler, yerleşik nitelikler ve yöntemlerdir.
+
+```python
+obj_1 = Dog()
+print(dir(obj_1))
+```
+
+Sınıfın nesnesini kullanarak sınıf ve örnek niteliklerine erişebilir ve bir örnek yöntemini çağırabilirsiniz. Bunu yapmak için, nesne adını, ardından nokta (.) operatörünü ve erişmek veya çağırmak istediğiniz özniteliğin veya yöntemin adını yazmanız gerekir.&#x20;
+
+```python
 rich = Dog()
 print(rich.name, rich.age) # Rich 5
 
 ja = Dog()
-print(ja .name, ja.age) # Rich 5
-
+print(ja .name, ja.age) # Rich 5class Dog:
 ```
 
 ```python
@@ -84,6 +113,8 @@ class Car:
     # class attributes
     classification = 'Vehicle'
 ```
+
+Constructur (yapıcı), bir sınıftan bir nesne oluşturduğunuzda varsayılan olarak çağrılan bir yöntemdir. Bir yapıcı oluşturmak için init anahtar kelimesiyle bir yöntem oluşturmalısınız.&#x20;
 
 ```python
 class Dog:
