@@ -1,24 +1,8 @@
 # OOP
 
-Nesne yönelikli programlamaya örnek verecek olursak gerçek hayatta gördüğümüz araba, radyo, bina… gibi nesnelerin bilgisayar ortamına aktarılmasına denir.
+Nesne tabanlı programlama bir yazılım geliştirme yöntemidir. Nesne yönelikli programlamaya örnek verecek olursak gerçek hayatta gördüğümüz araba, radyo, bina… gibi nesnelerin bilgisayar ortamına aktarılmasına denir.
 
-Nesne Yönelimli Programlamada 4 temel özellik vardır. Bu özelliklerden birini sağlamayan programlama dili nesne yönelimli programlama dili olarak sayılmaz.
-
-1.) Soyutlama (Abstraction)\
-2.) Kapsülleme (Encapsulation)\
-3.) Miras Alma (Inheritance)\
-4.) Çok biçimlilik (Polymorphism)
-
-**Soyutlama:** Bir sınıfta davranış ve özelliklerin tanımlanmasına soyutlama diyoruz.
-
-**Kapsülleme:** Davranış ve özellikler sınıfta soyutlanarak kapsüllenir. Kapsülleme ile hangi özellik ve davranışın dışarıya sunulup sunulmayacağını belirleriz.
-
-**Kalıtım:** Sınıflar birbirinden türeyebilir. Alt sınıf üst sınıfın özelliklerini alabilir.
-
-**Çok Biçimlilik:** Alt sınıflar üst sınıfın gösterdiği davranışları göstermek zorunda değildir. Alt sınıfların farklı davranışları göstermesine Çok biçimlilik denilmektedir.\
-
-
-Python'da her şey bir nesnedir. Örneğin, string ve list Python nesneleridir. Sınıf, nesneler oluşturmak için bir plan gibidir. Modüler yapısı nedeniyle OOP teknikleri kullanılarak yazılan kodun bakımı kolaydır. OOP'de kullanılan kapsülleme yaklaşımı ile programlar daha güvenlidir.
+Python'da her şey bir nesnedir. Örneğin, string ve list Python nesneleridir. Sınıf, nesneler oluşturmak için bir plan gibidir.&#x20;
 
 ## Class (Sınıf)
 
@@ -33,8 +17,11 @@ Gerçek dünyadaki nesnelerin (objects) özellikleri ve davranışları sınıfl
 Python'da class oluşturmak için class anahtar sözcüğü kullanılır. Sınıf adı, sınıf anahtar sözcüğünü ve ardından iki nokta üst üste işareti izler. Sınıfın gövdesi yeni bir satırda başlar ve class anahtar sözcüğünden bir sekme girintilidir.
 
 ```python
-class Employee:
+class Car:
     '''This is a docstring. I have created a new class'''
+    pass
+    
+class Dog:
     pass
 ```
 
@@ -44,18 +31,24 @@ Daha önce de söylediğim gibi, bir sınıf, nesneler oluşturmak için bir pla
 
 Python'da her şey nesnedir. Tam sayılar, ondalık sayılar, dizeler, sözlükler her şey nesnedir. 12 sayısı bir nesnedir veya "Merhaba Dünya" dizesi bir nesnedir.&#x20;
 
-İçinde veri saklayan ve bu veriler üzerinde işlem yapacak olan metodlar bulunduran bileşenlerdir.  Nesne oluşturduğumuzda hafızada yer kaplar.
-
 **Nesne oluşturma**
+
+Bizim oluşturduğumuz Dog_()_ sınıfı bir genel kavram. Şöyle anlatalım bütün köpekler bir yaşı, boyu veya bir rengi var. Yani genel bir sınıflandırma yapıyoruz. Ama siz bu köpeğin rengini, yaşını, boyunu bilemezsiniz. Çünkü _Dog()_ sınıfı bir soyut kavram. Bu yüzden soyut bir kavramın özelliklerini bilemezsiniz. Ama eğer yaşı 25, rengi beyaz gibi özelliklerini belirttiğiniz zaman siz o sınıfı somutlaştırmış bir nesne(object) oluşturmuş olursunuz.
 
 Bir nesne aynı zamanda bir örnek olarak da adlandırılır. Bu nedenle, bir sınıfın nesnesini oluşturma işlemine örnekleme denir. Python'da bir sınıfın nesnesini oluşturmak için sınıf adını yazmanız ve ardından parantez açıp kapatmanız gerekir.
 
-```
+```python
 obj_1 = Dog()
-print(type(obj_1) # __main__.Dog
+
+obj_1.age = 25
+obj_1.color = 'white'
 ```
 
-Nesnenin türünü kontrol etmek için type yöntemini kullanabilirim. Aşağıdaki örnekte gördüğünüz gibi emre nesnesinin türü bir Çalışan sınıfıdır.
+Nesnenin türünü kontrol etmek için type yöntemini kullanabilirim. Aşağıdaki örnekte gördüğünüz gibi emre nesnesinin türü bir Dog sınıfıdır.
+
+```
+print(type(obj_1) # __main__.Dog
+```
 
 Nesnelerimizin hafızada tuttuklerı adresler farkı
 
@@ -76,8 +69,6 @@ print(obj_1 == obj_2) # False
 obj\_1 ve obj\_2 Dog() sınıfının örnekleri olsa da bellekte iki farklı nesneyi temsil ederler. Oluşturduğumuz nesneye instance'da denir. Sınıfın örnekleri!
 
 ## Attributes (Özellikler)
-
-
 
 Sınıflarımızın özellikleri olur. Dog sınıfını düşünürsek bunlar ne olabilir ? ismi, yaşı özelliklerine örnek verilebilir.
 
@@ -233,81 +224,156 @@ Global değişkenler herhangi bir metodun dışında tanımlanır ve herhangi bi
 rich.species # Canis familiaris
 ```
 
-## encapsulation
+## Encapsulation (Kapsülleme)
 
-Nesne yönelimli programlamada üç ana kavram vardır: Kapsülleme, Kalıtım ve Polimorfizm. Kapsülleme, veri gizleme anlamına gelir. OOP'de, bir sınıfın diğer sınıfın verilerine doğrudan erişimi olmamalı veya erişim, örnek yöntemlerle kontrol edilmelidir. Sınıf verilerine erişimi kontrol etmek için özel değişkenleri ve özellikleri kullanabilirsiniz. Özel bir değişken tanımlamak için değişken adının önüne iki alt çizgi koyabilirsiniz. Örneğin, \_\_age özel bir değişkendir. Aşağıdaki kodda gösterildiği gibi bu mantığı uygulayan age özniteliği için bir özellik oluşturabilirsiniz. Bir mülkün üç bölümü vardır. Aşağıdaki örnekte age olan özniteliği tanımlamanız gerekir. Ardından, @property dekoratörünü kullanarak özniteliğin özelliğini tanımlamanız gerekir. Son olarak, aşağıdaki örnekte @age.setter tanımlayıcısı olan bir özellik ayarlayıcı oluşturmalısınız. Çalışanların yaşının her zaman 18 - 99 arasında olması gerektiğini söyleyebilirsiniz. Bir kullanıcı yaş özniteliği için 18'den küçük veya 99'dan büyük bir değer girmeye çalışırsa, bir hata vardır ve Employee sınıfından bir nesne oluşturulamaz. . Ancak değer 18 - 99 arasındaysa bir nesne oluşturulabilir.
+Kapsülleme, veri gizleme anlamına gelir. OOP'de, bir sınıfın diğer sınıfın verilerine doğrudan erişimi olmamalı veya erişim kontrol edilmelidir. Sınıf verilerine erişimi kontrol etmek için özel (private) değişkenleri ve özellikleri kullanabilirsiniz.&#x20;
 
+yaş değişkenine ulaşabiliyor ve değiştirebiliyoruz.&#x20;
+
+```python
+class Dog:
+    
+    def __init__(self, name, age):
+        self.name = name  # instance attribute
+        self.age = age    # instance attribute
+
+
+rich = Dog(name='Rich', age=5)
+print(rich.age) # 5
+
+rich.age = 15
+print(rich.age) # 15
 ```
-class Employee:
 
-    #class attributes
-    status = "active"
-    number_of_employee = 0
+Private (özel) bir değişken tanımlamak için değişken adının önüne iki alt çizgi koyabilirsiniz. Örneğin, \_\_age özel bir değişkendir. Yaş değişkenine ulaşmak istediğimizde hata ile karşılaştık. Artık bu değişkenlere sadece sınıf içerisinden ulaşılabilir.
 
-    def __init__(self, employee_id, name, age):
-        self.employee_id = employee_id #instance attribute
-        self.name = name #instance attribute
-        self.age = age #instance attribute
-        Employee.number_of_employee += 1
-
-
-    # Creates model property
-    @property
-    def age(self):
-        return self.__age
-
-    # Create property setter
-    @age.setter
-    def age(self, age):
-        if age < 18:
-            raise Exception('An Employee\'s age cannot be lower than 18')
-        elif age > 99:
-            raise Exception('An Employee\'s age cannot be upper than 99')
-        else:
-            self.__age = age
-
-
-    #instance method
-    def give_info(self):
-        print("Name:",self.name,"\nID:",self.employee_id)
-
-    @staticmethod
-    def get_class_objective():
-        message = "The objective of this Employee class is to organize employee information with more modular manner"
-        print (message)
+```python
+class Dog:
+    
+    def __init__(self, name, age):
+        self.__name = name  # instance attribute
+        self.__age = age    # instance attribute
         
-child = Employee("103", "Eric Cartman", 12)
-# Exception: An Employee's age cannot be lower than 18
+rich = Dog(name='Rich', age=5)
 
+print(rich.age) # AttributeError: 'Dog' object has no attribute 'age'
 ```
 
-## inheritance
+Peki ben değer güncellemek istemiyorum ama okumak istiyorsam ne yapacağım ?
 
-OOP'deki kalıtım, bir çocuğun kendi benzersiz özelliklerine ek olarak ebeveynlerinden bazı özellikleri miras aldığı gerçek dünya mirasına benzer. Başka bir sınıfı miras alan sınıfa alt sınıf, başka bir sınıf tarafından miras alınan sınıfa ise üst sınıf denir. Aşağıdaki kod, bir kalıtım örneği gösterir.
+```python
+class Dog:
+    
+    def __init__(self, name, age):
+        self.__name = name  # instance attribute
+        self.__age = age    # instance attribute
+    
+    def get_age(self):
+        return self.__age
+        
+rich = Dog(name='Rich', age=5)
+print(rich.get_age()) # 5
+```
+
+Şimdi buna birde güncelleme için bir metod ekleyelim.
+
+```python
+class Dog:
+    
+    def __init__(self, name, age):
+        self.__name = name  # instance attribute
+        self.__age = age    # instance attribute
+    
+    def get_age(self):
+        return self.__age
+    
+    def set_age(self, age):
+        self.__age = age
+        
+rich = Dog(name='Rich', age=5)
+rich.set_age(15)
+print(rich.get_age()) # 15
+```
+
+setage kullandığımda değiştirebiliyorum. Böyle bir method kullanmamıza ne gerek vardı ? Çünkü daha öncesinde hiç bir kontrol yapmadan değişkeni değiştirebiliyordum. set\_age metodu ile birlikte artık değişiklik oldugunda log tutabilirim veya öncesinde validasyona tabi tutabilirim. Örnekte de görüldüğü gibi 20'den yüksek yaş girildiğinde artık kabul etmiyoruz.
+
+```python
+class Dog:
+    
+    def __init__(self, name, age):
+        self.__name = name  # instance attribute
+        self.__age = age    # instance attribute
+    
+    def get_age(self):
+        return self.__age
+    
+    def set_age(self, age):
+        if age > 20:
+            raise ValueError('Your dog age is too old')
+        self.__age = age
+        
+rich = Dog(name='Rich', age=5)
+rich.set_age(15)
+print(rich.get_age()) # 15
+```
+
+## Inheritance (Kalıtım)
+
+OOP'deki kalıtım, bir çocuğun kendi benzersiz özelliklerine ek olarak ebeveynlerinden bazı özellikleri miras aldığı gerçek dünya mirasına benzer. Başka bir sınıfı miras alan sınıfa alt sınıf, başka bir sınıf tarafından miras alınan sınıfa ise üst sınıf denir. Aşağıdaki kod, bir kalıtım örneği gösterir. Bir sınıfı miras almak için, alt sınıf adından sonra gelen parantez içine üst sınıf adını yazmalısınız.&#x20;
+
+```python
+# Create Class ShepherdDog that inherits Dog
+class ShepherdDog(Dog):
+    pass
+```
+
+ShepherdDog sınıfı, aşağıdaki örnekte gösterildiği gibi, ana Dog sınıfının tüm özniteliklerine ve yöntemlerine erişebilir.
+
+```python
+k9= ShepherdDog(name='K9', 3)
+
+print(k9.name) # K9
+```
+
+ShepherdDog sınıfının, Dog sınıfının yöntem ve niteliklerine ek olarak kendi özellik ve yöntemleri de olabilir.&#x20;
+
+```python
+class ShepherdDog(Dog):
+    
+    def certificate(self):
+        return 'method for shepherd dogs'
+        
+k9= ShepherdDog(name='K9', 3)
+
+print(k9.certificate()) # method for shepherd dogs
+```
+
+### Method overriding
+
+Yöntem geçersiz kılma, alt sınıfta üst sınıfta olduğu gibi aynı ada sahip bir yönteme sahip olmak anlamına gelir. Bu tür yöntemlerin tanımları ebeveyn ve alt sınıflarda farklıdır, ancak ad aynı kalır. Hatırlarsanız, Employee sınıfında bir give\_info() yöntemimiz vardı. Yönetici nesneleri hakkında takım boyutu bilgisi vermek için alt Yönetici sınıfında bu yöntemi geçersiz kılabiliriz.
 
 ```
-# Create Class Manager that inherits Employee
 class Manager(Employee):
+
+    team_size = 10
 
     def set_team_size(self, team_size):
         self.team_size = team_size
-```
 
-Önceki örnekte, Employee sınıfını miras alan bir Manager sınıfı oluşturuyorum. Bir sınıfı miras almak için, alt sınıf adından sonra gelen parantez içine üst sınıf adını yazmalısınız. Manager sınıfı, aşağıdaki örnekte gösterildiği gibi, ana Employee sınıfının tüm özniteliklerine ve yöntemlerine erişebilir.
-
-```
+    def give_info(self):
+        print("Name:",self.name,"\nID:",self.employee_id,"\nTeam Size:",self.team_size)
+        
 muge = Manager("104", "Müge Özkan", 30)
-
-muge.name
-muge.status
-muge.get_class_objective()
+muge.give_info()
 ```
 
-Manager sınıfının, Employee sınıfının yöntem ve niteliklerine ek olarak kendi set\_team\_size() yöntemi de vardır. Manager sınıfının nesnesinin takım boyutunu aşağıdaki örnekte olduğu gibi ayarlayabilirsiniz. Bir yan not olarak, bir sınıfın ikiden fazla ebeveyn veya alt sınıfı olabilir.
+Önceki örnekte gördüğünüz gibi, give\_info() yöntemi hem ebeveyn hem de alt sınıflar aracılığıyla çağrılmaktadır, ancak alt sınıf, üst sınıfın yöntemini geçersiz kıldığından farklı davranırlar.
+
+## Multi Inheritance (Çoklu Miras)
+
+Bir sınıfın ikiden fazla ebeveyn veya alt sınıfı olabilir.
 
 ```
-muge.set_team_size(10)
-muge.team_size
 ```
 
 ## polymorphism
