@@ -101,7 +101,7 @@ rich = Dog()
 print(rich.name, rich.age) # Rich 5
 
 ja = Dog()
-print(ja .name, ja.age) # Rich 5class Dog:
+print(ja.name, ja.age) # Rich 5class Dog:
 ```
 
 ```python
@@ -112,9 +112,27 @@ class Dog:
 class Car:
     # class attributes
     classification = 'Vehicle'
+
+print(Dog.species)    # Canis familiaris
+
+rich = Dog()
+print(rich.species)   # Canis familiaris 
 ```
 
+Sınıf ve örnek öznitelikleri olmak üzere iki tür öznitelik vardır. Sınıf özniteliklerinin değeri tüm nesnelerde aynıdır, ancak örnek özniteliklerinin değeri nesneler arasında değişebilir.&#x20;
+
 Constructur (yapıcı), bir sınıftan bir nesne oluşturduğunuzda varsayılan olarak çağrılan bir yöntemdir. Bir yapıcı oluşturmak için init anahtar kelimesiyle bir yöntem oluşturmalısınız.&#x20;
+
+```python
+class Dog:
+    # class attribute
+    species = 'Canis familiaris'
+    
+    def __init__(self, name, age):
+        pass
+```
+
+Örnek öznitelikleri herhangi bir yöntemin içinde, sınıf öznitelikleri ise yöntemlerin dışında bildirilir. Örnek öznitelikleri self anahtar sözcüğü kullanılarak, sınıf öznitelikleri ise yöntem içindeki sınıf adıyla başvurulur.
 
 ```python
 class Dog:
@@ -134,6 +152,36 @@ print(ja.name, ja.age) # Ja 3
 ```
 
 ## Methods (Davranışlar)
+
+**instance methods**
+
+Metotları kullanarak bir nesnenin fonksiyonlarını uygulayabilirsiniz.
+
+```
+class Dog:
+    # class attribute
+    species = 'Canis familiaris'
+    
+    def __init__(self, name, age):
+        self.name = name  # instance attribute
+        self.age = age    # instance attribute
+    
+    # instance method
+    def speak(self):
+        # print('hau hau')
+        return 'hau hau'
+
+```
+
+**static methods**
+
+Şimdiye kadar yöntemleri çağırmak için bir sınıfın nesnelerini kullandım, ancak doğrudan sınıf adı kullanılarak çağrılabilen statik bir yöntem olan başka bir yöntem türü daha var. Statik yöntemler yalnızca sınıf özelliklerine erişebilir.
+
+```
+// Some code
+```
+
+##
 
 ## inheritance
 
