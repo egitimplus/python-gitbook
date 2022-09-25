@@ -93,7 +93,7 @@ difference         v -= t                   difference_update
 
 ### Kesişim
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 s1 = {1, 2, 3, 4}
@@ -135,7 +135,7 @@ s1.difference_update(s2)
 
 ### Simetrik Fark
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 s3 = s1.symmetric_difference(s2) 
