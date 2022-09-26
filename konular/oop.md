@@ -37,27 +37,7 @@ Bizim oluşturduğumuz Dog_()_ sınıfı bir genel kavram. Şöyle anlatalım b�
 
 Bir nesne aynı zamanda bir örnek olarak da adlandırılır. Bu nedenle, bir sınıfın nesnesini oluşturma işlemine örnekleme denir. Python'da bir sınıfın nesnesini oluşturmak için sınıf adını yazmanız ve ardından parantez açıp kapatmanız gerekir.
 
-```python
-obj_1 = Dog()
-
-obj_1.age = 25
-obj_1.color = 'white'
-```
-
-Nesnenin türünü kontrol etmek için type yöntemini kullanabilirim. Aşağıdaki örnekte gördüğünüz gibi emre nesnesinin türü bir Dog sınıfıdır.
-
-```
-print(type(obj_1) # __main__.Dog
-```
-
 Nesnelerimizin hafızada tuttuklerı adresler farkı
-
-```python
-print(Dog()) # <__main__.Dog object at 0x106702d30>
-print(Dog()) # <__main__.Dog object at 0x0004ccc90>
-```
-
-Nesneleri değişkene atadığımızda&#x20;
 
 ```python
 obj_1 = Dog()
@@ -66,7 +46,21 @@ obj_2 = Dog()
 print(obj_1 == obj_2) # False
 ```
 
-obj\_1 ve obj\_2 Dog() sınıfının örnekleri olsa da bellekte iki farklı nesneyi temsil ederler. Oluşturduğumuz nesneye instance'da denir. Sınıfın örnekleri!
+Nesnenin türünü kontrol etmek için type yöntemini kullanabilirim. Aşağıdaki örnekte gördüğünüz gibi emre nesnesinin türü bir Dog sınıfıdır.
+
+```
+print(type(obj_1) # __main__.Dog
+```
+
+```python
+obj_1.age = 25
+obj_1.color = 'white'
+
+obj_2.age = 5
+obj_2.color = 'black'
+
+print(obj_1.age, obj_2.age)
+```
 
 ## Attributes (Özellikler)
 
