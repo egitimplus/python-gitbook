@@ -32,3 +32,20 @@ def find_duplicates(data):
 print(find_duplicates(data))
 # Output: ['paris', 'newyork']
 ```
+
+İki listedeki aynı olan elemanları yazdıran fonksiyon
+
+```
+data1 = [1, 2, 5, 10]
+data2 = [2, 4, 10, 20]
+
+def same_items(data1, data2):
+    new = []
+    for item in data1:
+        if item in data2:
+            new.append(item)
+
+    return new
+
+same_items(data1, data2)
+```
