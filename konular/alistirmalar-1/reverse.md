@@ -31,3 +31,16 @@ def my_avg(*numbers):
 
 my_avg(3,5,7,10) 
 ```
+
+Palindrome
+
+```python
+def palindrome(word):
+    if word == word[::-1]:
+        return True
+
+    return False
+
+print(palindrome('kabak'))
+# Output: True
+```

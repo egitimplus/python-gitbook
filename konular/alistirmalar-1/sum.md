@@ -71,3 +71,17 @@ def sum_numbers(data):
 print(sum_numbers(numbers)) 
 # Output : 41
 ```
+
+Bir fonksiyona gönderilen sayıların toplamını ve benzersiz olanlarının toplamına bölen ve döndüren fonksiyon.
+
+```python
+def sum_uniques(*numbers):
+    unique_sum = 0
+    for number in numbers:
+        if numbers.count(number) == 1:
+            unique_sum += number
+
+    return unique_sum / sum(numbers)
+        
+sum_uniques(50, 20, 30, 50)
+```

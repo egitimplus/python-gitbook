@@ -56,6 +56,8 @@
   * [Flatten](konular/alistirmalar-1/flatten.md)
   * [Others](konular/alistirmalar-1/others.md)
   * [Reverse](konular/alistirmalar-1/reverse.md)
+  * [Text](konular/alistirmalar-1/text.md)
+  * [Auth](konular/alistirmalar-1/auth.md)
 * [Örnekler](konular/oernekler.md)
 * [Örnekler](konular/oernekler-1.md)
 * [Örnekler](konular/oernekler-2.md)
