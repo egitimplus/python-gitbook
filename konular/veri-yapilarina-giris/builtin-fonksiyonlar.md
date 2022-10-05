@@ -4,7 +4,7 @@
 
 type() fonksiyonu içine yazılan değişkenin veya ifadenin veri tipini dönderir.
 
-```
+```python
 number = 5
 print(type(number)) # <class 'int'>
 
@@ -21,7 +21,7 @@ print(type(string )) # <class 'str'>len()
 
 len() fonksiyonu içerisine gönderilen ifadenin uzunluğunu dönderir.
 
-```
+```python
 text = '24123213'
 print(len(text))   # 8
 
@@ -31,7 +31,7 @@ print(len(number)) # TypeError: object of type 'int' has no len()
 
 ## dir()
 
-```
+```python
 print(dir('Hello'))
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', 
 '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', 
@@ -59,6 +59,16 @@ print(dir(sayi))
 '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', 
 '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 
 'real', 'to_bytes']
+'''
+```
+
+```python
+print(dir(__builtins__))
+
+'''
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 
+ ...
+'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
 '''
 ```
 

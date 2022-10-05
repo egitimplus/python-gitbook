@@ -52,6 +52,17 @@ fruit_juicer()
 '''
 ```
 
+```python
+"""This is the module docstring."""
+
+def say_hi():
+    """This is the function docstring."""
+    print('Hi')
+    
+print(func.__doc__)
+print(help(func))
+```
+
 ## Fonksiyon Çağırma
 
 ```python

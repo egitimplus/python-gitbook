@@ -53,6 +53,34 @@ Sonucu belirlemek için değerlendirilmesi gerekmeyen ifadeler değerlendirilmez
 0 and print('Hello World') # 0
 ```
 
+```python
+def true_func():
+    print("true_func()")
+    return True
+
+def false_func():
+    print("false_func()")
+    return False
+
+print(true_func() or false_func())
+# true_func()
+# True
+
+print(false_func() or true_func())
+# false_func()
+# true_func()
+# True
+
+print(true_func() and false_func())
+# true_func()
+# false_func()
+# False
+
+print(false_func() and false_func())
+# false_func()
+# False
+```
+
 ## bool()
 
 ```python

@@ -58,6 +58,7 @@
   * [Reverse](konular/alistirmalar-1/reverse.md)
   * [Text](konular/alistirmalar-1/text.md)
   * [Auth](konular/alistirmalar-1/auth.md)
+  * [Exponentiation](konular/alistirmalar-1/exponentiation.md)
 * [Örnekler](konular/oernekler.md)
 * [Örnekler](konular/oernekler-1.md)
 * [Örnekler](konular/oernekler-2.md)
@@ -69,3 +70,7 @@
 * [Web Scraping](konular/web-scraping.md)
 * [Algorithims](konular/algorithims.md)
 * [Design Patterns](konular/design-patterns.md)
+
+***
+
+* [Datetime](datetime.md)

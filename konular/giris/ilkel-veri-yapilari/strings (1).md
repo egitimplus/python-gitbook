@@ -17,6 +17,19 @@ print('2' + 4)
 # Output : Error: sayı ile string toplanırsa hata verir
 ```
 
+```python
+'''
+b'foo bar': bytes 
+u'foo bar':  str 
+'foo bar': str
+r'foo bar': results so called raw string, 
+'''
+normal = 'foo\nbar'     # foo
+                        # bar
+escaped = 'foo\\nbar'   # foo\nbar 
+raw = r'foo\nbar'       # foo\nbar
+```
+
 ## İndeksleme
 
 ```python
