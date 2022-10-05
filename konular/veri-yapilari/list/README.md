@@ -300,22 +300,21 @@ print(output)
 # Out: [1, 2, 3, 4, 5, 6]
 
 [element for each_list in data for element in each_list] # Out: [1, 2, 3, 4, 5, 6]
+```
 
+```python
 import timeit
 
 data = [[1,2],[3,4],[5,6]]
 
 # 1000000 loops, best of 3: 1.37 µs per loop
-def f():
-    output=[]
-    for each_list in data:
-        for element in each_list:
-            output.append(element)
-    return output
-
+output=[]
+for each_list in data:
+    for element in each_list:
+        output.append(element)
 
 # 1000000 loops, best of 3: 632 ns per loop
-[inner for outer in data for inner in outer]P
+[inner for outer in data for inner in outer]
 ```
 
 ## any() & all()
