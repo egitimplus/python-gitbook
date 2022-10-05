@@ -47,6 +47,7 @@
   * [Sözlük](konular/veri-yapilari/dictionary/README.md)
   * [Kolleksiyonlar](konular/veri-yapilari/kolleksiyonlar.md)
   * [Array](konular/veri-yapilari/array.md)
+* [Comprehensions](konular/comprehensions.md)
 * [Örnekler](konular/oernekler.md)
 * [Örnekler](konular/oernekler-1.md)
 * [Örnekler](konular/oernekler-2.md)
