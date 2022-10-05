@@ -158,40 +158,43 @@ print(my_list) # []
 
 ## Mutable & Immutable
 
-```
-# Be careful when placing mutable objects, such as lists, inside tuples. 
-# This may lead to very confusing outcomes when changing them. For example:
+Be careful when placing mutable objects, such as lists, inside tuples. This may lead to very confusing outcomes when changing them. Will both raise an error and change the contents of the list within the tuple. For example:
 
+```python
 t = (1, 2, 3, [1, 2, 3])
 t[3] += [4, 5]
-# Will both raise an error and change the contents of the list within the tuple:
+
 # TypeError: 'tuple' object does not support item assignment
 
-t # (1, 2, 3, [1, 2, 3, 4, 5])#
+print(t) # (1, 2, 3, [1, 2, 3, 4, 5])
 ```
 
 ## Kopyalama
 
+You can slice it:
+
 ```python
-# You can slice it:
 new_list = my_list[:]
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
+You can use the built in list() function:
+
 ```python
-# You can use the built in list() function:
 new_list = list(my_list)
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
+You can use the list copy() method:
+
 ```python
-new_list = my_list.copy()  # Returns a shallow copy of the lis
+new_list = my_list.copy()  # Returns a shallow copy of the list
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 ```
 
-```python
-# You can use copy module:
+You can use copy module:
 
+```python
 import copy
 new_list = copy.copy(my_list) #inserts references to the objects found in the original.
 print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
@@ -204,48 +207,49 @@ print(new_list) # ['Newyork', 3, 3.5, True, ['banana', 'orange']]
 
 ## Sıralama
 
-```python
-# sort() metodu ile listeleri sıralayabiliriz.
+sort() metodu ile listeleri sıralayabiliriz.
 
+```python
 my_list = ['orange', 'banana', 'apple', 'cherry']
+
 my_list.sort()
-print(my_list)
+print(my_list) # ['apple', 'banana', 'cherry', 'orange']
 
 my_list.sort(reverse=True)
-print(my_list)
-```
-
-```
-['apple', 'banana', 'cherry', 'orange']
-['orange', 'cherry', 'banana', 'apple']
+print(my_list) # ['orange', 'cherry', 'banana', 'apple']
 ```
 
 ## Karşılaştırma
 
-```python
-# Comparison of list
+Comparison of list
 
+```python
 [1, 10, 100] < [2, 10, 100]     # True, because 1 < 2
 [1, 10, 100] < [1, 10, 100]     # False, because the lists are equal
 [1, 10, 100] <= [1, 10, 100]    # True, because the lists are equal
 [1, 10, 100] < [1, 10, 101]     # True, because 100 < 101
 [1, 10, 100] < [0, 10, 100]     # False, because 0 < 1
 [1, 10] < [1, 10, 100]          # True, If one of the lists is contained at the start of the other, the shortest list wins.
-
 ```
 
 ## Metodlar
 
+### count
+
 ```python
 my_list = ['orange', 'banana', 'apple', 'cherry']
-
-# count
 print(my_list.count('orange')) # 1
+```
 
-# index
-print(my_list.index('orange')) # 0
+### index
 
-# reverse
+<pre class="language-python"><code class="lang-python"><strong>my_list = ['orange', 'banana', 'apple', 'cherry']
+</strong><strong>print(my_list.index('orange')) # 0</strong></code></pre>
+
+### reverse
+
+```python
+my_list = ['orange', 'banana', 'apple', 'cherry']
 
 print(list(reversed(my_list))) # ['cherry', 'apple', 'banana', 'orange']
 
@@ -257,8 +261,9 @@ print(my_list) # ['cherry', 'apple', 'banana', 'orange']
 
 ## Nested Lists
 
+Accessing values in nested list
+
 ```python
-# Accessing values in nested list
 alist = [[[1,2],[3,4]], [[5,6,7],[8,9,10], [12, 13, 14]]]
 
 # Accesses second element in the first list in the first list
@@ -268,8 +273,9 @@ print(alist[0][0][1]) #2
 print(alist[1][1][2]) #10
 ```
 
+Using nested for loops to print the list:
+
 ```python
-# Using nested for loops to print the list:
 for row in alist: #One way to loop through nested lists
     for col in row:
         print(col)
