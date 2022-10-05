@@ -94,6 +94,52 @@ for x, y in [(1,2), (3,4), (5,6)]:
 # Out: [(1, 2), (3, 4), (5, 6)]
 ```
 
+## Dict Comprehensions
+
+```python
+data = [1, 2, 3, 4, 4, 5, 5]
+new_dict = {}
+  
+for item in data:
+    if item % 2 != 0:
+        new_dict[item] = item ** 2
+
+print(new_dict) # {1: 1, 3: 9, 5: 25}
+
+new_dict = {item:item ** 2 for item in data if item % 2 != 0}
+
+print(new_dict) # {1: 1, 3: 9, 5: 25}
+
+
+
+data = {
+    'germany': 'berlin',
+    'greece': 'atina',
+    'turkey': 'ankara'
+}
+
+new_dict = {}
+for k,v in data.items():
+    new_dict[k[:3]] = v
+
+print(new_dict) # {'ger': 'berlin', 'gre': 'atina', 'tur': 'ankara'}
+
+
+new_dict = {k[:3]:v for k,v in data.items()}
+
+print(new_dict) # {'ger': 'berlin', 'gre': 'atina', 'tur': 'ankara'}
+
+# Merging Dictionaries
+dict1 = {'w': 1, 'x': 1}
+dict2 = {'x': 2, 'y': 2, 'z': 2}
+
+{k: v for d in [dict1, dict2] for k, v in d.items()} # Out: {'w': 1, 'x': 2, 'y': 2, 'z': 2}
+
+# Python 3.x Version ≥ 3.5
+
+{**dict1, **dict2} # Out: {'w': 1, 'x': 2, 'y': 2, 'z': 2}
+```
+
 ## Nested List Comprehensions
 
 ```python

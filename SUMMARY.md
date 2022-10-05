@@ -45,8 +45,6 @@
   * [Demet](konular/veri-yapilari/tuple/README.md)
   * [Küme](konular/veri-yapilari/set/README.md)
   * [Sözlük](konular/veri-yapilari/dictionary/README.md)
-  * [Kolleksiyonlar](konular/veri-yapilari/kolleksiyonlar.md)
-  * [Array](konular/veri-yapilari/array.md)
 * [Comprehensions](konular/comprehensions.md)
 * [Örnekler](konular/oernekler.md)
 * [Örnekler](konular/oernekler-1.md)
