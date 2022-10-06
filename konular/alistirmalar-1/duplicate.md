@@ -4,7 +4,9 @@
 data = ['paris', 'istanbul', 'newyork', 'paris', 'berlin', 'paris', 'newyork']
 ```
 
+{% hint style="info" %}
 The function should check if the list has any duplicates. If there are duplicates, the function should return the duplicates. If there are no duplicates, the function should return "no duplicates".
+{% endhint %}
 
 ```python
 def find_duplicates(data):
@@ -33,7 +35,9 @@ print(find_duplicates(data))
 # Output: ['paris', 'newyork']
 ```
 
+{% hint style="info" %}
 İki listedeki aynı olan elemanları yazdıran fonksiyon
+{% endhint %}
 
 ```
 data1 = [1, 2, 5, 10]

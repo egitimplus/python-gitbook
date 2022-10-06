@@ -1,6 +1,8 @@
 # Sort
 
+{% hint style="info" %}
 sorting list ascending
+{% endhint %}
 
 ```python
 data = ['paris', 'istanbul', 'Newyork', 'berlin']
@@ -16,7 +18,9 @@ print(sort_list(data))
 # Output : ['Newyork', 'berlin', 'istanbul', 'paris']
 ```
 
+{% hint style="info" %}
 sorting list ascending (fix uppercase char problem)
+{% endhint %}
 
 ```python
 def sort_list(data):
@@ -28,7 +32,9 @@ print(sort_list(data))
 # Output : ['berlin', 'istanbul', 'Newyork', 'paris']
 ```
 
+{% hint style="info" %}
 sorting list ascending with key parameter
+{% endhint %}
 
 ```python
 def sort_list(data):
@@ -41,7 +47,9 @@ print(sort_list(data))
 # Output : ['berlin', 'istanbul', 'Newyork', 'paris']
 ```
 
+{% hint style="info" %}
 sorting list descending
+{% endhint %}
 
 ```python
 def sort_list(data):
@@ -55,7 +63,9 @@ print(sort_list(data))
 # Output : ['paris', 'Newyork', 'istanbul', 'berlin']
 ```
 
+{% hint style="info" %}
 sorting list with sorted method
+{% endhint %}
 
 ```python
 def sort_list(data):
@@ -67,7 +77,9 @@ print(sort_list(data))
 # Output : ['paris', 'Newyork', 'istanbul', 'berlin']
 ```
 
+{% hint style="info" %}
 sorting list by number of characters
+{% endhint %}
 
 ```python
 def sort_list(data):
@@ -93,7 +105,9 @@ print(sort_list(data))
 # Output : ['paris', 'berlin', 'Newyork', 'istanbul']
 ```
 
+{% hint style="info" %}
 sorting list by second word
+{% endhint %}
 
 ```python
 data = ['Adam Smith', 'Alex Mors', 'Mina Moore', 'Arya Stark', 'Ban Ate']
@@ -109,7 +123,9 @@ print(sort_list(data))
 # Output : ['Ban Ate', 'Mina Moore', 'Alex Mors', 'Adam Smith', 'Arya Stark']
 ```
 
-sorting list ascending but zeros at the end.
+{% hint style="info" %}
+sorting list ascending but zeros at the end
+{% endhint %}
 
 ```python
 data = [24, 0, 35, 0, 41, 11, 8]

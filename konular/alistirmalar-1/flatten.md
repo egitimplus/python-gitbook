@@ -1,6 +1,8 @@
 # Flatten
 
+{% hint style="info" %}
 Flatten a nested list
+{% endhint %}
 
 ```python
 data = [[1,2,5,4],[3,2,5,4],[4,5]]
@@ -37,7 +39,9 @@ print(list_flatten(data))
 # Output : [1, 2, 5, 4, 3, 2, 5, 4, 4, 5]
 ```
 
-flatten multi-nested data
+{% hint style="info" %}
+Flatten multi-nested data
+{% endhint %}
 
 ```python
 data = [[[1,2]], [3,4], [5, [6, 7]]]

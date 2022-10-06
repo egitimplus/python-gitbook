@@ -1,8 +1,10 @@
 # Others
 
+{% hint style="info" %}
 Group Elements of Same Indices
+{% endhint %}
 
-```
+```python
 inputLists = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
 outputLists = []
 index = 0
@@ -17,9 +19,11 @@ print(outputLists)
 # Output : [[10, 40, 70], [20, 50, 80], [30, 60, 90]]
 ```
 
+{% hint style="info" %}
 Find Missing Number using Python
+{% endhint %}
 
-```
+```python
 def findMissingNumbers(n):
     numbers = set(n)
     length = len(n)
@@ -33,9 +37,11 @@ listOfNumbers = [1, 2, 3, 5, 6, 7, 8, 9]
 print(findMissingNumbers(listOfNumbers))
 ```
 
+{% hint style="info" %}
 Index of the Maximum Value in a List
+{% endhint %}
 
-```
+```python
 def maximum(x):
     maximum_index = 0
     current_index = 1
@@ -48,9 +54,11 @@ a = [23, 76, 45, 20, 70, 65, 15, 54]
 print(maximum(a))
 ```
 
+{% hint style="info" %}
 İki listede birbirinden benzersiz olanları listeyen fonksiyon \[1,2,3] ve \[1,2,4] -> \[3]
+{% endhint %}
 
-```
+```python
 list1 = [1, 2, 3]
 list2 = [1, 2, 4]
 
@@ -65,9 +73,11 @@ def difference(data_1, data_2):
 print(difference(list1, list2))
 ```
 
+{% hint style="info" %}
 İki listedeki benzersiz olanları listeleyen fonksiyon \[1,2,3] ve \[1,2,4] -> \[3, 4]
+{% endhint %}
 
-```
+```python
 list1 = [1, 2, 3]
 list2 = [1, 2, 4]
 

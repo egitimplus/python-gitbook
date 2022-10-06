@@ -1,6 +1,8 @@
 # Filtreleme
 
+{% hint style="info" %}
 Filter list by first characters
+{% endhint %}
 
 ```python
 data = ['apple', 'apricot', 'blueberry', 'apple', 'Apple', 
@@ -18,7 +20,9 @@ print(filter_list('b', data))
 # Output : ['blueberry', 'blueberry']
 ```
 
+{% hint style="info" %}
 Filter list by first characters (case insensitive) and remove duplicate items.
+{% endhint %}
 
 ```python
 def filter_list(char, data):
@@ -36,7 +40,9 @@ print(filter_list('b', data))
 # Output: ['blueberry', 'banana']
 ```
 
+{% hint style="info" %}
 Filter list by last characters (case insensitive) and remove duplicate items.
+{% endhint %}
 
 ```python
 def filter_list(char, data):
@@ -54,7 +60,9 @@ print(filter_list('y', data))
 # Output: ['blueberry', 'cherry']
 ```
 
-Sıralı arama
+{% hint style="info" %}
+Sequential search
+{% endhint %}
 
 ```python
 def sequential_search(list_, n):

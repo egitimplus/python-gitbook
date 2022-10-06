@@ -1,8 +1,6 @@
 # Count
 
 ```python
-data = ['Banana','Apple', 'Kiwi', 'Cherry', 'kiwi']
-
 def count_items(data):
     new = {}
     for item in data:
@@ -13,6 +11,7 @@ def count_items(data):
             new[item_lower] = 1
     return new
     
+data = ['Banana','Apple', 'Kiwi', 'Cherry', 'kiwi']
 print(count_items(data))
 # Output : {'banana': 1, 'apple': 1, 'kiwi': 2, 'cherry': 1}
 ```
@@ -27,12 +26,15 @@ def count_items(data):
         new[item.lower()] += 1
 
     return dict(new)
-    
+
+data = ['Banana','Apple', 'Kiwi', 'Cherry', 'kiwi']
 print(count_items(data))
 # Output : {'banana': 1, 'apple': 1, 'kiwi': 2, 'cherry': 1}
 ```
 
+{% hint style="info" %}
 The Counter() class will return a dictionary of how many times each item appears in an iterable.
+{% endhint %}
 
 ```python
 from collections import Counter
@@ -57,11 +59,11 @@ print(count_item('Peter', data))
 # Output: 2
 ```
 
+{% hint style="info" %}
 Most Repeated Item
+{% endhint %}
 
 ```python
-data = ['new', 'bold', 'apple', 'yes', 'apple', 'bold', 'new', 'apple']
-
 def most_repeat(data):
     new = {}
     for item in data:
@@ -73,14 +75,16 @@ def most_repeat(data):
 
     return sorted(new, key=lambda x: x[1], reverse=True)[0]
 
+data = ['new', 'bold', 'apple', 'yes', 'apple', 'bold', 'new', 'apple']
 print(most_repeat(data))
 # Output: apple
 ```
 
+{% hint style="info" %}
 Bir fonksiyon yazalım bu fonksiyon verilen metindeki kelimelerin kaç harf olduğunu bize sözlük olarak döndürsün. Her kelime sadece bir kez olsun.
+{% endhint %}
 
 ```python
-
 def word_dict(text):
     word_list = {}
     words = text.split()
@@ -95,7 +99,9 @@ def word_dict(text):
 word_dict('My name is Alex. Welcome my home.')
 ```
 
+{% hint style="info" %}
 Bir fonksiyon yazalım bu fonksiyon verilen metindeki kelimelerin kaç kez geçtiğini bize sözlük olarak döndürsün.
+{% endhint %}
 
 ```python
 def word_count(text):
@@ -114,7 +120,9 @@ def word_count(text):
 word_count('My name is Alex. Welcome my home.')
 ```
 
+{% hint style="info" %}
 Bir fonksiyon yazalım bu fonksiyon içerisine gönderilen metinde kaç tane farklı kelime ve harf olduğunu tespit etsin.
+{% endhint %}
 
 ```python
 def count_words_chars(text):
@@ -125,14 +133,15 @@ def count_words_chars(text):
 
 print(count_words_chars('Hello this funcion works!'))
 # Output : (4, 16)
-
 ```
 
-Bİr fonksiyon yazalım bu fonksiyon bir cümledeki sesli harfleri bulsun ve bu harflerin sayıları çarpsın
+{% hint style="info" %}
+Bir fonksiyon yazalım bu fonksiyon bir cümledeki sesli harfleri bulsun ve bu harflerin sayıları çarpsın
 
 Benim adım emre ya sen? 2 x 2 x 2 x 1 x 1 = 8
 
 Örneği geliştirelim kelime içerisinde büyük harf varsa çarpmasın 2 x 2 x 1 x 1 = 4
+{% endhint %}
 
 ```python
 def multiply_vowels(text):
@@ -149,7 +158,6 @@ def multiply_vowels(text):
             vowel_multiply *= vowel_count
 
     return vowel_multiply
-
 
 print(multiply_vowels('Hello my name is Alexander.'))
 # Output: 16

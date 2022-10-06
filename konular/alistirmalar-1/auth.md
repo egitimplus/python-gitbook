@@ -1,6 +1,8 @@
 # Auth
 
+{% hint style="info" %}
 Check email
+{% endhint %}
 
 ```
 data = [
@@ -14,6 +16,7 @@ print(check_emails(data))
 # Output: ['adam@adam.com']
 ```
 
+{% hint style="info" %}
 Kullanıcıya şifresine soralım. Şifresinde;
 
 * 1 küçük harf
@@ -23,6 +26,7 @@ Kullanıcıya şifresine soralım. Şifresinde;
 * en az 8 karakter olmalı
 
 Koşullara uygun şifre girilirse Başarıyla oluşturuldu diyelim. Değilse hatayı yazdıralım ve tekrar soralım.
+{% endhint %}
 
 ```python
 
@@ -64,7 +68,9 @@ Your password is accepted
 '''
 ```
 
+{% hint style="info" %}
 Bir kullanıcı formu olduğunu düşünelim kullanıcı şifresini girdiğinde (12345) ona şifrenizi girdiniz 5 karakter ('\*\*\*\*\*') uzunluğunda diye ekrana yazdıralım
+{% endhint %}
 
 ```python
 def password_count():
@@ -84,7 +90,9 @@ Your password is 6 (******) characters long.
 '''
 ```
 
+{% hint style="info" %}
 Kullanıcının kayıt formuna yazdığı email adresinden kullanıcı adı oluşturan bir fonksiyon yazacağız. @ işaretinden önceki kısmı kullanıcı adı olacak.
+{% endhint %}
 
 ```python
 def create_user_from_email(email):
@@ -115,6 +123,7 @@ print(create_user_from_email('emrecevik@sas.ss'))
 # Output: emrecevik
 ```
 
+{% hint style="info" %}
 Username Generator
 
 Kullanıcının kayıt formuna yazadığı isim ve soyisimden kullanıcı adı oluşturan bir fonksiyon yazacağız.
@@ -122,6 +131,7 @@ Kullanıcının kayıt formuna yazadığı isim ve soyisimden kullanıcı adı o
 Eğer o kullanıcı adı varsa sonuna 1 ekleyeceğiz. Eğer sonunda kullandığımız sayıda varsa 2, 3 diye olmayana kadar ilerleyeceğiz.
 
 Boş karakterler silinecektir.
+{% endhint %}
 
 ```python
 user_data = [

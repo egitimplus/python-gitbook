@@ -1,8 +1,10 @@
 # Unique - Same
 
+{% hint style="info" %}
 Get unique values from a list
+{% endhint %}
 
-```
+```python
 data = ['apple', 'apricot', 'blueberry', 'apple', 'Apple', 
         'apricot', 'blueberry', 'cherry', 'Banana', 'applE']
         
@@ -18,7 +20,7 @@ print(unique_list(data))
 # Output : ['apple', 'apricot', 'blueberry', 'cherry', 'banana']
 ```
 
-```
+```python
 def unique_list(data):
     return list(set(i.lower() for i in data))
     
@@ -26,9 +28,11 @@ print(unique_list(data))
 # Output : ['apricot', 'blueberry', 'banana', 'apple', 'cherry']
 ```
 
+{% hint style="info" %}
 İki listedeki aynı olan elemanları yazdıran fonksiyon
+{% endhint %}
 
-```
+```python
 data1 = [1, 2, 5, 10]
 data2 = [2, 4, 10, 20]
 
