@@ -40,8 +40,9 @@ for _ in languages:
 ## 4. Separating Digits of Numbers <a href="#4.-separating-digits-of-numbers" id="4.-separating-digits-of-numbers"></a>
 
 ```python
-## different number systems
-## you can also check whether they are correct or not by coverting them into integer using "int" method
+# different number systems
+# you can also check whether they are correct or not by coverting them into integer 
+# using "int" method
 million = 1_000_000
 binary = 0b_0010
 octa = 0o_64
@@ -58,7 +59,8 @@ print(hexa)
 ### 5.1. \_single\_pre\_underscore <a href="#5.1.-_single_pre_underscore" id="5.1.-_single_pre_underscore"></a>
 
 ```python
-# Single Pre Underscore is used for internal use. Most of us don't use it because of that reason.
+# Single Pre Underscore is used for internal use. Most of us don't use it because 
+# of that reason.
 
 class Test:
 
@@ -155,7 +157,8 @@ dir(obj1)
 ### 5.4. Double Pre And Post Underscores <a href="#5.4.-double-pre-and-post-underscores" id="5.4.-double-pre-and-post-underscores"></a>
 
 ```python
-# In Python, you will find different names which start and end with the double underscore. They are called as magic methods or dunder methods.
+# In Python, you will find different names which start and end with the double underscore. 
+# They are called as magic methods or dunder methods.
 
 class Sample():
 
