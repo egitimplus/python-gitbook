@@ -19,20 +19,20 @@ print("2 power 3 is {}".format(a ** b))
 
 ```python
 ## general approach
-nums = [i for i in range(1, 6)]
+nums = [1, 2, 3, 4, 5]
 a = nums[0]
 b = nums[1:]
 print(a, b) # 1 [2, 3, 4, 5]
 
 ## hard approach
-squares = [i ** 2 for i in range(1, 6)]
+squares = [1, 4, 9, 16, 25]
 a = squares[0]
 b = []
 for i in range(1, len(squares)):
     b.append(squares[i])
 print(a, b) # 1 [4, 9, 16, 25]
 
-nums = [i for i in range(1, 6)]
+nums = [1, 2, 3, 4, 5)]
 
 ## a will be 1 and b will be a list containing remaining elements
 a, *b = nums
@@ -88,7 +88,7 @@ print(string) # Name:-John Year Of Graduation:-2021 Age:-19
 ### 3.1. Unpacking in Functions <a href="#3.1.-unpacking-in-functions" id="3.1.-unpacking-in-functions"></a>
 
 ```python
-nums = [i for i in range(1, 6)]
+nums = [1, 2, 3, 4, 5]
 ## passsing list using the *
 print(*nums) # 1 2 3 4 5
 ```
@@ -120,7 +120,7 @@ def keyword_only(*items, _list, default = False):
     print(_list)
     print(default)
     
-nums = [i ** 2 for i in range(1, 6)]
+nums = [1, 4, 9, 16, 25]
 ## calling the function
 keyword_only(1, 2, 3, 4, 5, _list = nums, default = True)
 
