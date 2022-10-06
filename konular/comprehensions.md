@@ -35,6 +35,35 @@ print(new_list)
 # ['aBefiltuu', 'is', 'beertt', 'ahnt', 'gluy']
 ```
 
+```
+numbers = []
+for x in range(10):
+    if x % 2 == 0:
+        temp = x
+    else:
+        temp = -1
+ 
+    numbers.append(2 * temp + 1)
+
+print(numbers)
+# Out: [1, -1, 5, -1, 9, -1, 13, -1, 17, -1]
+
+# The above code is equivalent to:
+
+[2 * (x if x % 2 == 0 else -1) + 1 for x in range(10)]
+```
+
+```
+# One can combine ternary expressions and if conditions. The ternary operator works on the filtered result:
+
+[x if x > 2 else '*' for x in range(10) if x % 2 == 0]
+# Out: ['*', '*', 4, 6, 8]
+
+# The same couldn't have been achieved just by ternary operator only:
+[x if (x > 2 and x % 2 == 0) else '*' for x in range(10)]
+# Out:['*', '*', '*', '*', 4, '*', 6, '*', 8, '*']
+```
+
 ```python
 # create a list of characters in apple, replacing non vowels with '*'
 
@@ -92,6 +121,52 @@ for x, y in [(1,2), (3,4), (5,6)]:
 
 [(x, y) for x, y in [(1, 2), (3, 4), (5, 6)]]
 # Out: [(1, 2), (3, 4), (5, 6)]
+```
+
+## Dict Comprehensions
+
+```python
+data = [1, 2, 3, 4, 4, 5, 5]
+new_dict = {}
+  
+for item in data:
+    if item % 2 != 0:
+        new_dict[item] = item ** 2
+
+print(new_dict) # {1: 1, 3: 9, 5: 25}
+
+new_dict = {item:item ** 2 for item in data if item % 2 != 0}
+
+print(new_dict) # {1: 1, 3: 9, 5: 25}
+
+
+
+data = {
+    'germany': 'berlin',
+    'greece': 'atina',
+    'turkey': 'ankara'
+}
+
+new_dict = {}
+for k,v in data.items():
+    new_dict[k[:3]] = v
+
+print(new_dict) # {'ger': 'berlin', 'gre': 'atina', 'tur': 'ankara'}
+
+
+new_dict = {k[:3]:v for k,v in data.items()}
+
+print(new_dict) # {'ger': 'berlin', 'gre': 'atina', 'tur': 'ankara'}
+
+# Merging Dictionaries
+dict1 = {'w': 1, 'x': 1}
+dict2 = {'x': 2, 'y': 2, 'z': 2}
+
+{k: v for d in [dict1, dict2] for k, v in d.items()} # Out: {'w': 1, 'x': 2, 'y': 2, 'z': 2}
+
+# Python 3.x Version ≥ 3.5
+
+{**dict1, **dict2} # Out: {'w': 1, 'x': 2, 'y': 2, 'z': 2}
 ```
 
 ## Nested List Comprehensions

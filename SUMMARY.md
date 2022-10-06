@@ -62,17 +62,9 @@
 * [Underscore](konular/underscore.md)
 * [Asteriks](konular/asteriks.md)
 * [Örnekler](konular/oernekler.md)
-* [Örnekler](konular/oernekler-1.md)
-* [Örnekler](konular/oernekler-2.md)
 * [Fonksiyonlar (Advanced)](konular/fonksiyonlar-advanced.md)
 * [OOP](konular/oop.md)
 * [Exceptions](konular/exceptions.md)
 * [Dosyalar](konular/dosyalar.md)
 * [SQLite](konular/sqlite.md)
-* [Web Scraping](konular/web-scraping.md)
-* [Algorithims](konular/algorithims.md)
 * [Design Patterns](konular/design-patterns.md)
-
-***
-
-* [Datetime](datetime.md)
