@@ -1,28 +1,4 @@
-# Merhaba Dünya
-
-## etkileşimli kabuk (shell)
-
-stringler her zaman tırnak içerisinde yazılır
-
-{% code lineNumbers="true" %}
-```python
-'Hello World'        # Hello World    
-"Hello World"        # Hello World
-""" Hello World"""   # Hello World
-'''Hello World'''    # Hello World
-```
-{% endcode %}
-
-sayılar tırnak içerisinde yazılmaz
-
-{% code lineNumbers="true" %}
-```python
-5    # 5
-2021 # 2021
-```
-{% endcode %}
-
-## print fonksiyonu
+# print fonksiyonu
 
 print() fonksiyonuna birden fazla argüman gönderebiliriz
 

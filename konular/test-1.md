@@ -18,7 +18,8 @@ lesser\_of\_two\_evens(2,5) --> 5
         
 # Check
 <strong>print(lesser_of_two_evens(2,4))     # 2
-</strong>print(lesser_of_two_evens(2,4))THO  # 5</code></pre>
+</strong>print(lesser_of_two_evens(2,4))THO  # 5
+</code></pre>
 
 {% hint style="info" %}
 ANIMAL CRACKERS
@@ -98,6 +99,7 @@ master\_yoda('We are ready') --> 'ready are We'
 # Check
 <strong>print(master_yoda('I am home'))    # home am I
 </strong>print(master_yoda('We are ready')) # ready are We
+
 </code></pre>
 
 {% hint style="info" %}
@@ -151,7 +153,8 @@ has\_33(\[3, 1, 3]) → False
 # Check
 print(has_33([1, 3, 3]))    # True
 <strong>print(has_33([1, 3, 1, 3])) # False
-</strong>print(has_33([3, 1, 3]))    # Falsey</code></pre>
+</strong>print(has_33([3, 1, 3]))    # Falsey
+</code></pre>
 
 {% hint style="info" %}
 PAPER DOLL
