@@ -1,4 +1,14 @@
+---
+description: kolay
+---
+
 # print fonksiyonu
+
+print() fonksiyonu kendisine gönderilen argümanları ekrana yazdırır
+
+```python
+print("Hello World") # Merhaba Dünya
+```
 
 print() fonksiyonuna birden fazla argüman gönderebiliriz
 

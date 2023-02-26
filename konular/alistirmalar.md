@@ -1,35 +1,63 @@
-# Alıştırmalar
+# Test
 
 ```
-Her işlem için farklı fonksiyonlar oluşturarak aşağıda adımları verilen programı yapınız. 
+Aşağıda adımları verilen programı yapınız
 
-1- Kullanıcı yapacağı işlemi girsin (toplama, çıkarma, bölme, çarpma)
-2- Bu işlemler harici bir işlem girilirse yanlış işlem diye mesaj versin ve işlemi tekrar sorsun
-3- Eğer işlem doğru ise kullanıcıdan bu işlemleri yapabilmek için iki tane sayı istesin. Eğer sayı girilmez ise hata versin ve başa dönsün.
-4- Her şey yolunda giderse sonucu ekrana bastırsın
+1- Kullanıcıya ismini soralım
+2- «Emre» cevabını verene kadar sormaya devam edelim.
+3- «Emre» cevabını verdiğinde şifresini soralım.
+4- Eğer girilen şifre «gizlişifre» değil ise ismini (1. adım) soralım. Eğer şifre doğru ise ekrana «Giriş Başarılı» yazdıralım.
 
 ```
 
-```python
+{% hint style="info" %}
+Use for, .split(), and if to create a Statement that will print out words that start with 's':
+{% endhint %}
+
+```
+st = 'Print only the words that start with s in this sentence'
+
+for word in st.split():
+    if word[0] == 's':
+        print(word)
+        
 '''
-1 - kullanıcı adını "username" eşit olana kadar soralım.
-2 - yanlış oluğuna ise ekrana "yanlış kullanıcı" yazdıralım.
-3 - doğru cevabı verdiğinde şifresini soralım eğer
-4 - eğer şifre doğru ise "giriş başarılı" yazdıralım.
-5 - eğer şifre yanlış ise "yanlış şifre" yazdırıp 1. adıma geri dönelim
+start
+s
+sentence
 '''
-username = 'emre'
-password = 'pass'
 ```
 
-```python
-'''
-1 - kullanıcı adını "username" eşit olana kadar soralım.
-2 - yanlış oluğuna ise ekrana "yanlış kullanıcı" yazdıralım.
-3 - doğru cevabı verdiğinde password eşit olana kadar şifresini soralım
-4 - şifre doğru ise ekrana "giriş başarılı" yanlış ise "yanlış şifre" yazalım 
-'''
+{% hint style="info" %}
+Use range() to print all the even numbers from 0 to 10.
+{% endhint %}
 
-username = 'emre'
-password = 'pass'
+```
+list(range(0,11,2)) # [0, 2, 4, 6, 8, 10]
+```
+
+{% hint style="info" %}
+Go through the string below and if the length of a word is even print "even!"
+{% endhint %}
+
+```
+for word in st.split():
+    if len(word)%2 == 0:
+        print(word+" <-- has an even length!")
+```
+
+{% hint style="info" %}
+Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+{% endhint %}
+
+```
+for num in range(1,101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
 ```

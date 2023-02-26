@@ -1,4 +1,4 @@
-# Exponentiation
+# exponentiation
 
 ```python
 import math
@@ -18,7 +18,6 @@ a, b, c = 2, 3, 2
 print(pow(2, 3, 2)) # 0, calculates (2 ** 3) % 2
 
 '''
-Special functions
 The function math.sqrt(x) calculates the square root of x.
 '''
 print(math.sqrt(a)) # = 2.0 (always float; does not allow complex results)
