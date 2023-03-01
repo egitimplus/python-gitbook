@@ -15,7 +15,7 @@
   * [aritmetik operatörler](konular/veri-yapilarina-giris/aritmetik-operatoerler.md)
   * [atama operatörleri](konular/veri-yapilarina-giris/atama-operatoerleri.md)
   * [alıştırma](konular/veri-yapilarina-giris/alistirma.md)
-  * [builtin fonksiyonlar](konular/veri-yapilarina-giris/builtin-fonksiyonlar.md)
+  * [builtin fonksiyonlar](konular/veri-yapilarina-giris/builtin-fonksiyonlar/README.md)
   * [alıştırma](konular/veri-yapilarina-giris/alistirma-1.md)
   * [tip değiştirme](konular/veri-yapilarina-giris/tip-degistirme.md)
   * [ilkel olmayan veri yapıları](konular/veri-yapilarina-giris/ilkel-olmayan-veri-yapilari/README.md)
