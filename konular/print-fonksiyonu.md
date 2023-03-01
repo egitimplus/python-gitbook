@@ -1,7 +1,3 @@
----
-description: kolay
----
-
 # print fonksiyonu
 
 print() fonksiyonu kendisine gönderilen argümanları ekrana yazdırır
