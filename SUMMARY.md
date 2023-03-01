@@ -37,7 +37,7 @@
   * [range()](konular/doengueler/range.md)
   * [enumerate()](konular/doengueler/enumerate.md)
   * [zip()](konular/doengueler/zip.md)
-  * [break](konular/doengueler/break.md)
+  * [break - continue - else](konular/doengueler/break-continue-else.md)
   * [continue](konular/doengueler/continue.md)
   * [else](konular/doengueler/else.md)
 * [alıştırmalar](konular/alistirmalar.md)
