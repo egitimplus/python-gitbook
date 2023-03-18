@@ -14,11 +14,7 @@
   * [builtin fonksiyonlar](konular/veri-yapilarina-giris/builtin-fonksiyonlar/README.md)
   * [alıştırma](konular/veri-yapilarina-giris/alistirma-1.md)
   * [tip değiştirme](konular/veri-yapilarina-giris/tip-degistirme.md)
-  * [ilkel olmayan veri yapıları](konular/veri-yapilarina-giris/ilkel-olmayan-veri-yapilari/README.md)
-    * [liste](konular/veri-yapilarina-giris/ilkel-olmayan-veri-yapilari/liste.md)
-    * [demet](konular/veri-yapilarina-giris/ilkel-olmayan-veri-yapilari/demet.md)
-    * [küme](konular/veri-yapilarina-giris/ilkel-olmayan-veri-yapilari/kueme.md)
-    * [sözlük](konular/veri-yapilarina-giris/ilkel-olmayan-veri-yapilari/soezluek.md)
+  * [liste](konular/veri-yapilarina-giris/liste.md)
   * [Test](konular/veri-yapilarina-giris/test.md)
 * [dizeler (strings)](<konular/giris/ilkel-veri-yapilari/strings (1).md>)
 * [koşullu ifadeler](konular/kosullu-ifadeler/README.md)
@@ -42,6 +38,9 @@
   * [set()](konular/veri-yapilari/set.md)
   * [dict()](konular/veri-yapilari/dict.md)
   * [comprehensions](konular/veri-yapilari/comprehensions.md)
+  * [demet](konular/veri-yapilari/demet.md)
+  * [küme](konular/veri-yapilari/kueme.md)
+  * [sözlük](konular/veri-yapilari/soezluek.md)
 * [alıştırmalar](konular/alistirmalar-3/README.md)
   * [filtreleme](konular/alistirmalar-3/filtreleme.md)
   * [duplicate](konular/alistirmalar-3/duplicate.md)
@@ -64,3 +63,7 @@
 * [dosyalar](konular/dosyalar.md)
 * [sqlite](konular/sqlite.md)
 * [design patterns](konular/design-patterns.md)
+
+***
+
+* [Inheritance](inheritance.md)
