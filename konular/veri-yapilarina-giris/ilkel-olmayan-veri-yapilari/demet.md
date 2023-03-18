@@ -4,7 +4,7 @@ description: >-
   (duplicate)
 ---
 
-# Demet
+# demet
 
 <pre class="language-python"><code class="lang-python">a = tuple()
 print(type(a)) # &#x3C;class 'tuple'>
@@ -35,4 +35,5 @@ t[0] = 2
 
 # Demetlerin elemanlarına indexi ile ulaşılabilir. 
 print(t[1]) # 4
-print(t[-1]) # 9</code></pre>
+print(t[-1]) # 9
+</code></pre>

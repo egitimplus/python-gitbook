@@ -63,8 +63,47 @@ kedi1.hareket_et()
 kedi1.ses_cikar()
 ```
 
+Kalıtım (inheritance), bir sınıfın başka bir sınıftan özelliklerini ve davranışlarını miras almasına izin veren bir nesne yönelimli programlama özelliğidir.&#x20;
+
+Kalıtım, kod tekrarını önlemek, kodu daha anlaşılır ve sürdürülebilir hale getirmek için kullanılır.&#x20;
+
+```python
+class Hayvan:
+    def __init__(self, isim, soyisim, yas):
+        self.isim = isim
+        self.soyisim = soyisim
+        self.yas = yas
+
+    def beslenme(self):
+        print(f'{self.isim} {self.soyisim} besleniyor')
+
+    def hareket_et(self):
+        print(f'{self.isim} {self.soyisim} hareket ediyor')
+
+
+class Kopek(Hayvan):
+    pass
+
+
+class Kedi(Hayvan):
+    pass
+    
 ```
-// Some code
+
+```python
+kopek1 = Kopek('Kaptan', 'Bir', 5)
+
+print(kopek1)
+print(kopek1.isim)
+kopek1.beslenme()
+kopek1.hareket_et()
+
+kedi1 = Kedi('Dantel', 'Ocean', 3)
+
+print(kedi1)
+print(kedi1.isim)
+kedi1.beslenme()
+kedi1.hareket_et()
 ```
 
 

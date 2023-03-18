@@ -4,7 +4,7 @@ description: >-
   (duplicate)
 ---
 
-# Liste
+# liste
 
 ```python
 my_list = list()

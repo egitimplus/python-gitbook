@@ -4,7 +4,7 @@ description: >-
   duplicate)
 ---
 
-# Küme
+# küme
 
 ```python
 x = set()
