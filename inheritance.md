@@ -291,7 +291,66 @@ MRO - Method Resolution Order
 
 Mixins
 
+```python
+class Personel:
+    maas_katsayisi = 1
 
+    def __init__(self, isim, soyisim, maas):
+        self.isim = isim
+        self.soyisim = soyisim
+        self.maas = maas
+
+    def ad(self):
+        return f'{self.isim} {self.soyisim}'
+
+    def maas_hesapla(self):
+        return self.maas * self.maas_katsayisi
+
+
+class Muhasebe(Personel):
+    pass
+
+
+emre = Muhasebe('Emre', 'Çevik', 10000)
+print(emre.ad())
+print(emre.maas_hesapla())
+
+
+class Yazilimci(Personel):
+    maas_katsayisi = 1.5
+
+    def __init__(self, isim, soyisim, maas, dil):
+        super().__init__(isim, soyisim, maas)
+        self.dil = dil
+
+ali = Yazilimci('Ali', 'Can', 10000, 'python')
+
+print(ali.ad())
+print(ali.maas_hesapla())
+print(ali.dil)
+
+
+class Yonetici(Personel):
+    maas_katsayisi = 2.1
+
+    def __init__(self, isim, soyisim, maas, personeller=None):
+        super().__init__(isim, soyisim, maas)
+
+        if personeller is None:
+            self.personeller = []
+        else:
+            self.personeller = personeller
+
+    def personel_ekle(self):
+        pass
+
+    def personel_sil(self):
+        pass
+
+    def personel_listele(self):
+        pass
+
+```
 
 Polymorphism
 
