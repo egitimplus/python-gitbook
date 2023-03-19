@@ -248,31 +248,27 @@ class Hayvan:
     pass
 
 
-class At(Hayvan):
+class Kedi(Hayvan):
     pass
 
 
-class Esek(Hayvan):
-    pass
-    
-
-class Katir(At, Esek):
+class Kopek(Hayvan):
     pass
 ```
 
 * Hybrid
 
 ```python
-class University:
+class Hayvan:
     pass
     
-class Course(University):
+class At(Hayvan):
     pass
     
-class Branch(University):
+class Esek(Hayvan):
     pass
     
-class Student(Course, Branch):
+class Katir(At, Esek):
     pass
     
 ```
@@ -280,9 +276,9 @@ class Student(Course, Branch):
 MRO - Method Resolution Order
 
 ```python
-print(Student.mro())
-print(Student.__mro__)
-print(help(Student))
+print(Katir.mro())
+print(Katir.__mro__)
+print(help(Katir))
 ```
 
 Mixins
