@@ -248,11 +248,15 @@ class Hayvan:
     pass
 
 
-class Kedi(Hayvan):
+class At(Hayvan):
     pass
 
 
-class Kopek(Hayvan):
+class Esek(Hayvan):
+    pass
+    
+
+class Katir(At, Esek):
     pass
 ```
 
