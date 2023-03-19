@@ -202,8 +202,6 @@ private, protected, public
 
 * Single&#x20;
 
-![](<.gitbook/assets/image (3).png>)
-
 ```python
 class Hayvan:
     pass
@@ -214,8 +212,6 @@ class Kedi(Hayvan):
 ```
 
 * Multilevel
-
-![](<.gitbook/assets/image (10).png>)
 
 ```python
 class Hayvan:
@@ -232,8 +228,6 @@ class Kedi(Memeli):
 
 * Multiple&#x20;
 
-![](<.gitbook/assets/image (2).png>)
-
 ```python
 class Hayvan:
     pass
@@ -249,8 +243,6 @@ class Kedi(Hayvan, Evcil):
 
 * Hierarchical
 
-![](<.gitbook/assets/image (1).png>)
-
 ```python
 class Hayvan:
     pass
@@ -265,8 +257,6 @@ class Kopek(Hayvan):
 ```
 
 * Hybrid
-
-![](<.gitbook/assets/image (11).png>)
 
 ```python
 class University:
