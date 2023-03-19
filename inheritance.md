@@ -339,15 +339,38 @@ class Yonetici(Personel):
         else:
             self.personeller = personeller
 
-    def personel_ekle(self):
-        pass
+    def personel_ekle(self, p):
+        if p not in self.personeller:
+            self.personeller.append(p)
+        else:
+            print('Bu personel zaten ekli')
 
-    def personel_sil(self):
-        pass
+        self.personel_listele()
+
+    def personel_sil(self, p):
+        if p in self.personeller:
+            self.personeller.remove(p)
+        else:
+            print('Bu personel ekli değil')
+
+        self.personel_listele()
 
     def personel_listele(self):
-        pass
+        for p in self.personeller:
+            print('-->', p.full_name)
 
+
+class YazilimYonetici(Manager):
+    maas_katsayisi = 2.5
+    
+    def personel_ekle(self, p):
+        if isinstance(p, Yazilimci):
+            if p not in self.personeller:
+                self.personeller.append(p)
+            else:
+                print('Bu personel zaten ekli')
+        else:
+            print('Bu personel yazılımcı değil')
 ```
 
 Polymorphism
