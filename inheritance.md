@@ -285,11 +285,19 @@ class Student(Course, Branch):
 
 MRO - Method Resolution Order
 
-
-
-
+```python
+print(Student.mro())
+print(Student.__mro__)
+print(help(Student))
+```
 
 Mixins
+
+
+
+
+
+Örnek
 
 ```python
 class Personel:
