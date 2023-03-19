@@ -204,73 +204,197 @@ private, protected, public
 
 ```python
 class Hayvan:
-    pass
+    def aciklama(self):
+        print('Hayvan')
+        
+
+class Kedi(Hayvan):
+    def aciklama(self):
+        print('Kedi')
+        
+obj = Kedi()
+obj.aciklama()
+
+# Kedi
+
+class Hayvan:
+    def aciklama(self):
+        print('Hayvan')
         
 
 class Kedi(Hayvan):
     pass
+        
+obj = Kedi()
+obj.aciklama()
+
+# Hayvan
 ```
 
 * Multilevel
 
 ```python
 class Hayvan:
-    pass
+    def aciklama(self):
+        print('Hayvan')
 
 
 class Memeli(Hayvan):
-    pass
+    def aciklama(self):
+        print('Memeli')
+
+
+class Kedi(Memeli):
+    def aciklama(self):
+        print('Kedi')
+        
+
+obj = Kedi()
+obj.aciklama()
+
+# Kedi
+
+
+class Hayvan:
+    def aciklama(self):
+        print('Hayvan')
+
+
+class Memeli(Hayvan):
+    def aciklama(self):
+        print('Memeli')
 
 
 class Kedi(Memeli):
     pass
+    
+# Memeli
 ```
 
 * Multiple&#x20;
 
 ```python
 class Hayvan:
+    def aciklama(self):
+        print('Hayvan')
+
+
+class Evcil:
+    def aciklama(self):
+        print('Evcil')
+
+
+class Kedi(Hayvan, Evcil):
+    def aciklama(self):
+        print('Kedi')
+     
+obj = Kedi()
+obj.aciklama()
+   
+# Kedi
+
+
+class Hayvan:
+    def aciklama(self):
+        print('Hayvan')
+
+
+class Evcil:
+    def aciklama(self):
+        print('Evcil')
+
+
+class Kedi(Evcil, Hayvan):
     pass
+    
+    
+obj = Kedi()
+obj.aciklama()
+
+# Evcil
+
+
+class Hayvan:
+    def aciklama(self):
+        print('Hayvan')
 
 
 class Evcil:
     pass
 
 
-class Kedi(Hayvan, Evcil):
+class Kedi(Evcil, Hayvan):
     pass
+    
+    
+obj = Kedi()
+obj.aciklama()
+
+# Hayvan
+
 ```
 
 * Hierarchical
 
 ```python
 class Hayvan:
-    pass
+    def aciklama(self):
+        print('Hayvan')
 
 
 class Kedi(Hayvan):
-    pass
+    def aciklama(self):
+        print('Kedi')
 
 
 class Kopek(Hayvan):
-    pass
+    def aciklama(self):
+        print('Köpek')
 ```
 
 * Hybrid
 
 ```python
 class Hayvan:
-    pass
+    def aciklama(self):
+        print('Hayvan')
+    
+class At(Hayvan):
+    def aciklama(self):
+        print('At')
+    
+class Esek(Hayvan):
+    def aciklama(self):
+        print('Esek')
+    
+class Katir(At, Esek):
+    def aciklama(self):
+        print('Katir')
+
+obj = Katir()
+obj.aciklama()
+
+# Katir
+
+
+class Hayvan:
+    def aciklama(self):
+        print('Hayvan')
     
 class At(Hayvan):
     pass
     
 class Esek(Hayvan):
-    pass
+    def aciklama(self):
+        print('Esek')
     
 class Katir(At, Esek):
     pass
-    
+
+obj = Katir()
+obj.aciklama()
+
+# Esek
 ```
 
 MRO - Method Resolution Order
@@ -372,10 +496,6 @@ class YazilimYonetici(Manager):
         else:
             print('Bu personel yazılımcı değil')
 ```
-
-Polymorphism
-
-Abstract Base Class
 
 \
 
