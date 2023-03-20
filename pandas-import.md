@@ -1,39 +1,100 @@
 # Pandas Import
 
-```python
-import pandas as pd
-
+<pre class="language-python"><code class="lang-python"><strong>import pandas as pd
+</strong>
 # Excel dosyasını import etme
 # Sadece ilk sheet yüklenir
+df = pd.read_excel('data/diller.xlsx')
+</code></pre>
 
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx')
 
-# Excel dosyasındaki tüm sheetleri alma
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name=None)
-df.keys() # df['DATA1']
 
-# Excel dosyasındaki belirli sheetleri alma. 0 ve 1. sıradaki sheetler ve 'DATA2'sheet alınır
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name=[0, 1, 'DATA2'])
-df.keys() # dict_keys([0, 1, 'DATA2'])
-
-# Excel dosyasındaki belirlibelirli bir sheet içerisindeki verileri alma
+<pre class="language-python"><code class="lang-python"><strong># Excel dosyasındaki belirlibelirli bir sheet içerisindeki verileri alma
+</strong>
 # ikinci sıradaki sheet alınır
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name=1)
+df = pd.read_excel('data/diller.xlsx', sheet_name=1)
 
-# DATA1 isimli sheet alınır
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1')
+# frontend alınır
+df = pd.read_excel('data/diller.xlsx', sheet_name='frontend')
+</code></pre>
 
-# baştaki bir satırı yok sayma
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1', skiprows=1)
 
-# belirli sütunlar arasını alma
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1', skiprows=1, usecols='B:E')
 
-# sütun isimlerini yok ise
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1', skiprows=1, usecols='B:E', header=None)
+```python
+# Excel dosyasındaki tüm sheetleri alma
+df = pd.read_excel('data/diller.xlsx', sheet_name=None)
+df.keys()
+df['backend']
+```
 
-# istediğimiz sütun isimleri ekleyebiliriz eğer sütun isimleri yok ise yine header=None unutulmamalı
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1', skiprows=1, usecols='B:E', names=['A','B','C','D'])
+
+
+```python
+# Excel dosyasındaki belirli sheetleri alma. 
+
+# backend ve frontend alınır
+df = pd.read_excel('data/diller.xlsx', sheet_name=['backend', 'frontend'])
+df['backend']
+
+# backend ve 2. sıradaki sheet alınır
+df = pd.read_excel('data/diller.xlsx', sheet_name=['backend', 1])
+df['backend']
+
+# 1. ve 2. sıradaki sheet alınır
+df = pd.read_excel('data/diller.xlsx', sheet_name=[0, 1])
+df[1]
+```
+
+
+
+```python
+df = pd.read_excel('data/sehirler.xlsx')
+
+# baştaki üç satırı yok sayma
+df = pd.read_excel('data/sehirler.xlsx', skiprows=3)
+
+# B:C arası sütunları alma
+df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C')
+```
+
+
+
+```python
+# başlıksız olarak verileri alma
+df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', header=None)
+
+# başlık ekleme
+df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', names=['City', 'Count'])
+```
+
+
+
+```python
+```
+
+1
+
+```python
+```
+
+1
+
+```python
+```
+
+1
+
+```python
+```
+
+1
+
+```python
+// Some codeö0o
+```
+
+```python
+import pandas as pd
 
 # eğer sütunlar arasında index var ise seçme için index_col sırasını göndeririz.
 df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1', skiprows=1, usecols='B:E', index_col=0)
