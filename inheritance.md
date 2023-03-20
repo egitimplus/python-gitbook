@@ -2,7 +2,7 @@
 
 Arkadaşlar merhaba,
 
-Bir önceki dersimizde sınıfları anlatmıştık. Ne işe yarıyordu sınıflar ? Sınıflar nesnelerin özelliklerini ve davranışlarını tanımlayan yapılardı. Yani bize nesnenin nasıl olacağı ile ilgili bir reçete / şablon sunuyordu.
+Bir önceki dersimizde sınıfları anlatmıştık. Ne işe yarıyordu sınıflar ? Sınıflar nesnelerin özelliklerini ve davranışlarını tanımlayan yapılardı. Yani bize nesnenin nasıl olacağı ile ilgili bir şablon sunuyordu. Daha sonra biz o şablonu kullanarak nesnelerimizi oluşturuyorduk.
 
 Neleri vardı sınıflarımızın atrributes (özellikleri) ve methodları (davranışları).
 
