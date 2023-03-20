@@ -18,7 +18,7 @@ Hayvanlar için sınıflar tanımlayalım. Öncelikle Kopek sınıfı ile başla
 
 ```python
 class Kopek:
-
+    mama = 200
     # constructor
     def __init__(self, isim, soyisim, yas):
         self.isim = isim
@@ -26,25 +26,23 @@ class Kopek:
         self.yas = yas
 
     def beslenme(self):
-        print(f'{self.isim} {self.soyisim} besleniyor')
+        print(f'{self.isim} {self.soyisim} gunde {self.mama} gr mama yiyor.')
 
     def hareket_et(self):
         print(f'{self.isim} {self.soyisim} hareket ediyor')
 
-    def ses_cikar(self):
-        print('hav hav')
+kaptan = Kopek('Kaptan', 'Bir', 5)
 
-kopek1 = Kopek('Kaptan', 'Bir', 5)
+print(kaptan.isim)
+kaptan.beslenme()
+kaptan.hareket_et()
 
-print(kopek1.isim)
-kopek1.beslenme()
-kopek1.hareket_et()
-kopek1.ses_cikar()
 ```
 
 ```python
 class Buldog(Kopek):
-    pass
+    mama = 300
+
     
 rocky = Buldog('Rocky', 'Rock', 1)
 
@@ -52,7 +50,13 @@ print(rocky)
 print(rocky.isim)
 rocky.beslenme()
 rocky.hareket_et()
-rocky.ses_cikar()
+
+
+class KurtKopegi(Kopek):
+    mama = 400
+
+asi = KurtKopegi('Asi', 'Bey', 3)
+asi.beslenme()
 ```
 
 Bir tane de kedi sınıfı oluşturalım.
@@ -73,6 +77,7 @@ class Kedi:
         print(f'{self.isim} {self.soyisim} hareket ediyor')
 
     def ses_cikar(self):
+        print(f'{self.isim} {self.soyisim} ses cikariyor')
         print('miyaw')
         
 dantel= Kedi('Dantel', 'Ocean', 3)
@@ -157,6 +162,8 @@ class Kus(Hayvan):
         print('cik cik')
 ```
 
+## init override
+
 ## super()
 
 ```python
@@ -171,6 +178,8 @@ class Kedi(Hayvan):
     def ses_cikar(self):
         print('miyav')
 ```
+
+DRY yine uymadı
 
 ```python
 class Kedi(Hayvan):
@@ -195,9 +204,9 @@ dantel.hareket_et()
 ## isinstance
 
 ```python
-print(isinstance(kedi1, Kedi))
-print(isinstance(kedi1, Kopek))
-print(isinstance(kedi1, Hayvan))
+print(isinstance(dantel, Kedi))
+print(isinstance(dantel, Kopek))
+print(isinstance(dantel, Hayvan))
 ```
 
 ## issubclass
@@ -221,7 +230,7 @@ print(issubclass(Kedi, Hayvan))
 
 ## kalıtım türleri
 
-### single&#x20;
+single&#x20;
 
 ```python
 class Hayvan:
@@ -252,7 +261,7 @@ obj.aciklama()
 # Hayvan
 ```
 
-### multilevel
+multilevel
 
 ```python
 class Hayvan:
@@ -292,7 +301,7 @@ class Kedi(Memeli):
 # Memeli
 ```
 
-### multiple&#x20;
+multiple&#x20;
 
 ```python
 class Hayvan:
@@ -355,7 +364,7 @@ obj.aciklama()
 
 ```
 
-### hierarchical
+hierarchical
 
 ```python
 class Hayvan:
@@ -373,7 +382,7 @@ class Kopek(Hayvan):
         print('Köpek')
 ```
 
-### hybrid
+hybrid
 
 ```python
 class Hayvan:
