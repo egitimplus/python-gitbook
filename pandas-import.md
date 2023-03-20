@@ -45,8 +45,6 @@ df = pd.read_excel('data/diller.xlsx', sheet_name=[0, 1])
 df[1]
 ```
 
-
-
 ```python
 # -------------------------------------------------------------------------
 # Satır ve sütunları yok sayma
@@ -67,8 +65,6 @@ df = pd.read_excel('data/sehirler.xlsx', skiprows=3, nrows=1)
 
 ```
 
-
-
 ```python
 # -------------------------------------------------------------------------
 # Başlıklar ve Indeks
@@ -88,61 +84,42 @@ df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', index_col=0)
 # parse_dates : tarihler otomatik olarak çevrilsin
 ```
 
-
-
 ```python
-
-
-
-
-```
-
-1
-
-```python
-```
-
-1
-
-```python
-```
-
-1
-
-```python
-```
-
-
-
-```python
-df = pd.read_csv('kalibrasyon/2020-2021.csv')
+# -------------------------------------------------------------------------
+# CSV dosyasını import etme
+# -------------------------------------------------------------------------
+df = pd.read_csv('data/backend.csv')
 
 # sep = ','
 # ayıraç seçmek için
-df = pd.read_csv('kalibrasyon/2020-2021.csv', sep=';')
+df = pd.read_csv('data/backend.csv', sep=';')
 
 # eğer ilk satır başlık değilse header=None
-df = pd.read_csv('kalibrasyon/2020-2021.csv', sep=';', header=None)
+df = pd.read_csv('data/backend.csv', sep=';', header=None)
 
 # sütun isimleri names ile belirlenebilir
-df = pd.read_csv('kalibrasyon/2020-2021.csv', sep=';', names=[1,3,4,7])
+df = pd.read_csv('data/backend.csv', sep=';', names=['x','y'])
 ```
 
 ```python
+# -------------------------------------------------------------------------
+# Excel Kayıt Etme
+# -------------------------------------------------------------------------
 # tek sheet yazdırmak için
-df.to_excel('kalibrasyon/aaa.xlsx')
+df.to_excel('data/kayit.xlsx')
+
+# engine belirleme
+df2.to_excel('data/engine.xlsx', engine='xlsxwriter')
 
 # birden fazla sheet yazdırmak için
-df2 = df.copy()
-with pd.ExcelWriter('kalibrasyon/bbb.xlsx') as writer:
-    df.to_excel(writer, sheet_name='Sheet_name_1', freeze_panes=(1,1))
-    df2.to_excel(writer, sheet_name='Sheet_name_2')
-
-df2.to_excel('kalibrasyon/ccc.xlsx', engine='xlsxwriter')
-
-with pd.ExcelWriter('kalibrasyon/bbb.xlsx', engine="openpyxl", mode='a') as writer:
-    df.to_excel(writer, sheet_name='Sheet_name_3')
-
+with pd.ExcelWriter('data/multi.xlsx') as writer:
+    df['backend'].to_excel(writer, sheet_name='back')
+    df['frontend'].to_excel(writer, sheet_name='front')
+    
+# yeni sheet ekleme
+with pd.ExcelWriter('data/multi.xlsx', engine="openpyxl", mode='a') as writer:
+    df.to_excel(writer, sheet_name='new')
+    
 # startrow
 # startcol
 # columns : Columns to write.
