@@ -12,6 +12,10 @@ Hemen basit bir örnek ile başlayalım.&#x20;
 
 Hayvanlar için sınıflar tanımlayalım. Öncelikle Kopek sınıfı ile başlayalım.
 
+
+
+## kopek sınıfı
+
 ```python
 class Kopek:
 
@@ -53,6 +57,8 @@ rocky.ses_cikar()
 
 Bir tane de kedi sınıfı oluşturalım.
 
+## kedi sınıfı
+
 ```python
 class Kedi:
     def __init__(self, isim, soyisim, yas):
@@ -85,6 +91,8 @@ Adından da anlaşılacağı üzere gereksiz kod tekrarlarının önüne geçmey
 Kalıtım (inheritance) içinj ne demiştik, bir sınıfın başka bir sınıftan özelliklerini ve davranışlarını miras almasına izin veren bir nesne yönelimli programlama özelliğidir.&#x20;
 
 Kalıtım, kod tekrarını önlemek, kodu daha anlaşılır ve sürdürülebilir hale getirmek için kullanılır. O zaman biz base bir sınıf yapıp bu sınıflarımızı o sınıftan türetebiliriz.
+
+## hayvan sınıfı
 
 ```python
 class Hayvan:
@@ -125,7 +133,7 @@ dantel.beslenme()
 dantel.hareket_et()
 ```
 
-add new method
+## add new method
 
 ```python
 class Kopek(Hayvan):
@@ -138,7 +146,7 @@ class Kedi(Hayvan):
         print('miyav')
 ```
 
-override
+## override
 
 ```python
 class Kus(Hayvan):
@@ -149,7 +157,7 @@ class Kus(Hayvan):
         print('cik cik')
 ```
 
-super()
+## super()
 
 ```python
 class Kedi(Hayvan):
@@ -184,7 +192,7 @@ dantel.beslenme()
 dantel.hareket_et()
 ```
 
-isinstance
+## isinstance
 
 ```python
 print(isinstance(kedi1, Kedi))
@@ -192,14 +200,14 @@ print(isinstance(kedi1, Kopek))
 print(isinstance(kedi1, Hayvan))
 ```
 
-issubclass
+## issubclass
 
 ```python
 print(issubclass(Kedi, Kopek))
 print(issubclass(Kedi, Hayvan))
 ```
 
-private, protected, public
+## private, protected, public
 
 
 
@@ -211,9 +219,9 @@ private, protected, public
 
 
 
+## kalıtım türleri
 
-
-* Single&#x20;
+### single&#x20;
 
 ```python
 class Hayvan:
@@ -244,7 +252,7 @@ obj.aciklama()
 # Hayvan
 ```
 
-* Multilevel
+### multilevel
 
 ```python
 class Hayvan:
@@ -284,7 +292,7 @@ class Kedi(Memeli):
 # Memeli
 ```
 
-* Multiple&#x20;
+### multiple&#x20;
 
 ```python
 class Hayvan:
@@ -347,7 +355,7 @@ obj.aciklama()
 
 ```
 
-* Hierarchical
+### hierarchical
 
 ```python
 class Hayvan:
@@ -365,7 +373,7 @@ class Kopek(Hayvan):
         print('Köpek')
 ```
 
-* Hybrid
+### hybrid
 
 ```python
 class Hayvan:
@@ -410,7 +418,9 @@ obj.aciklama()
 # Esek
 ```
 
-MRO - Method Resolution Order
+## mixins
+
+## MRO - Method Resolution Order
 
 ```python
 print(Katir.mro())
@@ -418,13 +428,11 @@ print(Katir.__mro__)
 print(help(Katir))
 ```
 
-Mixins
 
 
 
 
-
-Örnek
+## örnek
 
 ```python
 class Personel:
