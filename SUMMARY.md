@@ -67,3 +67,4 @@
 ***
 
 * [Inheritance](inheritance.md)
+* [Pandas Import](pandas-import.md)
