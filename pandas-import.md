@@ -1,37 +1,37 @@
 # Pandas Import
 
-<pre class="language-python"><code class="lang-python"><strong>import pandas as pd
-</strong>
+```python
+import pandas as pd
+
+# -------------------------------------------------------------------------
 # Excel dosyasını import etme
-# Sadece ilk sheet yüklenir
+# -------------------------------------------------------------------------
+## Sadece ilk sheet yüklenir
 df = pd.read_excel('data/diller.xlsx')
-</code></pre>
 
-
-
-<pre class="language-python"><code class="lang-python"><strong># Excel dosyasındaki belirlibelirli bir sheet içerisindeki verileri alma
-</strong>
-# ikinci sıradaki sheet alınır
+# -------------------------------------------------------------------------
+# Excel dosyasındaki belirlibelirli bir sheet içerisindeki verileri alma
+# -------------------------------------------------------------------------
+## ikinci sıradaki sheet alınır
 df = pd.read_excel('data/diller.xlsx', sheet_name=1)
 
-# frontend alınır
+## frontend alınır
 df = pd.read_excel('data/diller.xlsx', sheet_name='frontend')
-</code></pre>
 
-
-
-```python
+# -------------------------------------------------------------------------
 # Excel dosyasındaki tüm sheetleri alma
+# -------------------------------------------------------------------------
 df = pd.read_excel('data/diller.xlsx', sheet_name=None)
+
+## keyleri yazdırma
 df.keys()
+
+## backend datası yazdırma
 df['backend']
-```
 
-
-
-```python
+# -------------------------------------------------------------------------
 # Excel dosyasındaki belirli sheetleri alma. 
-
+# -------------------------------------------------------------------------
 # backend ve frontend alınır
 df = pd.read_excel('data/diller.xlsx', sheet_name=['backend', 'frontend'])
 df['backend']
@@ -48,28 +48,52 @@ df[1]
 
 
 ```python
+# -------------------------------------------------------------------------
+# Satır ve sütunları yok sayma
+# -------------------------------------------------------------------------
 df = pd.read_excel('data/sehirler.xlsx')
 
 # baştaki üç satırı yok sayma
 df = pd.read_excel('data/sehirler.xlsx', skiprows=3)
 
+# sondaki iki satırı yok sayma
+df = pd.read_excel('data/sehirler.xlsx', skipfooter=2)
+
 # B:C arası sütunları alma
 df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C')
+
+# alınacak satır sayısını bir olarak belirleme
+df = pd.read_excel('data/sehirler.xlsx', skiprows=3, nrows=1)
+
 ```
 
 
 
-```python
+<pre class="language-python"><code class="lang-python"><strong># -------------------------------------------------------------------------
+</strong># Başlıklar ve Indeks
+# -------------------------------------------------------------------------
 # başlıksız olarak verileri alma
 df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', header=None)
 
 # başlık ekleme
 df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', names=['City', 'Count'])
-```
+
+# eğer sütunlar arasında index var ise seçme için index_col sırasını göndeririz.
+df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', index_col=0)
+
+# thousands : binlik ayıracı
+# decimal : ondalık ayıracı
+# dtype : alınan alanların türleri
+# parse_dates : tarihler otomatik olarak çevrilsin
+</code></pre>
 
 
 
 ```python
+
+
+
+
 ```
 
 1
@@ -96,16 +120,7 @@ df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', names=['City
 ```python
 import pandas as pd
 
-# eğer sütunlar arasında index var ise seçme için index_col sırasını göndeririz.
-df = pd.read_excel('kalibrasyon/Data_KURTIC_20221231.xlsx', sheet_name='DATA1', skiprows=1, usecols='B:E', index_col=0)
 
-# skipfooter : sondan alınmayacak satır sayısı
-# thousands : binlik ayıracı
-# decimal : ondalık ayıracı
-# dtype : alınan alanların türleri
-# nrows : kaç satır alınacağı
-# parse_dates : tarihler otomatik olarak çevrilsin
-# eğer data sadece tek bir sütundan oluşuyorsa Series dönmesi için squueze True seçilir
 
 df
 ```
