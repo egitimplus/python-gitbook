@@ -69,13 +69,13 @@ class Kedi:
     def ses_cikar(self):
         print('miyaw')
         
-kedi1 = Kedi('Dantel', 'Ocean', 3)
+dantel= Kedi('Dantel', 'Ocean', 3)
 
-print(kedi1)
-print(kedi1.isim)
-kedi1.beslenme()
-kedi1.hareket_et()
-kedi1.ses_cikar()
+print(dantel)
+print(dantel.isim)
+dantel.beslenme()
+dantel.hareket_et()
+dantel.ses_cikar()
 ```
 
 Daha önceki konularda ne demiştik DRY prensinimiz vardı değil mi? Neydi DRY prensibi ? Dont Repeat Yourself.&#x20;
@@ -117,12 +117,12 @@ print(kopek1.isim)
 kopek1.beslenme()
 kopek1.hareket_et()
 
-kedi1 = Kedi('Dantel', 'Ocean', 3)
+dantel= Kedi('Dantel', 'Ocean', 3)
 
-print(kedi1)
-print(kedi1.isim)
-kedi1.beslenme()
-kedi1.hareket_et()
+print(dantel)
+print(dantel.isim)
+dantel.beslenme()
+dantel.hareket_et()
 ```
 
 add new method
@@ -176,12 +176,12 @@ class Kedi(Hayvan):
 ```
 
 ```python
-kedi1 = Kedi('Dantel', 'Ocean', 3, 'British')
+dantel = Kedi('Dantel', 'Ocean', 3, 'British')
 
-print(kedi1)
-print(kedi1.cins)
-kedi1.beslenme()
-kedi1.hareket_et()
+print(dantel)
+print(dantel.cins)
+dantel.beslenme()
+dantel.hareket_et()
 ```
 
 isinstance
