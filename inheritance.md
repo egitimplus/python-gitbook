@@ -38,6 +38,19 @@ kopek1.hareket_et()
 kopek1.ses_cikar()
 ```
 
+```python
+class Buldog(Kopek):
+    pass
+    
+rocky = Buldog('Rocky', 'Rock', 1)
+
+print(rocky)
+print(rocky.isim)
+rocky.beslenme()
+rocky.hareket_et()
+rocky.ses_cikar()
+```
+
 Bir tane de kedi sınıfı oluşturalım.
 
 ```python
