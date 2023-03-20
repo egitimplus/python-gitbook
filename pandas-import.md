@@ -69,8 +69,9 @@ df = pd.read_excel('data/sehirler.xlsx', skiprows=3, nrows=1)
 
 
 
-<pre class="language-python"><code class="lang-python"><strong># -------------------------------------------------------------------------
-</strong># Başlıklar ve Indeks
+```python
+# -------------------------------------------------------------------------
+# Başlıklar ve Indeks
 # -------------------------------------------------------------------------
 # başlıksız olarak verileri alma
 df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', header=None)
@@ -85,7 +86,7 @@ df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', index_col=0)
 # decimal : ondalık ayıracı
 # dtype : alınan alanların türleri
 # parse_dates : tarihler otomatik olarak çevrilsin
-</code></pre>
+```
 
 
 
@@ -111,19 +112,7 @@ df = pd.read_excel('data/sehirler.xlsx', skiprows=3, usecols='B:C', index_col=0)
 ```python
 ```
 
-1
 
-```python
-// Some codeö0o
-```
-
-```python
-import pandas as pd
-
-
-
-df
-```
 
 ```python
 df = pd.read_csv('kalibrasyon/2020-2021.csv')
