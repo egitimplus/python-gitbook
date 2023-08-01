@@ -2,16 +2,11 @@
 description: Comparison Operators
 ---
 
-# Karşılaştırma Operatörleri
+# karşılaştırma operatörleri
 
-| Operatör | Açıklama      | Örnek  | Sonuç |
-| -------- | ------------- | ------ | ----- |
-| ==       | Eşittir       | 5 == 6 | False |
-| !=       | Eşit Değildir | 5 != 6 | True  |
-| >        | Büyüktür      | 6 > 4  | True  |
-| <        | Küçüktür      | 6 < 4  | False |
-| >=       | Büyük Eşittir | 6 >= 5 | True  |
-| <=       | Küçük Eşittir | 5 <= 4 | False |
+
+
+<table><thead><tr><th width="137">Operatör</th><th width="187">Açıklama</th><th width="161">Örnek</th><th>Sonuç</th></tr></thead><tbody><tr><td>==</td><td>Eşittir</td><td>5 == 6</td><td>False</td></tr><tr><td>!=</td><td>Eşit Değildir</td><td>5 != 6</td><td>True</td></tr><tr><td>></td><td>Büyüktür</td><td>6 > 4</td><td>True</td></tr><tr><td>&#x3C;</td><td>Küçüktür</td><td>6 &#x3C; 4</td><td>False</td></tr><tr><td>>=</td><td>Büyük Eşittir</td><td>6 >= 5</td><td>True</td></tr><tr><td>&#x3C;=</td><td>Küçük Eşittir</td><td>5 &#x3C;= 4</td><td>False</td></tr></tbody></table>
 
 ```python
 # Equal ( == )

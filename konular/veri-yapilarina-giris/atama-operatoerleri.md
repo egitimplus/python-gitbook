@@ -2,16 +2,9 @@
 description: Assignment Operators
 ---
 
-# Atama Operatörleri
+# atama operatörleri
 
-| Operatör | Açıklama    |
-| -------- | ----------- |
-| +=       | Toplama     |
-| -=       | Çıkarma     |
-| \*=      | Çarpma      |
-| /=       | Bölme       |
-| \*\*=    | Üs alma     |
-| %=       | Mod / Kalan |
+<table><thead><tr><th width="196">Operatör</th><th>Açıklama</th></tr></thead><tbody><tr><td>+=</td><td>Toplama</td></tr><tr><td>-=</td><td>Çıkarma</td></tr><tr><td>*=</td><td>Çarpma</td></tr><tr><td>/=</td><td>Bölme</td></tr><tr><td>**=</td><td>Üs alma</td></tr><tr><td>%=</td><td>Mod / Kalan</td></tr></tbody></table>
 
 ```python
 x += 3      # Addition

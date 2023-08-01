@@ -42,14 +42,7 @@ student_name = 'Emre Cevik' # SyntaxError: invalid syntax
 
 ## değişken isimlendirme yöntemleri
 
-| Yöntem        | Örnek        | Kullanım            |
-| ------------- | ------------ | ------------------- |
-| Camel Case    | totalCount   |                     |
-| Pascal Case   | TotalCount   | sınıflar            |
-| Snake Case    | total\_count | değişken, fonksiyon |
-| Flat Case     | totalcount   | paket isimleri      |
-| Constant Case | TOTAL\_COUNT | sabitler            |
-| Kebap Case    | total-count  |                     |
+<table><thead><tr><th width="167">Yöntem</th><th width="166">Örnek</th><th>Kullanım</th></tr></thead><tbody><tr><td>Camel Case</td><td>totalCount</td><td></td></tr><tr><td>Pascal Case</td><td>TotalCount</td><td>sınıflar</td></tr><tr><td>Snake Case</td><td>total_count</td><td>değişken, fonksiyon</td></tr><tr><td>Flat Case</td><td>totalcount</td><td>paket isimleri</td></tr><tr><td>Constant Case</td><td>TOTAL_COUNT</td><td>sabitler</td></tr><tr><td>Kebap Case</td><td>total-count</td><td></td></tr></tbody></table>
 
 ```
 

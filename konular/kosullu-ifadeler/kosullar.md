@@ -1,4 +1,4 @@
-# If - elif - else
+# koşullar
 
 ## if
 
@@ -127,13 +127,7 @@ else:
 Kullanıcı tarafından girilen sınav puanını nota çeviren programı yazınız. Eğer girilen puan 0-100 aralığında değilse ekrana hata mesajı basınız.
 {% endhint %}
 
-| Sınav Puanı | Not |
-| ----------- | --- |
-| 0-20        | E   |
-| 21-40       | D   |
-| 41-60       | C   |
-| 61-80       | B   |
-| 81-100      | A   |
+<table><thead><tr><th width="203">Sınav Puanı</th><th>Not</th></tr></thead><tbody><tr><td>0-20</td><td>E</td></tr><tr><td>21-40</td><td>D</td></tr><tr><td>41-60</td><td>C</td></tr><tr><td>61-80</td><td>B</td></tr><tr><td>81-100</td><td>A</td></tr></tbody></table>
 
 ```python
 exam_grade = int(input('Please enter exam grade: '))
