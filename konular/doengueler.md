@@ -2,9 +2,7 @@
 description: Loops
 ---
 
-# Döngüler
-
-
+# döngüler
 
 ## While
 
@@ -94,6 +92,21 @@ while i < 6:
     print('')
 ```
 
+{% hint style="info" %}
+Kullanıcı tarafından girilen sayının faktöryelini hesaplayınız.
+{% endhint %}
+
+```python
+faktoryel = 3
+i = 1
+toplam = 1
+while i < faktoryel:
+    i = i + 1
+    toplam = toplam * i
+    
+print(toplam) # 6
+```
+
 ## For
 
 
@@ -129,39 +142,6 @@ for num in list1:
 ```
 
 {% hint style="info" %}
-Kullanıcı tarafından girilen sayının faktöryelini hesaplayınız.
-{% endhint %}
-
-```python
-faktoryel = 3
-i = 1
-toplam = 1
-while i < faktoryel:
-    i = i + 1
-    toplam = toplam * i
-    
-print(toplam) # 6
-```
-
-{% hint style="info" %}
-Klavyeden girilen başlangıç ve bitiş sayıları arasında bulunan tek sayıların ortalamasını bulan programı yazınız.
-{% endhint %}
-
-```python
-baslangic = 3
-bitis = 9
-
-toplam = 0
-adet = 0
-for i in range(baslangic, bitis):
-    if i % 2 != 0:
-        toplam = toplam + i
-        adet = adet + 1
-        
-print(toplam / adet) # 5.0
-```
-
-{% hint style="info" %}
 Klavyeden girilen sayının rakamlarının çarpımını bulan programı yazınız.
 {% endhint %}
 
@@ -176,8 +156,6 @@ print(toplam) # 36
 ```
 
 ## Builtin Fonksiyonlar
-
-
 
 ### range()
 
@@ -199,6 +177,24 @@ for number in range(5):
 ```
 for number in range(6, 21, 3):
     print(number)
+```
+
+{% hint style="info" %}
+Klavyeden girilen başlangıç ve bitiş sayıları arasında bulunan tek sayıların ortalamasını bulan programı yazınız.
+{% endhint %}
+
+```python
+baslangic = 3
+bitis = 9
+
+toplam = 0
+adet = 0
+for i in range(baslangic, bitis):
+    if i % 2 != 0:
+        toplam = toplam + i
+        adet = adet + 1
+        
+print(toplam / adet) # 5.0
 ```
 
 ### enumerate()
